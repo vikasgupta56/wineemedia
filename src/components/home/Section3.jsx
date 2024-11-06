@@ -23,7 +23,7 @@ const Section3 = () => {
 
     },[])
   return (
-    <div className='section3 w-full h-screen flex flex-col text-black  justify-center '>
+    <div className='section3 w-full h-screen flex flex-col text-white  justify-center '>
         <h1 className='txt1 text-[15vw] font-[font3] whitespace-nowrap capitalize -translate-x-[50%]'>digital</h1>
         <h1 className='txt2 text-[15vw] font-[font3] whitespace-nowrap  capitalize translate-x-[80%]'>marketing agency</h1>
     </div>

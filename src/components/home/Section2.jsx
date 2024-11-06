@@ -4,14 +4,8 @@ const Section2 = () => {
 
 
   return (
-    <div className='sec2 w-full h-screen text-black p-[2vw] pl-[35%] flex flex-col justify-center'>
-        <h1 className='text-[5vw] leading-none font-[font1] whitespace-nowrap'>Cultivating digital</h1>
-        <h1 className='text-[5vw] leading-none font-[font1] whitespace-nowrap'>brilliance through creative </h1>
-        <h1 className='text-[5vw] leading-none font-[font1] whitespace-nowrap'>designs and developing</h1>
-        <h1 className='text-[5vw] leading-none font-[font1] whitespace-nowrap'>immersive interactive</h1>
-        <h1 className='text-[5vw] leading-none font-[font1] whitespace-nowrap'>experiences that elevate</h1>
-        <h1 className='text-[5vw] leading-none font-[font1] whitespace-nowrap'>brands in the era of digital</h1>
-        <h1 className='text-[5vw] leading-none font-[font1] whitespace-nowrap'>design.</h1>
+    <div className='sec2 w-full text-white h-screen p-[2vw] flex items-start justify-between'>
+        <h1 className='text-[2vw] w-[60%] leading-none font-[font6]'>Collaborating with passionate individuals and ambitious brands to craft memorable, captivating digital experiences, always striving for a best possible solution.</h1>
     </div>
   )
 }

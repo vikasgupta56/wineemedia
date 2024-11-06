@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='w-full z-20 text-black absolute top-0 left-0 flex items-center justify-between py-[1vw] p-[2vw]'>
+    <div className='w-full z-20 text-white absolute top-0 left-0 flex items-center justify-between py-[1vw] p-[2vw]'>
         <Link href="/" className='text-[1.4vw] font-[font6]'>wineemedia</Link>
         <div className='flex items-start gap-[3vw] capitalize text-[1.2vw] font-[font6]'>
             <Link href="/work">

@@ -5,7 +5,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <div className='relative bg-white'>
+    <div className='relative bg-black'>
         <Section1/>
         <Footer/>
     </div>
