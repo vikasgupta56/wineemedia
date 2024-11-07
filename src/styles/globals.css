@@ -81,3 +81,36 @@ body {
   left: 0;
   transition: all ease .3s;
 }
+
+.marquee{
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+}
+.marquee2{
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+}
+.mar-p:hover .marquee2 {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 3vw - 4px));
+  }
+}
+
+.project-h:hover .black-strip{
+  height: 4%;
+}
+
+.project-h:hover .strip-text{
+  opacity: 1;
+}
