@@ -88,6 +88,13 @@ body {
   animation-timing-function: linear;
   animation-duration: 10s;
 }
+
+.marquee-about{
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 25s;
+}
 .marquee2{
   animation-name: slide;
   animation-iteration-count: infinite;
@@ -113,4 +120,26 @@ body {
 
 .project-h:hover .strip-text{
   opacity: 1;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.096);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

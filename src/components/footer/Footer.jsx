@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-[.3vw] text-[1vw]'>
                         <Link href="/" className='link-hover'>Home</Link>
                         <Link href="/work" className='link-hover'>Work</Link>
-                        <Link href="/" className='link-hover'>About</Link>
+                        <Link href="/about" className='link-hover'>About</Link>
                         <Link href="/" className='link-hover'>Contact</Link>
                     </div>
                     <div className='flex flex-col gap-[.3vw] text-[1vw]'>
