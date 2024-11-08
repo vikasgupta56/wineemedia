@@ -8,6 +8,7 @@ const Section1 = () => {
     const navRef = useRef(null)
     const img3dRef = useRef(null)
     useEffect(() => {
+
         var tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".section1",
@@ -37,20 +38,26 @@ const Section1 = () => {
     }, []);
 
     const handleMouseMove3d = (e)=>{
+        const x = 1 - e.clientX * 0.02
+        const y = 1 - e.clientY * 0.02
         gsap.to(img3dRef.current,{
-            y:e.clientY * 0.02,
-            x:e.clientX * 0.02
+            x:x,
+            y:y
         })
     }
 
     return (
         <div onMouseMove={handleMouseMove3d} className='section1 h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
             <Navbar nav={navRef} />
-            <div className='header-txt font-[font2] '>
-                <h1 className='text-[6vw] leading-none'>Digital agency with a</h1>
-                <h1 className='text-[6vw] '>human touch.</h1>
+            <div className='header-txt font-[font2] relative z-[9]'>
+                <div className='h-[7vw] overflow-hidden' >
+                <h1 className='text-header text-[6vw] leading-none'>Digital agency with a</h1>
+                </div>
+                <div className='h-[7vw] overflow-hidden' >
+                <h1 className='text-header text-[6vw] '>human touch.</h1>
+                </div>
             </div>
-            <img ref={img3dRef} className='absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[38%] ' src="./3dimg.png" alt="" />
+            <img ref={img3dRef} className='fixed top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[38%] ' src="./3dimg.png" alt="" />
             <div className='w-full flex justify-end p-[2vw] absolute bottom-0'>
                 <div className='social flex items-center gap-[1vw]'>
                     {["instagram-line", "dribbble-line", "linkedin-fill"].map((icon, idx) => (

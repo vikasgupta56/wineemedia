@@ -8,6 +8,18 @@ const Transition = ({ children }) => {
     const curtainRef = useRef(null)
 
     const isHomePage = router.pathname === '/'
+    const isAboutPage = router.pathname === '/about'
+    const isWorkPage = router.pathname.startsWith('/work')
+
+    const getRouteName = () => {
+        if (isHomePage) return 'wineemedia'
+        if (isAboutPage) return 'about'
+        if (isWorkPage) {
+            const workName = router.query.name; 
+            return workName ? `${workName}` : 'work'
+        }
+        return '' 
+    }
 
     useEffect(() => {
         const animateTransition = () => {
@@ -18,9 +30,12 @@ const Transition = ({ children }) => {
                 gsap.to(curtainRef.current, {
                     clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
                     duration: 0.8,
-                    delay:1,
+                    delay: 1,
                     ease: 'power2.inOut',
-                    onComplete: () => setDisplayChildren(children),
+                    onComplete: () =>{
+                        window.scrollTo(0,0)
+                        setDisplayChildren(children)
+                    },
                 })
             } else {
                 gsap.set(curtainRef.current, {
@@ -31,6 +46,7 @@ const Transition = ({ children }) => {
                     duration: 0.8,
                     ease: 'power2.inOut'
                 }).then(() => {
+                    window.scrollTo(0,0)
                     setDisplayChildren(children)
                     gsap.to(curtainRef.current, {
                         clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
@@ -42,17 +58,19 @@ const Transition = ({ children }) => {
         }
 
         animateTransition()
-    }, [children, isHomePage])
+    }, [children, isHomePage, isAboutPage, isWorkPage])
 
     return (
         <div className="relative">
             {displayChildren}
             <div
                 ref={curtainRef}
-                style={{ clipPath:"polygon(0 0, 0 0, 0 100%, 0 100%)" }}
+                style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
                 className="w-full h-screen bg-[#111111] fixed top-0 left-0 z-[999] flex items-center justify-center"
             >
-                <h2 className='text-white font-[font2] text-[2vw] uppercase'>wineemedia</h2>
+                <h2 className='text-white font-[font2] text-[2vw] uppercase'>
+                    {getRouteName()}
+                </h2>
             </div>
         </div>
     )

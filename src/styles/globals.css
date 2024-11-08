@@ -144,4 +144,11 @@ body {
   object-fit: cover;
 }
 
+.viewall:hover{
+  color: black;
+}
+
+.viewall:hover .coverall{
+  top: 0;
+}
 

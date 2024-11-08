@@ -48,7 +48,7 @@ const Section1 = () => {
         <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
       </div>
       <div className="projects w-full flex justify-between flex-wrap py-[2vw]">
-        <Link href="/work/details" className='project w-full mb-[4vw] px-[2vw]'>
+        <Link href="/work/kuchenbuddy" className='project w-full mb-[4vw] px-[2vw]'>
           <div className='w-full h-[90vh] flex'>
             <div className='w-1/2 h-full overflow-hidden'>
               <img className='project-ig scale-[1.2] w-full h-full object-cover object-center' src="https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fill/w_1479,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg" alt="" />
@@ -60,7 +60,7 @@ const Section1 = () => {
           <h1 className='text-[2vw] text-white mt-[1vw]'>KUCHENBUDDY</h1>
           <h2 className='text-[1.2vw] text-white'>Easy Peasy Cooking</h2>
         </Link>
-        <Link href="/work/details" className='project w-full mb-[4vw] px-[2vw]'>
+        <Link href="/work/kuchenbuddy" className='project w-full mb-[4vw] px-[2vw]'>
           <div className='w-full h-[90vh] flex'>
             <div className='w-1/2 h-full overflow-hidden'>
               <img className='w-full h-full object-cover object-center project-ig scale-[1.2]' src="https://static.wixstatic.com/media/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg/v1/fill/w_1479,h_735,q_90/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg" alt="" />
@@ -72,7 +72,7 @@ const Section1 = () => {
           <h1 className='text-[2vw] text-white mt-[1vw]'>KUCHENBUDDY</h1>
           <h2 className='text-[1.2vw] text-white'>Easy Peasy Cooking</h2>
         </Link>
-        <Link href="/work/details" className='project w-full mb-[4vw]'>
+        <Link href="/work/kuchenbuddy" className='project w-full mb-[4vw]'>
           <div className='w-full h-screen overflow-hidden'>
             <img className='w-full h-full object-cover object-center project-ig scale-[1.2]' src="https://static.wixstatic.com/media/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg/v1/fit/w_1440,h_735,q_90/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg" alt="" />
           </div>
@@ -81,7 +81,7 @@ const Section1 = () => {
             <h2 className='text-[1.2vw] text-white'>Easy Peasy Cooking</h2>
           </div>
         </Link>
-        <Link href="/work/details" className='project w-full mb-[4vw] px-[2vw]'>
+        <Link href="/work/kuchenbuddy" className='project w-full mb-[4vw] px-[2vw]'>
           <div className='w-full h-[90vh] flex'>
             <div className='w-1/2 h-full overflow-hidden'>
               <img className='w-full h-full object-cover object-center project-ig scale-[1.2]' src="https://static.wixstatic.com/media/84770f_23ebbc39557f4db58b9cb92d79a4c9fc~mv2.jpg/v1/fit/w_480,h_721,q_90/84770f_23ebbc39557f4db58b9cb92d79a4c9fc~mv2.jpg" alt="" />
@@ -93,7 +93,7 @@ const Section1 = () => {
           <h1 className='text-[2vw] text-white mt-[1vw]'>KUCHENBUDDY</h1>
           <h2 className='text-[1.2vw] text-white'>Easy Peasy Cooking</h2>
         </Link>
-        <Link href="/work/details" className='project w-full mb-[4vw] px-[2vw]'>
+        <Link href="/work/kuchenbuddy" className='project w-full mb-[4vw] px-[2vw]'>
           <div className='w-full h-[90vh] flex'>
             <div className='w-1/2 h-full overflow-hidden'>
               <img className='w-full h-full object-cover object-center scale-[1.2] project-ig' src="https://static.wixstatic.com/media/84770f_20c621b2982d46e2835a4dc27a61a4b3~mv2.jpg/v1/fit/w_1440,h_735,q_90/84770f_20c621b2982d46e2835a4dc27a61a4b3~mv2.jpg" alt="" />
@@ -105,7 +105,7 @@ const Section1 = () => {
           <h1 className='text-[2vw] text-white mt-[1vw]'>KUCHENBUDDY</h1>
           <h2 className='text-[1.2vw] text-white'>Easy Peasy Cooking</h2>
         </Link>
-        <Link href="/work/details" className='project w-full mb-[4vw]'>
+        <Link href="/work/kuchenbuddy" className='project w-full mb-[4vw]'>
           <div className='w-full h-screen overflow-hidden'>
             <img className='w-full h-full object-cover object-center project-ig scale-[1.2]' src="https://static.wixstatic.com/media/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg/v1/fill/w_1479,h_735,q_90/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg" alt="" />
           </div>

@@ -124,41 +124,40 @@ const index = () => {
             </div>
             <div className='w-full py-[3vw] pb-[10vw]'>
                 <div className='w-full text-white capitalize mb-[3vw] px-[2vw] flex gap-[4vw]'>
-                    <h1 className='text-[5vw] font-[none]'>latest</h1>
-                    <h1 className='text-[5vw] font-[font6]'>project</h1>
+                    <h1 className='text-[5vw] font-[font6]'>Latest project</h1>
                 </div>
                 <div onMouseMove={handleMouseMove2} onMouseLeave={handleMouseLeave} className='mar-p w-full flex gap-[1.5vw]'>
                     <div className='marquee2 w-fit flex items-center text-white/50 font-[font4] text-[4vw] gap-[1.5vw] uppercase'>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg/v1/fit/w_480,h_330,q_90/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg/v1/fit/w_1440,h_735,q_90/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg/v1/fit/w_700,h_409,q_90/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_cbf4131909214476803b7bb87627e948~mv2.jpg/v1/fit/w_480,h_271,q_90/84770f_cbf4131909214476803b7bb87627e948~mv2.jpg" alt="" />
                         </Link>
                     </div>
                     <div className='marquee2 w-fit flex items-center text-white/50 font-[font4] text-[4vw] gap-[1.5vw] uppercase'>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg/v1/fit/w_480,h_330,q_90/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg/v1/fit/w_1440,h_735,q_90/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg/v1/fit/w_700,h_409,q_90/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg" alt="" />
                         </Link>
-                        <Link href="/work/details" className='w-[20vw] h-[12vw] cursor-pointer'>
+                        <Link href="/work/kuchenbuddy" className='w-[20vw] h-[12vw] cursor-pointer'>
                             <img className='w-full h-full object-cover' src="https://static.wixstatic.com/media/84770f_cbf4131909214476803b7bb87627e948~mv2.jpg/v1/fit/w_480,h_271,q_90/84770f_cbf4131909214476803b7bb87627e948~mv2.jpg" alt="" />
                         </Link>
                     </div>

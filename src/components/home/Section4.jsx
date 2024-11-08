@@ -130,11 +130,12 @@ const Section4 = ({ cursor }) => {
         </Link>))}
       </div>
      <div className='flex items-center justify-center py-[3vw] pt-[1vw]'>
-     <Link href="/work" className=' effecttxt border border-white px-[2vw] rounded-full py-[.7vw] text-white flex items-center gap-[1vw] mix-blend-difference  cursor-pointer'>
-            <div className='overflow-hidden h-[1.5vw] text-[1.2vw] font-[font6]'>
+     <Link href="/work" className='viewall overflow-hidden effecttxt border border-white px-[2vw] relative rounded-full py-[.7vw] text-white flex items-center gap-[1vw] mix-blend-difference  cursor-pointer'>
+            <div className='relative z-[10] overflow-hidden h-[1.5vw] text-[1.2vw] font-[font6]'>
               <h2 className='one capitalize'>view all</h2>
               <h2 className='one capitalize'>view all</h2>
             </div>
+            <div className='coverall transition-all duration-300 w-full h-full bg-white absolute left-1/2 -translate-x-1/2 top-full rounded-full'></div>
           </Link>
      </div>
     </div>
