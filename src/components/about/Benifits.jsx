@@ -24,6 +24,20 @@ const Benifits = () => {
               duration: .8,
             }, "a")
       
+            gsap.fromTo(".benfit-txt1", {
+                y: 10,
+                opacity: 0,
+            }, {
+                y: 0,
+                opacity: 1,
+                duration:1,
+                scrollTrigger: {
+                    trigger: ".benfit-txt1",
+                    start: "top 70%",
+                    end: "top 40%",
+                    scrub: 1,
+                }
+            })
     },[])
 
   return (
@@ -34,7 +48,7 @@ const Benifits = () => {
         </div>
         <div className="line-about2 w-[0] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
     </div>
-    <h2 className='text-white font-[font6] w-[70%] text-[2vw] capitalize my-[5vw]'>
+    <h2 className='benfit-txt1 text-white font-[font6] w-[70%] text-[2vw] capitalize my-[5vw]'>
         At LuxeFrame, we pride ourselves on delivering unparalleled photography and videography services
         that capture the essence of your unique story. Here are the key benefits of choosing our studio:
     </h2>

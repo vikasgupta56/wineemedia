@@ -19,23 +19,52 @@ const Section2 = () => {
 
         var tl = gsap.timeline({
             scrollTrigger: {
-              trigger: ".select-work",
-              start: "top 75%",
-              end: "top 60%",
-              scrub: 1,
+                trigger: ".select-work",
+                start: "top 75%",
+                end: "top 60%",
+                scrub: 1,
             }
-          })
-          tl
+        })
+        tl
             .to(".line-about", {
-              width: "96vw",
-              duration: .8,
-              ease: "none",
+                width: "96vw",
+                duration: .8,
+                ease: "none",
             }, "a")
             .to(".work-txt-about", {
-              transform: "translateY(0)",
-              duration: .8,
+                transform: "translateY(0)",
+                duration: .8,
             }, "a")
-      
+
+        gsap.fromTo(".sect2-txt", {
+            y: 50,
+            opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
+            duration:1,
+            stagger:0.4,
+            scrollTrigger: {
+                trigger: ".sect2-txt",
+                start: "top 70%",
+                end: "top 40%",
+                scrub: 1,
+            }
+        })
+        gsap.fromTo(".sec2-txt1", {
+            y: 10,
+            opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
+            duration:1,
+            scrollTrigger: {
+                trigger: ".sec2-txt1",
+                start: "top 70%",
+                end: "top 40%",
+                scrub: 1,
+            }
+        })
 
     }, [])
 
@@ -47,7 +76,7 @@ const Section2 = () => {
                 </div>
                 <div className="line-about w-[0] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
             </div>
-            <h2 className='text-white font-[font6] w-[70%] text-[2vw] capitalize my-[5vw]'>Welcome to LuxeFrame, where we transform moments into timeless visual narratives. Founded with a
+            <h2 className='sec2-txt1 text-white font-[font6] w-[70%] text-[2vw] capitalize my-[5vw]'>Welcome to LuxeFrame, where we transform moments into timeless visual narratives. Founded with a
                 passion for capturing the essence of life's most cherished experiences, LuxeFrame is dedicated
                 to crafting captivating photography and videography that resonates with authenticity and
                 elegance.
@@ -61,7 +90,7 @@ const Section2 = () => {
                 </div>
             </div>
             <div className='w-full py-[5vw] pb-[10vw] text-white font-[font4] text-[1.1vw] flex flex-col items-center gap-[4vw]'>
-                <h4 className='w-[50%]'>
+                <h4 className='sect2-txt w-[50%]'>
                     We believe in the power of storytelling through imagery. Whether it's the serene
                     landscapes of the Dolomites, the bustling streets of Paris, or the vibrant energy of an event at
                     sunset, our team of talented photographers and videographers is committed to exceeding
@@ -69,7 +98,7 @@ const Section2 = () => {
                     each frame tells a compelling story, evoking emotions and capturing moments that last a
                     lifetime.
                 </h4>
-                <h4 className='w-[50%]'>
+                <h4 className='sect2-txt w-[50%]'>
                     Driven by innovation and a deep understanding of visual arts, LuxeFrame is not just a
                     photography studio; it's a creative hub where ideas come to life. From concept to execution, we
                     collaborate closely with our clients to deliver outstanding results that resonate with their
