@@ -37,14 +37,18 @@ const Section1 = () => {
 
     }, []);
 
-    const handleMouseMove3d = (e)=>{
-        const x = 1 - e.clientX * 0.02
-        const y = 1 - e.clientY * 0.02
-        gsap.to(img3dRef.current,{
-            x:x,
-            y:y
-        })
-    }
+    const handleMouseMove3d = (e) => {
+        const bounds = img3dRef.current.getBoundingClientRect();
+        const offsetX = (e.clientX - bounds.left - bounds.width / 2) / bounds.width;
+        const offsetY = (e.clientY - bounds.top - bounds.height / 2) / bounds.height;
+        
+        gsap.to(img3dRef.current, {
+            x: offsetX * 15, // Limit range to ±15px for better control
+            y: offsetY * 15,
+            duration: 0.2,   // Reduced duration for more responsive movement
+            ease: "power3.out"
+        });
+    };
 
     return (
         <div onMouseMove={handleMouseMove3d} className='section1 h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
