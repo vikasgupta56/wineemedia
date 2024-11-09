@@ -29,9 +29,9 @@
   src: url(/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2);
 }
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
   display: none;
-} */
+}
 
 * {
   margin: 0;
