@@ -29,19 +29,22 @@
   src: url(/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2);
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   display: none;
-}
+} */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 html,
 body {
   width: 100%;
   height: 100%;
+  /* overflow: hidden; */
 }
 
 .social-i:hover .cir{
@@ -103,6 +106,10 @@ body {
 }
 .mar-p:hover .marquee2 {
   animation-play-state: paused;
+}
+
+.marquee-container, .marquee-about-container, .marquee2-container {
+  overflow: hidden;
 }
 
 @keyframes slide {

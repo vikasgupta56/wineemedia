@@ -110,14 +110,14 @@ const Section4 = ({ cursor }) => {
 
   return (
     <div className='section4-h w-full min-h-screen bg-black'>
-      <div className='select-work relative w-full mx-[2vw] py-[1.2vw] flex mt-[6vw]'>
+      <div className='select-work relative w-full mx-[2vw] py-[5vw] sm:py-[1.2vw] mt-[6vw]'>
         <div className='overflow-hidden'>
-          <h2 className='work-txt text-white text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>Selected Work</h2>
+          <h2 className='work-txt text-white text-[10vw] sm:text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>Selected Work</h2>
         </div>
         <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
       </div>
-      <div className="projects w-full flex justify-between flex-wrap p-[2vw] pb-[0]">
-        {works.map((w, i) => (<Link href="/work/details" key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-[49%] h-[90vh] mb-[2%] overflow-hidden relative">
+      <div className="projects w-full flex justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
+        {works.map((w, i) => (<Link href="/work/details" key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-full sm:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
           <div className='black-strip transition-all duration-500 w-full h-[0%] bg-black absolute top-1/2 -translate-y-1/2 left-0 z-[9]'></div>
           <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[.8vw] font-[font6] h-[4%]  absolute top-1/2 opacity-0 -translate-y-1/2 left-0 z-[10] flex items-center justify-between'>
             <h5>{w.title}</h5>
@@ -129,9 +129,9 @@ const Section4 = ({ cursor }) => {
           <img className='project-ig w-full h-full object-cover scale-[1.3]' src={w.image} alt="" />
         </Link>))}
       </div>
-     <div className='flex items-center justify-center py-[3vw] pt-[1vw]'>
-     <Link href="/work" className='viewall overflow-hidden effecttxt border border-white px-[2vw] relative rounded-full py-[.7vw] text-white flex items-center gap-[1vw] mix-blend-difference  cursor-pointer'>
-            <div className='relative z-[10] overflow-hidden h-[1.5vw] text-[1.2vw] font-[font6]'>
+     <div className='flex items-center justify-center py-[3vw] pt-[5vw] sm:pt-[1vw]'>
+     <Link href="/work" className='viewall overflow-hidden effecttxt border border-white px-[6vw] sm:px-[2vw] relative rounded-full py-[2vw] sm:py-[.7vw] text-white flex items-center gap-[1vw] mix-blend-difference  cursor-pointer'>
+            <div className='relative z-[10] overflow-hidden h-[4.5vw] sm:h-[1.5vw] text-[4vw] sm:text-[1.2vw] font-[font6]'>
               <h2 className='one capitalize'>view all</h2>
               <h2 className='one capitalize'>view all</h2>
             </div>

@@ -31,7 +31,7 @@ const SmoothScroller = ({ children }) => {
         };
     }, []);
 
-    return <>{children}</>;
+    return <div className='w-full'>{children}</div>;
 };
 
 export default SmoothScroller;
