@@ -136,23 +136,6 @@ const Transition = ({ children }) => {
     return (
         <contactContext.Provider value={[isOpen, setisOpen]}>
             <div className="relative overflow-x-hidden">
-            <div id='curtain' ref={curtainRef}
-                    style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
-                    className="w-full h-screen bg-[#111111] fixed top-0 left-0 z- [9999] flex flex-col items-center justify-center"
-                >
-                    {getRouteName() === "wineemedia" ? <>
-                    <div className='relative'>
-                        <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#111111] opacity-[.7]'></div>
-                        <h1 className="text-[8vw] sm:text-[4vw] font-[font4] text-white uppercase">{getRouteName()}</h1>
-                    </div>
-                        <div className='flex items-center justify-between opacity-[.7] gap-[.5vw]'>
-                        <h4 className='text-white font-[font4] text-[1vw]  '>Loading...</h4>
-                        <div className='w-[2.5vw] text-white flex items-center justify-between'>{loading}<span>%</span></div>
-                        </div>
-
-                    </> : <h1 className="text-[8vw] sm:text-[3vw] font-[font4] text-white uppercase">{getRouteName()}</h1>}
-
-                </div>
                 {displayChildren}
                 {isOpen && <>
                 <div onClick={() => {
@@ -214,7 +197,23 @@ const Transition = ({ children }) => {
                             </form>
                         </div>
                 </>}
-                
+                <div id='curtain' ref={curtainRef}
+                    style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
+                    className="w-full h-screen bg-[#111111] fixed top-0 left-0 z- [999] flex flex-col items-center justify-center"
+                >
+                    {getRouteName() === "wineemedia" ? <>
+                    <div className='relative'>
+                        <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#111111] opacity-[.7]'></div>
+                        <h1 className="text-[8vw] sm:text-[4vw] font-[font4] text-white uppercase">{getRouteName()}</h1>
+                    </div>
+                        <div className='flex items-center justify-between opacity-[.7] gap-[.5vw]'>
+                        <h4 className='text-white font-[font4] text-[1vw]  '>Loading...</h4>
+                        <div className='w-[2.5vw] text-white flex items-center justify-between'>{loading}<span>%</span></div>
+                        </div>
+
+                    </> : <h1 className="text-[8vw] sm:text-[3vw] font-[font4] text-white uppercase">{getRouteName()}</h1>}
+
+                </div>
             </div>
         </contactContext.Provider>
     )
