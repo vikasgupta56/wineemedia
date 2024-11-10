@@ -1,0 +1,148 @@
+import React, { createContext } from 'react'
+
+export const projectContext = createContext()
+
+const ProjectContext = ({children}) => {
+
+    const projectData = [
+        {
+          projectname: "maab cosmetics",
+          serviceprovided: "graphic posts, social media management",
+          coverimage1: "/images/maab-cover1.png",
+          coverimage2: "/images/maab-cover2.png",
+          image3: "/images/maab-image3.png",
+          image4: "/images/maab-image4.png",
+          image5: "/images/maab-image5.png",
+          image6: "/images/maab-image6.png",
+          image7: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "pepe cafe",
+          serviceprovided: "social media management, video/photo shoot, reels",
+          coverimage1: "/images/Pe-cover1.png",
+          coverimage2: "/images/Pe-cover2.png",
+          image3: "/images/Pe-image3.png",
+          image4: "/images/Pe-image4.png",
+          image5: "/images/Pe-image5.png",
+          image6: "/images/Pe-image6.png",
+          image7: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "pace entertainment",
+          serviceprovided: "social media management, video/photo shoot, reels",
+          coverimage1: "/images/pace-cover1.jpg",
+          coverimage2: "/images/pace-cover2.jpg",
+          image3: "/images/pace-image3.jpg",
+          image4: "/images/pace-image4.jpg",
+          image5: "/images/pace-image5.jpg",
+          image6: "/images/pace-image6.jpg",
+          image7: "/images/pace-image7.jpg",
+          image8: "/images/pace-image8.jpg",
+          image9: "/images/pace-image8.jpg",
+        },
+        {
+          projectname: "meera engineering works",
+          serviceprovided: "brochure, branding",
+          coverimage1: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          coverimage2: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image3: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image4: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image5: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image6: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image7: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "muscle squadron",
+          serviceprovided: "social media management, content creation, shoot",
+          coverimage1: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          coverimage2: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image3: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image4: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image5: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image6: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image7: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "pace premium",
+          serviceprovided: "graphics, creatives",
+          coverimage1: "/images/pacep-cover1.png",
+          coverimage2: "/images/pacep-cover2.png",
+          image3: "/images/pacep-image3.png",
+          image4: "/images/pacep-image4.png",
+          image5: "/images/pacep-image5.png",
+          image6: "/images/pacep-image6.png",
+          image7: "/images/pacep-image7.png",
+          image8: "/images/pacep-image8.png",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "zerror studios",
+          serviceprovided: "video graphics, logo animation",
+          coverimage1: "/images/zerror-cover1.png",
+          coverimage2: "/images/zerror-cover2.png",
+          image3: "/images/zerror-image3.png",
+          image4: "/images/zerror-image4.png",
+          image5: "/images/zerror-image5.png",
+          image6: "/images/zerror-image6.png",
+          image7: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "dawn knight",
+          serviceprovided: "videography, video editing",
+          coverimage1: "/images/dawn-cover1.png",
+          coverimage2: "/images/dawn-cover2.png",
+          image3: "/images/dawn-image3.png",
+          image4: "/images/dawn-image4.png",
+          image5: "/images/dawn-image5.png",
+          image6: "/images/dawn-image6.png",
+          image7: "/images/dawn-image7.png",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "amwaves",
+          serviceprovided: "graphic posts",
+          coverimage1: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          coverimage2: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image3: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image4: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image5: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image6: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image7: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+        {
+          projectname: "envision dazzling",
+          serviceprovided: "event management, branding, digital marketing",
+          coverimage1: "/images/envision-cover1.png",
+          coverimage2: "/images/envision-cover2.png",
+          image3: "/images/envision-image3.png",
+          image4: "/images/envision-image4.png",
+          image5: "/images/envision-image5.png",
+          image6: "/images/envision-image6.png",
+          image7: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image8: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+          image9: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg",
+        },
+      ];
+      
+      
+      
+
+  return (
+    <projectContext.Provider value={projectData}>{children}</projectContext.Provider>
+  )
+}
+
+export default ProjectContext

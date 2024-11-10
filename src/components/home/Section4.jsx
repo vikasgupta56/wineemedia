@@ -1,51 +1,55 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Link from 'next/link'
-import React, { useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
+import { projectContext } from '../projectContext/ProjectContext'
 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const Section4 = ({ cursor }) => {
    const workrefs = useRef([])
-  const works = [
-    {
-      title: 'NoMadS',
-      description: 'Brand Strategy, Website Design, Social Media Campaigns',
-      image: 'https://static.wixstatic.com/media/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg/v1/fill/w_1479,h_735,q_90/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg',
-      year: "2024"
-    },
-    {
-      title: 'NoMadS',
-      description: 'Brand Strategy, Website Design, Social Media Campaigns',
-      image: 'https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg',
-      year: "2024"
-    },
-    {
-      title: 'NoMadS',
-      description: 'Brand Strategy, Website Design, Social Media Campaigns',
-      image: 'https://static.wixstatic.com/media/84770f_41562a89c1d2492d9cfcc38c950a1167~mv2.jpg/v1/fit/w_700,h_801,q_90/84770f_41562a89c1d2492d9cfcc38c950a1167~mv2.jpg',
-      year: "2024"
-    },
-    {
-      title: 'NoMadS',
-      description: 'Brand Strategy, Website Design, Social Media Campaigns',
-      image: 'https://static.wixstatic.com/media/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg/v1/fit/w_700,h_1050,q_90/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg',
-      year: "2024"
-    },
-    {
-      title: 'NoMadS',
-      description: 'Brand Strategy, Website Design, Social Media Campaigns',
-      image: 'https://static.wixstatic.com/media/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg/v1/fit/w_700,h_1050,q_90/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg',
-      year: "2024"
-    },
-    {
-      title: 'NoMadS',
-      description: 'Brand Strategy, Website Design, Social Media Campaigns',
-      image: 'https://static.wixstatic.com/media/84770f_0084f58d065e4df89df22e7641337350~mv2.jpg/v1/fit/w_699,h_699,q_90/84770f_0084f58d065e4df89df22e7641337350~mv2.jpg',
-      year: "2024"
-    },
-  ]
+const workData = useContext(projectContext)
+   const works = workData.slice(0,6)
+
+  // const works = [
+  //   {
+  //     title: 'NoMadS',
+  //     description: 'Brand Strategy, Website Design, Social Media Campaigns',
+  //     image: 'https://static.wixstatic.com/media/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg/v1/fill/w_1479,h_735,q_90/84770f_35bbc7d1b2fe4e66ab9b7b4d72f9cc83~mv2.jpg',
+  //     year: "2024"
+  //   },
+  //   {
+  //     title: 'NoMadS',
+  //     description: 'Brand Strategy, Website Design, Social Media Campaigns',
+  //     image: 'https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fit/w_1440,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg',
+  //     year: "2024"
+  //   },
+  //   {
+  //     title: 'NoMadS',
+  //     description: 'Brand Strategy, Website Design, Social Media Campaigns',
+  //     image: 'https://static.wixstatic.com/media/84770f_41562a89c1d2492d9cfcc38c950a1167~mv2.jpg/v1/fit/w_700,h_801,q_90/84770f_41562a89c1d2492d9cfcc38c950a1167~mv2.jpg',
+  //     year: "2024"
+  //   },
+  //   {
+  //     title: 'NoMadS',
+  //     description: 'Brand Strategy, Website Design, Social Media Campaigns',
+  //     image: 'https://static.wixstatic.com/media/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg/v1/fit/w_700,h_1050,q_90/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg',
+  //     year: "2024"
+  //   },
+  //   {
+  //     title: 'NoMadS',
+  //     description: 'Brand Strategy, Website Design, Social Media Campaigns',
+  //     image: 'https://static.wixstatic.com/media/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg/v1/fit/w_700,h_1050,q_90/84770f_b38c6ae73ba64017b4e5a31f79ca9ae3~mv2.jpg',
+  //     year: "2024"
+  //   },
+  //   {
+  //     title: 'NoMadS',
+  //     description: 'Brand Strategy, Website Design, Social Media Campaigns',
+  //     image: 'https://static.wixstatic.com/media/84770f_0084f58d065e4df89df22e7641337350~mv2.jpg/v1/fit/w_699,h_699,q_90/84770f_0084f58d065e4df89df22e7641337350~mv2.jpg',
+  //     year: "2024"
+  //   },
+  // ]
 
   useEffect(() => {
    if(workrefs.current){
@@ -117,16 +121,16 @@ const Section4 = ({ cursor }) => {
         <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
       </div>
       <div className="projects w-full flex justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
-        {works.map((w, i) => (<Link href="/work/details" key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-full sm:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
+        {works.map((w, i) => (<Link href={`/work/${w.projectname}`} key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-full sm:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
           <div className='black-strip transition-all duration-500 w-full h-[0%] bg-black absolute top-1/2 -translate-y-1/2 left-0 z-[9]'></div>
           <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[.8vw] font-[font6] h-[4%]  absolute top-1/2 opacity-0 -translate-y-1/2 left-0 z-[10] flex items-center justify-between'>
-            <h5>{w.title}</h5>
+            <h5>{w.projectname}</h5>
             <div className='flex items-center gap-[8vw]'>
-              <h5>{w.description}</h5>
-              <h1>{w.year}</h1>
+              <h5>{w.serviceprovided}</h5>
+              <h1>2024</h1>
             </div>
           </div>
-          <img className='project-ig w-full h-full object-cover scale-[1.3]' src={w.image} alt="" />
+          <img className='project-ig w-full h-full object-cover scale-[1.3]' src={w.coverimage1} alt="" />
         </Link>))}
       </div>
      <div className='flex items-center justify-center py-[3vw] pt-[5vw] sm:pt-[1vw]'>

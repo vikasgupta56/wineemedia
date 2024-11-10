@@ -22,7 +22,7 @@ const Navbar = ({nav}) => {
             </div>
             </Link>
             <div>
-            <div onClick={()=>setisOpen(true)} className='effecttxt overflow-hidden h-[1.3vw]'>
+            <div onClick={()=>setisOpen(true)} className='cursor-pointer effecttxt overflow-hidden h-[1.3vw]'>
               <h2 className='one leading-1'>contact</h2>
               <h2 className='one leading-1'>contact</h2>
             </div>

@@ -37,7 +37,7 @@ const index = () => {
 
   return (
     <div onMouseMove={(e) => handleMouseMove(e)} className='relative bg-black'>
-      <div id='player'  ref={playerRef} className='w-[4vw] scale-0 h-[4vw] cursor-pointer pointer-events-none flex items-center justify-center bg-white rounded-full fixed -translate-x-1/2 -translate-y-1/2 z-[999] text-black'><i class={`${player} text-[1.5vw]`}></i></div>
+      <div id='player'  ref={playerRef} className='w-[4vw] scale-0 h-[4vw] cursor-pointer pointer-events-none flex items-center justify-center bg-white rounded-full fixed -translate-x-1/2 -translate-y-1/2 z-[999] text-black'><i className={`${player} text-[1.5vw]`}></i></div>
       <div ref={cursor} className='cursor fixed z-[999] mix-blend-difference -translate-x-1/2 -translate-y-1/2 scale-0 bg-white pointer-events-none w-fit p-[.7vw] text-[1vw] py-[.1vw] rounded-full'>Discover</div>
       <Section1 videoRef={videoRef} playerRef={playerRef} handlePlayer={handlePlayer} />
       <Marquee />

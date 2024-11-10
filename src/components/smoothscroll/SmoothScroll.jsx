@@ -30,7 +30,9 @@ export default function SmoothScroll() {
   useEffect(() => {
     // Reset scroll on route change
     const handleRouteChange = () => {
-      lenis.current.scrollTo(0, { immediate: true });
+      if (lenis.current) {
+        lenis.current.scrollTo(0, { immediate: true });
+      }
     };
 
     router.events.on("routeChangeStart", handleRouteChange);
@@ -38,6 +40,20 @@ export default function SmoothScroll() {
       router.events.off("routeChangeStart", handleRouteChange);
     };
   }, [router.events]);
+
+  useEffect(() => {
+    // Recalculate Lenis scroll on window resize
+    const handleResize = () => {
+      if (lenis.current) {
+        lenis.current.update();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return null;
 }

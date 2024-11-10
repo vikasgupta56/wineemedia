@@ -121,26 +121,36 @@ const Transition = ({ children }) => {
         if (!value) return { error: `${field} is required`, color: 'text-red-600' }
         return { error: '', color: 'text-white' }
     }
+    const contactRef = useRef(null)
+    const handleClickOutside = (event) => {
+        if (contactRef.current && !contactRef.current.contains(event.target)) {
+            // Close the contact form if clicking outside it
+            setErrors({})
+            setisOpen(false)
+            setEmail('')
+            setSubject('')
+            setMessage('')
+        }
+    }
 
     return (
         <contactContext.Provider value={[isOpen, setisOpen]}>
             <div className="relative overflow-x-hidden">
                 {displayChildren}
                 {isOpen && <>
-                    <div id='contact-page' className='w-full h-screen fixed top-0 left-0 z-[99] flex items-center justify-center'>
-                        <div className='w-[50%] overflow-hidden bg-white/10 rounded-2xl flex flex-col' style={{ backdropFilter: "blur(50px)" }}>
-                            <div className='w-full bg-[#ffffff] px-[1vw] py-[.3vw] flex items-center justify-between'>
-                                <div className='flex gap-[.3vw]'>
-                                    <div className='w-[1vw] h-[1vw] bg-red-600 rounded-full'></div>
-                                    <div className='w-[1vw] h-[1vw] bg-[#F3BF49] rounded-full'></div>
-                                    <div className='w-[1vw] h-[1vw] bg-[#58595B] rounded-full'></div>
-                                </div>
-                                <i onClick={() => {
+                <div onClick={() => {
                                     setErrors({}); setisOpen(false);
                                     setEmail('')
                                     setSubject('')
                                     setMessage('')
-                                }} className="cursor-pointer ri-close-circle-fill text-[1.5vw] text-black"></i>
+                                }} className='w-full h-screen bg-black/50 fixed top-0 left-0 z-40'></div>
+                        <div id='contact-page' ref={contactRef}  className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[99] w-[50%] overflow-hidden bg-black/50 rounded-2xl flex flex-col' style={{ backdropFilter: "blur(50px)" }}>
+                            <div className='w-full bg-[#222222] px-[1vw] py-[.8vw] flex items-center justify-between'>
+                                <div className='flex gap-[.4vw]'>
+                                    <div className='w-[.9vw] h-[.9vw] bg-red-600 rounded-full'></div>
+                                    <div className='w-[.9vw] h-[.9vw] bg-[#F3BF49] rounded-full'></div>
+                                    <div className='w-[.9vw] h-[.9vw] bg-[#58595B] rounded-full'></div>
+                                </div>
                             </div>
                             <form onSubmit={handleSubmit}>
                                 <div className='w-full p-[1.5vw] font-[font3]'>
@@ -186,11 +196,10 @@ const Transition = ({ children }) => {
                                 </div>
                             </form>
                         </div>
-                    </div>
                 </>}
                 <div id='curtain' ref={curtainRef}
                     style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
-                    className="w-full h-screen bg-[#111111] fixed top-0 left-0 z- [999] flex flex-col items-center justify-center"
+                    className="w-full h-screen bg-[#111111] fixed top-0 left-0 z- [9999] flex flex-col items-center justify-center"
                 >
                     {getRouteName() === "wineemedia" ? <>
                     <div className='relative'>
