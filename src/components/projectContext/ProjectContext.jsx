@@ -39,10 +39,10 @@ const ProjectContext = ({children}) => {
           image3: "/images/pace-image3.jpg",
           image4: "/images/pace-image4.jpg",
           image5: "/images/pace-image5.jpg",
-          image6: "/images/pace-image6.jpg",
+          image6: "/images/pace-image6.png",
           image7: "/images/pace-image7.jpg",
-          image8: "/images/pace-image8.jpg",
-          image9: "/images/pace-image8.jpg",
+          image8: "/images/pace-image8.png",
+          image9: "/images/pace-image8.png",
         },
         {
           projectname: "meera engineering works",
