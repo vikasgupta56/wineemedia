@@ -42,8 +42,8 @@ const Section2 = () => {
         }, {
             y: 0,
             opacity: 1,
-            duration:1,
-            stagger:0.4,
+            duration: 1,
+            stagger: 0.4,
             scrollTrigger: {
                 trigger: ".sect2-txt",
                 start: "top 70%",
@@ -57,7 +57,7 @@ const Section2 = () => {
         }, {
             y: 0,
             opacity: 1,
-            duration:1,
+            duration: 1,
             scrollTrigger: {
                 trigger: ".sec2-txt1",
                 start: "top 70%",
@@ -76,10 +76,7 @@ const Section2 = () => {
                 </div>
                 <div className="line-about w-[0] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
             </div>
-            <h2 className='sec2-txt1 text-white font-[font6] w-full sm:w-[70%] text-[3vw] sm:text-[2vw] capitalize my-[10vw] sm:my-[5vw]'>Welcome to LuxeFrame, where we transform moments into timeless visual narratives. Founded with a
-                passion for capturing the essence of life's most cherished experiences, LuxeFrame is dedicated
-                to crafting captivating photography and videography that resonates with authenticity and
-                elegance.
+            <h2 className='sec2-txt1 text-white font-[font6] w-full sm:w-[70%] text-[3vw] sm:text-[2vw] capitalize my-[10vw] sm:my-[5vw]'>WineeMedia is a branding and marketing agency specializing in providing comprehensive online solutions for businesses aiming to enhance their digital presence. They offer a wide range of services including social media management, content creation, SEO optimization, and targeted advertising campaigns.
             </h2>
             <div className='clipimg w-full flex flex-col sm:flex-row gap-[2vw]'>
                 <div className='w-full sm:w-1/2 h-[80vh] sm:h-[120vh]'>
@@ -90,21 +87,11 @@ const Section2 = () => {
                 </div>
             </div>
             <div className='w-full py-[5vw] pb-[10vw] text-white font-[font4] text-[3vw] sm:text-[1.1vw] flex flex-col items-center gap-[4vw]'>
-                <h4 className='sect2-txt w-full sm:w-[50%]'>
-                    We believe in the power of storytelling through imagery. Whether it's the serene
-                    landscapes of the Dolomites, the bustling streets of Paris, or the vibrant energy of an event at
-                    sunset, our team of talented photographers and videographers is committed to exceeding
-                    expectations. With a meticulous attention to detail and a commitment to quality, we ensure that
-                    each frame tells a compelling story, evoking emotions and capturing moments that last a
-                    lifetime.
+                <h4 className='sect2-txt w-full sm:w-[40%]'>
+                    WineeMedia's approach is data-driven and tailored to meet the specific needs of each client, ensuring effective engagement and measurable results.
                 </h4>
-                <h4 className='sect2-txt w-full sm:w-[50%]'>
-                    Driven by innovation and a deep understanding of visual arts, LuxeFrame is not just a
-                    photography studio; it's a creative hub where ideas come to life. From concept to execution, we
-                    collaborate closely with our clients to deliver outstanding results that resonate with their
-                    vision and exceed industry standards. Discover the artistry of LuxeFrame and let us create
-                    breathtaking visuals that elevate your brand and tell your story with grace and sophistication.
-                </h4>
+                <h4 className='sect2-txt w-full sm:w-[40%]'>
+                    Their team of experienced professionals is dedicated to staying ahead of industry trends, leveraging the latest technologies and strategies to help clients achieve their marketing goals and grow their brand visibility online.</h4>
             </div>
         </div>
     )

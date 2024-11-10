@@ -8,55 +8,26 @@ const OurTeam = () => {
     const teamMembers = [
         {
             image: "https://luxeframe.netlify.app/team1.webp",
-            name: "lily rose",
-            profession: "photographer"
-        },
-        {
-            image: "https://luxeframe.netlify.app/project6.webp",
-            name: "lily rose",
-            profession: "photographer"
+            name: "Ramkrishna Tripathi",
+            profession: "Founder/CEO"
         },
         {
             image: "https://luxeframe.netlify.app/team2.webp",
-            name: "lily rose",
-            profession: "photographer"
+            name: "Dev Majumdar",
+            profession: "3D Designer"
         },
         {
             image: "https://luxeframe.netlify.app/team3.webp",
-            name: "lily rose",
-            profession: "photographer"
+            name: "Niranjan Solanki",
+            profession: "Data Scientist"
         },
         {
             image: "https://luxeframe.netlify.app/team5.webp",
-            name: "lily rose",
-            profession: "photographer"
-        },
-        {
-            image: "https://luxeframe.netlify.app/team2.webp",
-            name: "lily rose",
-            profession: "photographer"
-        },
-        {
-            image: "https://luxeframe.netlify.app/team3.webp",
-            name: "lily rose",
-            profession: "photographer"
-        },
-        {
-            image: "https://luxeframe.netlify.app/team5.webp",
-            name: "lily rose",
-            profession: "photographer"
-        },
-        {
-            image: "https://luxeframe.netlify.app/team9.webp",
-            name: "lily rose",
-            profession: "photographer"
-        },
-        {
-            image: "https://luxeframe.netlify.app/team10.webp",
-            name: "lily rose",
-            profession: "photographer"
-        },
-    ]
+            name: "Rishabh Pandey",
+            profession: "Data Analyst"
+        }
+    ];
+    
     useEffect(() => {
         var tl = gsap.timeline({
             scrollTrigger: {
@@ -107,8 +78,8 @@ const OurTeam = () => {
                 </div>
                 <div className="line-about3 w-[0]] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
             </div>
-            <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap gap-[1.5vw] py-[5vw] sm:py-[2vw]'>
-                {teamMembers.map((m, i) => (<div ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[18vw]">
+            <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap justify-between py-[5vw] sm:py-[2vw]'>
+                {teamMembers.map((m, i) => (<div ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[21vw]">
                     <div key={i} className='w-full h-[50vh] '>
                         <img className='w-full h-full object-cover' src={m.image} alt="" />
                     </div>

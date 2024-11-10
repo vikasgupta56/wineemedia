@@ -1,37 +1,43 @@
-import { useRef, useEffect } from 'react';
-import Lenis from '@studio-freight/lenis';
+import { useEffect, useRef } from "react";
+import { useRouter } from "next/router";
+import Lenis from "@studio-freight/lenis";
 
-const SmoothScroller = ({ children }) => {
-    const lenisRef = useRef(null);
-    const animationFrameId = useRef(null);
+export default function SmoothScroll() {
+  const lenis = useRef(null);
+  const router = useRouter();
 
-    useEffect(() => {
-        // Initialize Lenis if not already initialized
-        if (!lenisRef.current) {
-            lenisRef.current = new Lenis();
-        }
+  useEffect(() => {
+    // Initialize Lenis
+    lenis.current = new Lenis({
+      duration: 1.2, // Adjust for scroll speed
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+    });
 
-        // Create a recursive animation loop
-        const raf = (time) => {
-            lenisRef.current?.raf(time);
-            animationFrameId.current = requestAnimationFrame(raf);
-        };
-        animationFrameId.current = requestAnimationFrame(raf);
+    // Start the scroll animation loop
+    const raf = (time) => {
+      lenis.current.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
 
-        return () => {
-            // Cleanup on unmount
-            if (lenisRef.current) {
-                lenisRef.current.destroy();
-                lenisRef.current = null;
-            }
-            // Cancel the animation frame loop
-            if (animationFrameId.current) {
-                cancelAnimationFrame(animationFrameId.current);
-            }
-        };
-    }, []);
+    // Clean up on unmount
+    return () => {
+      lenis.current.destroy();
+    };
+  }, []);
 
-    return <div className='w-full'>{children}</div>;
-};
+  useEffect(() => {
+    // Reset scroll on route change
+    const handleRouteChange = () => {
+      lenis.current.scrollTo(0, { immediate: true });
+    };
 
-export default SmoothScroller;
+    router.events.on("routeChangeStart", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router.events]);
+
+  return null;
+}

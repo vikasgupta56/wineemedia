@@ -5,10 +5,9 @@ import 'remixicon/fonts/remixicon.css'
 
 export default function App({ Component, pageProps ,router}) {
   return (
-      <SmoothScroll>
         <Transition>
+          <SmoothScroll/>
         <Component key={router.route} {...pageProps} />
         </Transition>
-      </SmoothScroll>
   );
 }

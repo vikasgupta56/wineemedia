@@ -13,6 +13,7 @@ const Transition = ({ children }) => {
     const router = useRouter()
     const [displayChildren, setDisplayChildren] = useState(children)
     const curtainRef = useRef(null)
+    const [loading, setloading] = useState(0)
 
     const isHomePage = router.pathname === '/'
     const isAboutPage = router.pathname === '/about'
@@ -34,10 +35,22 @@ const Transition = ({ children }) => {
                 gsap.set(curtainRef.current, {
                     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 })
-                gsap.to(curtainRef.current, {
+                const loader = gsap.timeline()
+                loader
+                .to(".loader-cover",{
+                    width:"0",
+                    duration:6,
+                    onUpdate: () => {
+                        // Update loading percentage based on animation progress
+                        setloading(Math.min(100, Math.floor(loader.progress() * 100)));
+                      },
+                })
+                .to(curtainRef.current, {
+                    onStart:()=>{
+                        setloading(100)
+                    },
                     clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
                     duration: 0.8,
-                    delay: 1,
                     ease: 'power2.inOut',
                     onComplete: () => {
                         window.scrollTo(0, 0)
@@ -177,9 +190,20 @@ const Transition = ({ children }) => {
                 </>}
                 <div id='curtain' ref={curtainRef}
                     style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
-                    className="w-full h-screen bg-[#111111] fixed top-0 left-0 z-[999] flex items-center justify-center"
+                    className="w-full h-screen bg-[#111111] fixed top-0 left-0 z- [999] flex flex-col items-center justify-center"
                 >
-                    <h1 className="text-[8vw] sm:text-[3vw] font-[font4] text-white uppercase">{getRouteName()}</h1>
+                    {getRouteName() === "wineemedia" ? <>
+                    <div className='relative'>
+                        <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#111111] opacity-[.7]'></div>
+                        <h1 className="text-[8vw] sm:text-[4vw] font-[font4] text-white uppercase">{getRouteName()}</h1>
+                    </div>
+                        <div className='flex items-center justify-between opacity-[.7] gap-[.5vw]'>
+                        <h4 className='text-white font-[font4] text-[1vw]  '>Loading...</h4>
+                        <div className='w-[2.5vw] text-white flex items-center justify-between'>{loading}<span>%</span></div>
+                        </div>
+
+                    </> : <h1 className="text-[8vw] sm:text-[3vw] font-[font4] text-white uppercase">{getRouteName()}</h1>}
+
                 </div>
             </div>
         </contactContext.Provider>
