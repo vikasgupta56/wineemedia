@@ -6,7 +6,7 @@ import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 
 export default function App() {
     return (
-        <div className='w-full h-[35vh] sm:h-[60vh]'>
+        <div className='w-full h-[50vh] sm:h-[60vh]'>
             <Swiper
                 cssMode={true}
                 navigation={true} // Enables navigation arrows
@@ -34,7 +34,7 @@ export default function App() {
             >
                 {[0, 1, 2, 3, 4, 5, 6].map((_, i) => (
                     <SwiperSlide key={i}>
-                        <div className='w-full h-full p-[2vw] flex flex-col items-center justify-between'>
+                        <div className='w-full h-full p-[5vw] sm:p-[2vw] flex flex-col items-center justify-between'>
                             <div>
                                 <span>
                                     <i className="ri-double-quotes-l mb-[2vw] sm:mb-[1vw] text-[8vw] sm:text-[3vw] inline-block text-white/30"></i>

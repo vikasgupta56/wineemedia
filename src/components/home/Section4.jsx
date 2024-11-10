@@ -122,8 +122,8 @@ const workData = useContext(projectContext)
       </div>
       <div className="projects w-full flex justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
         {works.map((w, i) => (<Link href={`/work/${w.projectname}`} key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-full sm:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
-          <div className='black-strip transition-all duration-500 w-full h-[0%] bg-black absolute top-1/2 -translate-y-1/2 left-0 z-[9]'></div>
-          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[.8vw] font-[font6] h-[4%]  absolute top-1/2 opacity-0 -translate-y-1/2 left-0 z-[10] flex items-center justify-between'>
+          <div className='hidden sm:block black-strip transition-all duration-500 w-full h-[0%] bg-black absolute top-1/2 -translate-y-1/2 left-0 z-[9]'></div>
+          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[.8vw] font-[font6] h-[4%]  absolute top-1/2 opacity-0 -translate-y-1/2 left-0 z-[10]  hidden sm:flex items-center justify-between'>
             <h5>{w.projectname}</h5>
             <div className='flex items-center gap-[8vw]'>
               <h5>{w.serviceprovided}</h5>

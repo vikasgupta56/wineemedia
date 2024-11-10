@@ -208,3 +208,23 @@ body {
   top: 0;
 }
 
+
+@media (max-width:640px) {
+  .swiper {
+    padding-bottom: 20vw !important;
+  }
+  
+  .swiper-button-prev{
+    left: 35% !important;
+    width: 10vw !important;
+    height: 10vw !important;
+  }
+
+  
+  .swiper-button-next{
+    right: 35% !important;
+    width: 10vw !important;
+    height: 10vw !important;
+  }
+ 
+}

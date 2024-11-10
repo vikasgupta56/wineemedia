@@ -77,7 +77,7 @@ const index = () => {
 
     return (
         <div onMouseMove={(e) => handleMouseMove(e)} className='relative bg-black'>
-            <div className='open-p fixed z-[999] scale-0 mix-blend-difference -translate-x-1/2 -translate-y-1/2 bg-white pointer-events-none w-fit p-[.7vw] text-[1vw] py-[.1vw] rounded-full capitalize'>open project</div>
+            <div className='hidden sm:block open-p fixed z-[999] scale-0 mix-blend-difference -translate-x-1/2 -translate-y-1/2 bg-white pointer-events-none w-fit p-[.7vw] text-[1vw] py-[.1vw] rounded-full capitalize'>open project</div>
             <div className='w-full h-screen p-[2vw] py-0 flex flex-col sm:flex-row items-start pb-[2vw] pt-[20vw] sm:pt-[7vw]'>
                 <Navbar />
                 <div className='w-full sm:w-[68%] text-white h-[40vh] sm:h-full flex flex-col justify-between '>

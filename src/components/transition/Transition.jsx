@@ -37,26 +37,26 @@ const Transition = ({ children }) => {
                 })
                 const loader = gsap.timeline()
                 loader
-                .to(".loader-cover",{
-                    width:"0",
-                    duration:6,
-                    onUpdate: () => {
-                        // Update loading percentage based on animation progress
-                        setloading(Math.min(100, Math.floor(loader.progress() * 100)));
-                      },
-                })
-                .to(curtainRef.current, {
-                    onStart:()=>{
-                        setloading(100)
-                    },
-                    clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
-                    duration: 0.8,
-                    ease: 'power2.inOut',
-                    onComplete: () => {
-                        window.scrollTo(0, 0)
-                        setDisplayChildren(children)
-                    },
-                })
+                    .to(".loader-cover", {
+                        width: "0",
+                        duration: 6,
+                        onUpdate: () => {
+                            // Update loading percentage based on animation progress
+                            setloading(Math.min(100, Math.floor(loader.progress() * 100)));
+                        },
+                    })
+                    .to(curtainRef.current, {
+                        onStart: () => {
+                            setloading(100)
+                        },
+                        clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
+                        duration: 0.8,
+                        ease: 'power2.inOut',
+                        onComplete: () => {
+                            window.scrollTo(0, 0)
+                            setDisplayChildren(children)
+                        },
+                    })
             } else {
                 gsap.set(curtainRef.current, {
                     clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)",
@@ -138,77 +138,84 @@ const Transition = ({ children }) => {
             <div className="relative overflow-x-hidden">
                 {displayChildren}
                 {isOpen && <>
-                <div onClick={() => {
-                                    setErrors({}); setisOpen(false);
-                                    setEmail('')
-                                    setSubject('')
-                                    setMessage('')
-                                }} className='w-full h-screen bg-black/50 fixed top-0 left-0 z-40'></div>
-                        <div id='contact-page' ref={contactRef}  className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[99] w-[50%] overflow-hidden bg-black/50 rounded-2xl flex flex-col' style={{ backdropFilter: "blur(50px)" }}>
-                            <div className='w-full bg-[#222222] px-[1vw] py-[.8vw] flex items-center justify-between'>
-                                <div className='flex gap-[.4vw]'>
-                                    <div className='w-[.9vw] h-[.9vw] bg-red-600 rounded-full'></div>
-                                    <div className='w-[.9vw] h-[.9vw] bg-[#F3BF49] rounded-full'></div>
-                                    <div className='w-[.9vw] h-[.9vw] bg-[#58595B] rounded-full'></div>
+                    <div onClick={() => {
+                        setErrors({}); setisOpen(false);
+                        setEmail('')
+                        setSubject('')
+                        setMessage('')
+                    }} className='w-full h-screen bg-black/50 fixed top-0 left-0 z-40'></div>
+                    <div id='contact-page' ref={contactRef} className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[99] w-full sm:w-[50%] h-full sm:h-fit overflow-hidden bg-black/50 sm:rounded-2xl flex flex-col' style={{ backdropFilter: "blur(50px)" }}>
+                        <div className='w-full bg-[#222222] px-[3vw] sm:px-[1vw] py-[4vw] sm:py-[.8vw] flex items-center justify-between'>
+                            <div className='flex gap-[4vw] sm:gap-[.4vw]'>
+                                <div className='w-[4vw] sm:w-[.9vw] h-[4vw] sm:h-[.9vw] bg-red-600 rounded-full'></div>
+                                <div className='w-[4vw] sm:w-[.9vw] h-[4vw] sm:h-[.9vw] bg-[#F3BF49] rounded-full'></div>
+                                <div className='w-[4vw] sm:w-[.9vw] h-[4vw] sm:h-[.9vw] bg-[#58595B] rounded-full'></div>
+                            </div>
+                            <button onClick={() => {
+                                setErrors({})
+                                setisOpen(false)
+                                setEmail('')
+                                setSubject('')
+                                setMessage('')
+                            }} className='text-white text-[4vw] font-[font4] sm:hidden'>Close</button>
+                        </div>
+                        <form onSubmit={handleSubmit}>
+                            <div className='w-full p-[1.5vw] font-[font3] pt-[10vw] sm:pt-[1.5vw]'>
+                                <div className='w-full text-white text-[3.5vw] sm:text-[1vw] flex items-center border-b border-white/40 pt-[5vw] sm:pt-[1vw] pb-[5vw] sm:pb-[1vw]'>
+                                    <h2>To</h2>
+                                    <span className='bg-white/20 rounded-md mx-[.5vw] px-[2vw] sm:px-[.5vw] flex items-center gap-[.5vw]'>
+                                        <div className='w-[1vw] h-[1vw] bg-white rounded-full text-black flex items-center justify-center text-[.8vw] font-[font5]'>w</div>
+                                        wineemedia</span>
+                                    <h2>(hello@wineemedia-society.fr)</h2>
+                                </div>
+                                <div className={`w-full text-white text-[3.5vw] sm:text-[1vw] flex items-center border-b border-white/40`}>
+                                    {errors.email && <div className='w-[5vw] sm:w-[.6vw] h-[4vw] sm:h-[.6vw] bg-red-600 rounded-full mr-[3vw] sm:mr-[.5vw]'></div>}
+                                    <h2>From</h2>
+                                    <input
+                                        className={`ml-[.7vw] outline-none bg-transparent text-white w-full py-[5vw] sm:py-[1vw] ${validateField('email', email).color}`}
+                                        type="email"
+                                        placeholder='your@email.com'
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
+                                </div>
+                                <div className={`w-full text-white text-[3.5vw] sm:text-[1vw] flex items-center border-b border-white/40`}>
+                                    {errors.subject && <div className='w-[5vw] sm:w-[.6vw] h-[4vw] sm:h-[.6vw] bg-red-600 rounded-full mr-[3vw] sm:mr-[.5vw]'></div>}
+                                    <h2>Subject</h2>
+                                    <input
+                                        className={`ml-[.7vw] outline-none bg-transparent text-white w-full py-[5vw] sm:py-[1vw] ${validateField('subject', subject).color}`}
+                                        type="text"
+                                        placeholder='A cool subject'
+                                        value={subject}
+                                        onChange={(e) => setSubject(e.target.value)}
+                                    />
+                                </div>
+                                <textarea
+                                    className={`w-full outline-none bg-transparent text-white text-[3.5vw] sm:text-[1vw] flex items-center border-b border-white/40 py-[1vw] h-[35vh] resize-none`}
+                                    placeholder='Say something,'
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                ></textarea>
+                                <div className='w-full flex items-center justify-between mt-[20vh] sm:mt-0'>
+                                    {errors && <div className='text-[3.5vw] sm:text-[1vw] text-red-600'>{errors.email || errors.subject || errors.message}</div>}
+                                    <button type="submit" className='w-full sm:w-fit py-[3vw] sm:py-[.8vw] text-white bg-gray-500/30 mt-[5vw] sm:mt-[1.5vw] rounded-md text-[4vw] sm:text-[1vw] px-[8vw] sm:px-[2.3vw]'>Send</button>
                                 </div>
                             </div>
-                            <form onSubmit={handleSubmit}>
-                                <div className='w-full p-[1.5vw] font-[font3]'>
-                                    <div className='w-full text-white text-[1vw] flex items-center border-b border-white/40 pb-[1vw]'>
-                                        <h2>To</h2>
-                                        <span className='bg-white/20 rounded-md mx-[.5vw] px-[.5vw] flex items-center gap-[.5vw]'>
-                                            <div className='w-[1vw] h-[1vw] bg-white rounded-full text-black flex items-center justify-center text-[.8vw] font-[font5]'>w</div>
-                                            wineemedia</span>
-                                        <h2>(hello@wineemedia-society.fr)</h2>
-                                    </div>
-                                    <div className={`w-full text-white text-[1vw] flex items-center border-b border-white/40`}>
-                                        {errors.email && <div className='w-[.6vw] h-[.6vw] bg-red-600 rounded-full mr-[.5vw]'></div>}
-                                        <h2>From</h2>
-                                        <input
-                                            className={`ml-[.7vw] outline-none bg-transparent text-white w-full py-[1vw] ${validateField('email', email).color}`}
-                                            type="email"
-                                            placeholder='your@email.com'
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                        />
-                                    </div>
-                                    <div className={`w-full text-white text-[1vw] flex items-center border-b border-white/40`}>
-                                        {errors.subject && <div className='w-[.6vw] h-[.6vw] bg-red-600 rounded-full mr-[.5vw]'></div>}
-                                        <h2>Subject</h2>
-                                        <input
-                                            className={`ml-[.7vw] outline-none bg-transparent text-white w-full py-[1vw] ${validateField('subject', subject).color}`}
-                                            type="text"
-                                            placeholder='A cool subject'
-                                            value={subject}
-                                            onChange={(e) => setSubject(e.target.value)}
-                                        />
-                                    </div>
-                                    <textarea
-                                        className={`w-full outline-none bg-transparent text-white text-[1vw] flex items-center border-b border-white/40 py-[1vw] h-[35vh] resize-none`}
-                                        placeholder='Say something,'
-                                        value={message}
-                                        onChange={(e) => setMessage(e.target.value)}
-                                    ></textarea>
-                                    <div className='w-full flex items-center justify-between'>
-                                        {errors && <div className='text-[1vw] text-red-600'>{errors.email || errors.subject || errors.message}</div>}
-                                        <button type="submit" className='py-[.8vw] text-white bg-gray-500/30 mt-[1.5vw] rounded-md text-[1vw] px-[2.3vw]'>Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        </form>
+                    </div>
                 </>}
                 <div id='curtain' ref={curtainRef}
                     style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
                     className="w-full h-screen bg-[#111111] fixed top-0 left-0 z- [999] flex flex-col items-center justify-center"
                 >
                     {getRouteName() === "wineemedia" ? <>
-                    <div className='relative'>
-                        <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#111111] opacity-[.7]'></div>
-                        <h1 className="text-[8vw] sm:text-[4vw] font-[font4] text-white uppercase">{getRouteName()}</h1>
-                    </div>
-                        <div className='flex items-center justify-between opacity-[.7] gap-[.5vw]'>
-                        <h4 className='text-white font-[font4] text-[1vw]  '>Loading...</h4>
-                        <div className='w-[2.5vw] text-white flex items-center justify-between'>{loading}<span>%</span></div>
+                        <div className='relative'>
+                            <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#111111] opacity-[.7]'></div>
+                            <h1 className="text-[8vw] sm:text-[4vw] font-[font4] text-white uppercase">{getRouteName()}</h1>
+                        </div>
+                        <div className='flex items-center justify-between opacity-[.7] gap-[2vw] sm:gap-[.5vw]'>
+                            <h4 className='text-white font-[font4] text-[4vw] sm:text-[1vw]'>Loading...</h4>
+                            <div className='w-[2.5vw] text-white flex items-center justify-between'>{loading}<span>%</span></div>
                         </div>
 
                     </> : <h1 className="text-[8vw] sm:text-[3vw] font-[font4] text-white uppercase">{getRouteName()}</h1>}

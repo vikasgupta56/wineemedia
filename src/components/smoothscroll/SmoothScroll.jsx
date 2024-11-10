@@ -5,6 +5,7 @@ import Lenis from "@studio-freight/lenis";
 export default function SmoothScroll() {
   const lenis = useRef(null);
   const router = useRouter();
+  const animationFrameId = useRef(null);
 
   useEffect(() => {
     // Initialize Lenis
@@ -15,24 +16,36 @@ export default function SmoothScroll() {
     });
 
     // Start the scroll animation loop
-    const raf = (time) => {
-      lenis.current.raf(time);
-      requestAnimationFrame(raf);
+    const startAnimationLoop = () => {
+      const raf = (time) => {
+        lenis.current?.raf(time);
+        animationFrameId.current = requestAnimationFrame(raf);
+      };
+      animationFrameId.current = requestAnimationFrame(raf);
     };
-    requestAnimationFrame(raf);
+
+    startAnimationLoop();
 
     // Clean up on unmount
     return () => {
-      lenis.current.destroy();
+      lenis.current?.destroy();
+      if (animationFrameId.current) cancelAnimationFrame(animationFrameId.current);
     };
   }, []);
 
   useEffect(() => {
-    // Reset scroll on route change
+    // Reset scroll on route change and restart the animation loop
     const handleRouteChange = () => {
-      if (lenis.current) {
-        lenis.current.scrollTo(0, { immediate: true });
-      }
+      lenis.current?.scrollTo(0, { immediate: true });
+      if (animationFrameId.current) cancelAnimationFrame(animationFrameId.current);
+      const startAnimationLoop = () => {
+        const raf = (time) => {
+          lenis.current?.raf(time);
+          animationFrameId.current = requestAnimationFrame(raf);
+        };
+        animationFrameId.current = requestAnimationFrame(raf);
+      };
+      startAnimationLoop();
     };
 
     router.events.on("routeChangeStart", handleRouteChange);
@@ -44,9 +57,7 @@ export default function SmoothScroll() {
   useEffect(() => {
     // Recalculate Lenis scroll on window resize
     const handleResize = () => {
-      if (lenis.current) {
-        lenis.current.update();
-      }
+      lenis.current?.update();
     };
 
     window.addEventListener("resize", handleResize);

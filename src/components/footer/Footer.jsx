@@ -39,9 +39,8 @@ const Footer = () => {
                         <Link href="/about" className='link-hover'>About</Link>
                     </div>
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[1vw]'>
-                        <Link href="/" className='link-hover'>Instagram</Link>
-                        <Link href="/" className='link-hover'>Linkdin</Link>
-                        <Link href="/" className='link-hover'>Dribbble</Link>
+                        <Link href="https://www.instagram.com/wineemedia/" className='link-hover'>Instagram</Link>
+                        <Link href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" className='link-hover'>Linkedin</Link>
                     </div>
                 </div>
 
@@ -52,7 +51,7 @@ const Footer = () => {
                     <h1 className='block sm:hidden logo-title text-[16.5vw] whitespace-nowrap leading-none' >winemedia</h1>
                 </div>
                 <div className='w-full flex text-[2vw] sm:text-[1vw] text-white/50 font-[font4] items-center justify-between'>
-                    <h2>Developed By <span className='font-[font6] text-white/80'>Zerror Studios</span></h2>
+                    <h2>Developed By <Link href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h2>
                     <h2>© 2023 by WineeMedia.</h2>
                 </div>
             </div>
