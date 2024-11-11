@@ -8,8 +8,9 @@ export default function App({ Component, pageProps, router }) {
   return (
     <Transition>
       <ProductContext>
-        <SmoothScroll />
+        <SmoothScroll>
         <Component key={router.route} {...pageProps} />
+        </SmoothScroll>
       </ProductContext>
     </Transition>
   );
