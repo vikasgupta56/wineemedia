@@ -137,10 +137,10 @@ const Section4 = () => {
                     onMouseEnter={(e) => handleMouseMove(e)}
                     onMouseMove={(e) => handleMouseMove(e)}
                     onMouseLeave={(e) => handleMouseLeave(e)}
-                    className='our-work relative flex items-center justify-between text-black py-[8vw] sm:py-[4vw] border-b border-black'
+                    className='our-work relative flex items-center justify-between text-black py-[8vw] sm:py-[7vw] md:py-[4vw] border-b border-black'
                 >
-                    <h4 className='text-[6vw] sm:text-[3vw] font-[font4] pointer-events-none'>{service.title}</h4>
-                    <h5 className='hidden sm:block w-[15%] text-right text-[1.1vw]'>{service.description}</h5>
+                    <h4 className='text-[6vw] sm:text-[4vw] md:text-[3vw] font-[font4] pointer-events-none'>{service.title}</h4>
+                    <h5 className='hidden md:block w-[15%] text-right md:text-[1.1vw]'>{service.description}</h5>
                     <div className='hidden sm:block shadow-over w-full h-full absolute right-0 top-1/2 -translate-y-1/2 bg-white opacity-[.5] pointer-events-none'></div>
                     <div
                         style={{ transform: "translate(-50%,-50%)" }}

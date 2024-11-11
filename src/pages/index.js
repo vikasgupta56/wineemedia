@@ -37,8 +37,8 @@ const index = () => {
 
   return (
     <div onMouseMove={(e) => handleMouseMove(e)} className='relative bg-black'>
-      <div id='player'  ref={playerRef} className='w-[10vw] sm:w-[4vw] scale-0 h-[10vw] sm:h-[4vw] cursor-pointer pointer-events-none flex items-center justify-center bg-white rounded-full fixed -translate-x-1/2 -translate-y-1/2 z-[999] text-black'><i className={`${player} text-[4vw] sm:text-[1.5vw]`}></i></div>
-      <div ref={cursor} className='cursor hidden sm:block fixed z-[999] mix-blend-difference -translate-x-1/2 -translate-y-1/2 scale-0 bg-white pointer-events-none w-fit p-[.7vw] text-[1vw] py-[.1vw] rounded-full'>Discover</div>
+      <div id='player'  ref={playerRef} className='w-[10vw] sm:w-[6vw] md:w-[4vw] scale-0 h-[10vw] sm:h-[6vw] md:h-[4vw] cursor-pointer pointer-events-none flex items-center justify-center bg-white rounded-full fixed -translate-x-1/2 -translate-y-1/2 z-[999] text-black'><i className={`${player} text-[4vw] sm:text-[2.5vw] md:text-[1.5vw]`}></i></div>
+      <div ref={cursor} className='cursor hidden sm:block fixed z-[999] mix-blend-difference -translate-x-1/2 -translate-y-1/2 scale-0 bg-white pointer-events-none w-fit  sm:p-[1vw] md:p-[.7vw]  text-[2vw] md:text-[1vw] py-[.1vw] rounded-full'>Discover</div>
       <Section1 videoRef={videoRef} playerRef={playerRef} handlePlayer={handlePlayer} />
       <Marquee />
       <Services />

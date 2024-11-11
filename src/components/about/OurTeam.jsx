@@ -72,19 +72,19 @@ const OurTeam = () => {
 
     return (
         <div className='w-full px-[2vw]'>
-            <div className='select-work3 relative w-full py-[5vw] sm:py-[1.2vw] flex'>
+            <div className='select-work3 relative w-full py-[5vw] md:py-[1.2vw] flex'>
                 <div className='overflow-hidden'>
-                    <h2 className='work-txt-about3 text-white text-[10vw] sm:text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>Team Members</h2>
+                    <h2 className='work-txt-about3 text-white text-[10vw] md:text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>Team Members</h2>
                 </div>
                 <div className="line-about3 w-[0]] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
             </div>
             <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap justify-between py-[5vw] sm:py-[2vw]'>
-                {teamMembers.map((m, i) => (<div ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[21vw]">
+                {teamMembers.map((m, i) => (<div ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[47vw] md:w-[21vw]">
                     <div key={i} className='w-full h-[50vh] '>
                         <img className='w-full h-full object-cover' src={m.image} alt="" />
                     </div>
-                    <h2 className='text-white text-[5vw] sm:text-[1.2vw] mt-[1.3vw] font-[font6] capitalize'>{m.name}</h2>
-                    <p className='text-white/60 text-[3vw] sm:text-[1vw] font-[font6] capitalize'>{m.profession}</p>
+                    <h2 className='text-white text-[5vw] sm:text-[2.5vw] md:text-[1.2vw] mt-[1.3vw] font-[font6] capitalize'>{m.name}</h2>
+                    <p className='text-white/60 text-[3vw] sm:text-[2vw] md:text-[1vw] font-[font6] capitalize'>{m.profession}</p>
                 </div>))}
 
             </div>

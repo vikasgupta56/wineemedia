@@ -48,23 +48,23 @@ const Navbar = ({nav}) => {
 
   return (
     <div ref={nav} className='w-full  text-white absolute top-0 left-0 z-[99] flex items-center justify-between py-[4vw] sm:py-[1vw] p-[4vw] sm:p-[2vw]'>
-        <Link href="/" className='text-[5vw] sm:text-[1.4vw] font-[font6]'>wineemedia</Link>
-        <div className='hidden sm:flex items-start gap-[3vw] capitalize text-[1.2vw] font-[font6]'>
+        <Link href="/" className='text-[5vw] sm:text-[3vw] md:text-[1.4vw] font-[font6]'>wineemedia</Link>
+        <div className='hidden sm:flex items-start sm:gap-[6vw] md:gap-[3vw] capitalize sm:text-[3vw] md:text-[1.2vw] font-[font6]'>
             <Link href="/work">
-            <div className='effecttxt overflow-hidden h-[1.3vw]'>
+            <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[1.3vw]'>
               <h2 className='one leading-1'>work</h2>
               <h2 className='one leading-1'>work</h2>
             </div>
             </Link>
 
             <Link href="/about">
-            <div className='effecttxt overflow-hidden h-[1.3vw]'>
+            <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[1.3vw]'>
               <h2 className='one leading-1'>about</h2>
               <h2 className='one leading-1'>about</h2>
             </div>
             </Link>
             <div>
-            <div onClick={()=>setisOpen(true)} className='cursor-pointer effecttxt overflow-hidden h-[1.3vw]'>
+            <div onClick={()=>setisOpen(true)} className='cursor-pointer effecttxt overflow-hidden sm:h-[3.3vw] md:h-[1.3vw]'>
               <h2 className='one leading-1'>contact</h2>
               <h2 className='one leading-1'>contact</h2>
             </div>
@@ -77,16 +77,16 @@ const Navbar = ({nav}) => {
         </div>
         <div className='flex flex-col px-3 text-white items-start'>
           <div className='overflow-hidden'>
-          <Link href="/" className='mtxt inline-block text-[14vw] font-[font4] font-semibold text-white'>Home</Link>
+          <Link href="/" className='mtxt inline-block text-[10vw] font-[font4] font-semibold text-white'>Home</Link>
           </div>
           <div className='overflow-hidden'>
-          <Link href="/about" className='mtxt inline-block text-[14vw] font-[font4] font-semibold text-white'>About</Link>
+          <Link href="/about" className='mtxt inline-block text-[10vw] font-[font4] font-semibold text-white'>About</Link>
           </div>
           <div className='overflow-hidden'>
-          <Link href="/work" className='mtxt inline-block text-[14vw] font-[font4] font-semibold text-white'>Work</Link>
+          <Link href="/work" className='mtxt inline-block text-[10vw] font-[font4] font-semibold text-white'>Work</Link>
           </div>
           <div className='overflow-hidden'>
-          <div onClick={()=>setisOpen(true)} className='mtxtc inline-block text-[14vw] font-[font4] font-semibold text-white'>Contact</div>
+          <div onClick={()=>setisOpen(true)} className='mtxtc inline-block text-[10vw] font-[font4] font-semibold text-white'>Contact</div>
           </div>
         </div>
         <div className='border-t w-full border-white'>

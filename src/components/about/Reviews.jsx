@@ -6,9 +6,9 @@ import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 
 export default function App() {
     return (
-        <div className='w-full h-[50vh] sm:h-[60vh]'>
+        <div className='w-full h-[50vh] md:h-[60vh]'>
             <Swiper
-                cssMode={true}
+                csmdode={true}
                 navigation={true} // Enables navigation arrows
                 mousewheel={true} // Allows mouse wheel control
                 keyboard={true} // Allows keyboard control
@@ -34,18 +34,18 @@ export default function App() {
             >
                 {[0, 1, 2, 3, 4, 5, 6].map((_, i) => (
                     <SwiperSlide key={i}>
-                        <div className='w-full h-full p-[5vw] sm:p-[2vw] flex flex-col items-center justify-between'>
+                        <div className='w-full h-full p-[5vw] md:p-[2vw] flex flex-col items-center justify-between'>
                             <div>
                                 <span>
-                                    <i className="ri-double-quotes-l mb-[2vw] sm:mb-[1vw] text-[8vw] sm:text-[3vw] inline-block text-white/30"></i>
+                                    <i className="ri-double-quotes-l mb-[2vw] md:mb-[1vw] text-[8vw] sm:text-[6vw] md:text-[3vw] inline-block text-white/30"></i>
                                 </span>
-                                <p className='font-[font4] text-[3.5vw] sm:text-[.8vw] text-white/60'>
+                                <p className='font-[font4] text-[3.5vw] sm:text-[1.8vw] md:text-[.8vw] text-white/60'>
                                     The LuxeFrame team has brought their exceptional talent and charm to our properties. Their remarkable work resonated wonderfully with our audience and enhanced our marketing efforts. We eagerly anticipate their return.
                                 </p>
                             </div>
                             <div>
-                                <h2 className='text-[4vw] sm:text-[1.2vw] capitalize'>Mike Green</h2>
-                                <h4 className='text-[3vw] sm:text-[1vw] leading-none'>Manager at Cosmic</h4>
+                                <h2 className='text-[4vw] sm:text-[1.8vw] md:text-[1.2vw] capitalize'>Mike Green</h2>
+                                <h4 className='text-[3vw] sm:text-[1.5vw] md:text-[1vw] leading-none'>Manager at Comdic</h4>
                             </div>
                         </div>
                     </SwiperSlide>

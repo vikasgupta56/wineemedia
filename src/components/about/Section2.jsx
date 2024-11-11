@@ -70,27 +70,27 @@ const Section2 = () => {
 
     return (
         <div className='w-full min-h-screen px-[2vw]'>
-            <div className='select-work relative w-full py-[5vw] sm:py-[1.2vw] flex'>
+            <div className='select-work relative w-full py-[5vw] md:py-[1.2vw] flex'>
                 <div className='overflow-hidden'>
-                    <h2 className='work-txt-about text-white text-[10vw] sm:text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>About Us</h2>
+                    <h2 className='work-txt-about text-white text-[10vw] md:text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>About Us</h2>
                 </div>
                 <div className="line-about w-[0] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
             </div>
-            <h2 className='sec2-txt1 text-white font-[font6] w-full sm:w-[70%] text-[3vw] sm:text-[2vw] capitalize my-[10vw] sm:my-[5vw]'>WineeMedia is a branding and marketing agency specializing in providing comprehensive online solutions for businesses aiming to enhance their digital presence. They offer a wide range of services including social media management, content creation, SEO optimization, and targeted advertising campaigns.
+            <h2 className='sec2-txt1 text-white font-[font6] w-full md:w-[70%] text-[3vw] md:text-[2vw] capitalize my-[10vw] md:my-[5vw]'>WineeMedia is a branding and marketing agency specializing in providing comprehensive online solutions for businesses aiming to enhance their digital presence. They offer a wide range of services including social media management, content creation, SEO optimization, and targeted advertising campaigns.
             </h2>
-            <div className='clipimg w-full flex flex-col sm:flex-row gap-[2vw]'>
-                <div className='w-full sm:w-1/2 h-[80vh] sm:h-[120vh]'>
-                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-[70%] sm:h-[50%] object-cover' src="https://luxeframe.netlify.app/about1.webp" alt="" />'
+            <div className='clipimg w-full flex flex-col md:flex-row gap-[2vw]'>
+                <div className='w-full md:w-1/2 h-[80vh] md:h-[120vh]'>
+                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-[70%] md:h-[50%] object-cover' src="https://luxeframe.netlify.app/about1.webp" alt="" />'
                 </div>
-                <div className='w-full sm:w-1/2 h-[80vh] sm:h-[120vh]'>
+                <div className='w-full md:w-1/2 h-[80vh] md:h-[120vh]'>
                     <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-full object-cover' src="https://luxeframe.netlify.app/about2.webp" alt="" />
                 </div>
             </div>
-            <div className='w-full py-[5vw] pb-[10vw] text-white font-[font4] text-[3vw] sm:text-[1.1vw] flex flex-col items-center gap-[4vw]'>
-                <h4 className='sect2-txt w-full sm:w-[40%]'>
+            <div className='w-full py-[5vw] pb-[10vw] text-white font-[font4] text-[3vw] md:text-[1.1vw] flex flex-col items-center gap-[4vw]'>
+                <h4 className='sect2-txt w-full md:w-[40%]'>
                     WineeMedia's approach is data-driven and tailored to meet the specific needs of each client, ensuring effective engagement and measurable results.
                 </h4>
-                <h4 className='sect2-txt w-full sm:w-[40%]'>
+                <h4 className='sect2-txt w-full md:w-[40%]'>
                     Their team of experienced professionals is dedicated to staying ahead of industry trends, leveraging the latest technologies and strategies to help clients achieve their marketing goals and grow their brand visibility online.</h4>
             </div>
         </div>

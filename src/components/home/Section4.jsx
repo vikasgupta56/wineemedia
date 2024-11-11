@@ -121,9 +121,9 @@ const workData = useContext(projectContext)
         <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
       </div>
       <div className="projects w-full flex justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
-        {works.map((w, i) => (<Link href={`/work/${w.projectname}`} key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-full sm:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
+        {works.map((w, i) => (<Link href={`/work/${w.projectname}`} key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-full sm:w-full md:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
           <div className='hidden sm:block black-strip transition-all duration-500 w-full h-[0%] bg-black absolute top-1/2 -translate-y-1/2 left-0 z-[9]'></div>
-          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[.8vw] font-[font6] h-[4%]  absolute top-1/2 opacity-0 -translate-y-1/2 left-0 z-[10]  hidden sm:flex items-center justify-between'>
+          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[2vw] md:text-[.8vw] font-[font6] h-[4%]  absolute top-1/2 opacity-0 -translate-y-1/2 left-0 z-[10]  hidden sm:flex items-center justify-between'>
             <h5>{w.projectname}</h5>
             <div className='flex items-center gap-[8vw]'>
               <h5>{w.serviceprovided}</h5>
@@ -134,8 +134,8 @@ const workData = useContext(projectContext)
         </Link>))}
       </div>
      <div className='flex items-center justify-center py-[3vw] pt-[5vw] sm:pt-[1vw]'>
-     <Link href="/work" className='viewall overflow-hidden effecttxt border border-white px-[6vw] sm:px-[2vw] relative rounded-full py-[2vw] sm:py-[.7vw] text-white flex items-center gap-[1vw] mix-blend-difference  cursor-pointer'>
-            <div className='relative z-[10] overflow-hidden h-[4.5vw] sm:h-[1.5vw] text-[4vw] sm:text-[1.2vw] font-[font6]'>
+     <Link href="/work" className='viewall overflow-hidden effecttxt border border-white px-[6vw] sm:px-[3vw] md:px-[2vw] relative rounded-full py-[2vw] sm:py-[1vw] md:py-[.7vw] text-white flex items-center gap-[1vw] mix-blend-difference  cursor-pointer'>
+            <div className='relative z-[10] overflow-hidden h-[4.5vw] sm:h-[2.3vw] md:h-[1.5vw] text-[4vw] sm:text-[2vw] md:text-[1.2vw] font-[font6]'>
               <h2 className='one capitalize'>view all</h2>
               <h2 className='one capitalize'>view all</h2>
             </div>

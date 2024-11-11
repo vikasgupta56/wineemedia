@@ -55,7 +55,7 @@ const OurClient = () => {
             </div>
             <div className='w-full pt-[6vw] sm:pt-[3vw] flex flex-wrap gap-[1.5vw]'>
                 {
-                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] sm:w-[18vw] h-[30vw] sm:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
+                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
                         <div className='clipeffect absolute bottom-0 left-0 h-full w-full' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
                             <img className='w-full h-full object-cover' src="https://luxeframe.netlify.app/project4.webp" alt="" />
                         </div>
@@ -64,7 +64,7 @@ const OurClient = () => {
                 }
 
             </div>
-            <h2 className='client-txt1 text-white font-[font6] w-full sm:w-[70%] text-[3vw] sm:text-[2vw] capitalize my-[5vw]'>
+            <h2 className='client-txt1 text-white font-[font6] w-full md:w-[70%] text-[3vw] md:text-[2vw] capitalize my-[5vw]'>
                 Our clients had an amazing experience collaborating with us, praising our dedication,
                 creativity, and
                 professionalism every step of the way. We're confident you'll feel the same and enjoy a

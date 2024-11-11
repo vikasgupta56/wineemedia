@@ -32,7 +32,7 @@ const Services = () => {
     },[])
 
     return (
-        <div className='relative w-full h-[70vh] sm:h-fit bg-black p-[2vw] py-[10vw]'>
+        <div className='relative w-full h-fit sm:h-fit bg-black p-[2vw] py-[10vw]'>
             <div className='wrapper-txt relative '>
                 <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     Collaborating
