@@ -29,6 +29,11 @@
   src: url(/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2);
 }
 
+@font-face {
+  font-family: styles;
+  src: url(/fonts/NUSAR.ttf);
+}
+
 ::-webkit-scrollbar{
   display: none;
 }
@@ -89,7 +94,7 @@ body {
   animation-name: slide;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 10s;
+  animation-duration: 30s;
 }
 
 .home-marquee{

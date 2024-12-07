@@ -47,8 +47,8 @@ const Footer = () => {
             </div>
             <div className='w-full text-white font-[font6]'>
                 <div className='overflow-hidden flex items-center justify-center'>
-                    <h1 ref={titleRef} className='hidden sm:hidden  md:block logo-title text-[15.5vw] whitespace-nowrap leading-none' >{"wineemedia".split("").map((l, i) => <span key={i} style={{transform:"translateY(-100%)"}} className='inline-block'>{l}</span>)}</h1>
-                    <h1 className='block  sm:block md:hidden logo-title text-[16.5vw] whitespace-nowrap leading-none' >winemedia</h1>
+                    <h1 ref={titleRef} className='hidden sm:hidden  md:block logo-title text-[13.2vw] whitespace-nowrap font-[styles] leading-[.8]' >{"Winee Media".split("").map((l, i) => <span key={i} style={{transform:"translateY(-100%)"}} className='inline-block'>{l}</span>)}</h1>
+                    <h1 className='block  sm:block md:hidden logo-title text-[16.5vw]  whitespace-nowrap leading-none' >winemedia</h1>
                 </div>
                 <div className='w-full flex text-[2.3vw] sm:text-[2vw] md:text-[1vw] text-white/50 font-[font4] items-center justify-between'>
                     <h2>Developed By <Link href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h2>

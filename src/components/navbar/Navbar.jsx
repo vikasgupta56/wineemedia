@@ -47,8 +47,8 @@ const Navbar = ({nav}) => {
   
 
   return (
-    <div ref={nav} className='w-full  text-white absolute top-0 left-0 z-[99] flex items-center justify-between py-[4vw] sm:py-[1vw] p-[4vw] sm:p-[2vw]'>
-        <Link href="/" className='text-[5vw] sm:text-[3vw] md:text-[1.4vw] font-[font6]'>wineemedia</Link>
+    <div ref={nav} className='w-full  text-white absolute top-0 left-0 z-[99] flex items-center justify-between py-[4vw] sm:py-[2vw] p-[4vw] sm:p-[2vw]'>
+        <Link href="/" ><img className='w-[15vw] md:w-[5vw]' src="/logo.png" alt="" /></Link>
         <div className='hidden sm:flex items-start sm:gap-[6vw] md:gap-[3vw] capitalize sm:text-[3vw] md:text-[1.2vw] font-[font6]'>
             <Link href="/work">
             <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[1.3vw]'>

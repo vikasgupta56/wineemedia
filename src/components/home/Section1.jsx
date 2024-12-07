@@ -44,10 +44,9 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
         const offsetY = (e.clientY - bounds.top - bounds.height / 2) / bounds.height;
         
         gsap.to(img3dRef.current, {
-            x: offsetX * 15, 
-            y: offsetY * 15,
+            x: offsetX * 10, 
+            y: offsetY * 10,
             duration: 0.2,   
-            ease: "power3.out"
         });
        
     };
@@ -75,18 +74,18 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
     return (
         <div onMouseMove={handleMouseMove3d}   className='section1 overflow-hidden h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
             <Navbar nav={navRef} />
-            <div className='header-txt font-[font2] relative z-[9]'>
-                <div className='h-[7vw] overflow-hidden' >
-                <h1 className='text-header text-[6vw] leading-none'>Digital agency with a</h1>
+            <div className='header-txt font-[styles] relative z-[9]'>
+                <div className='h-[7vw] overflow-hidden'>
+                <h1 className='text-header text-[6vw] leading-none '>Digital agency with a</h1>
                 </div>
                 <div className='h-[7vw] overflow-hidden' >
                 <h1 className='text-header text-[6vw] '>human touch.</h1>
                 </div>
             </div>
             <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
-            <img ref={img3dRef} className='w-[80%] sm:w-[38%]' src="./3dimg.png" alt="" />
+            <img ref={img3dRef} className='w-[100%] sm:w-[75%] object-center object-contain opacity-[.6]' src="https://i.pinimg.com/originals/c9/44/b1/c944b16f01f53a7be5d75c37a6e1babf.gif" alt="" />
             </div>
-            <div className='w-full flex justify-end pb-[5vw] sm:pb-[2vw] p-[2vw] absolute bottom-0'>
+            <div className='w-full flex justify-end pb-[10vw] sm:pb-[2vw] p-[2vw] absolute bottom-0'>
                 <div className='social flex items-center gap-[3vw] sm:gap-[3vw]   md:gap-[1vw]'>
                     {socialLinks.map((s, idx) => (
                         <Link href={s.link} key={idx} className="w-[10vw] sm:w-[7vw] md:w-[3vw]  h-[10vw] sm:h-[7vw] md:h-[3vw] border border-white rounded-full flex items-center justify-center text-white relative overflow-hidden social-i cursor-pointer">
@@ -97,7 +96,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
                 </div>
             </div>
             <div onMouseMove={handlePlayerMove} onClick={handlePlayer} onMouseLeave={handlePlayerLeave} style={{ clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)" }} className='header-video  cursor-none absolute bottom-0 left-0 w-full h-screen z-[99]'>
-                <video ref={videoRef} autoPlay muted loop playsInline className='w-full h-full object-cover' src="https://video.wixstatic.com/video/36971c_4cf7ab905c31434e928491fde8282fd5/480p/mp4/file.mp4"></video>
+                <video ref={videoRef} autoPlay muted loop playsInline className='w-full h-full object-cover' src="/shortv.mp4"></video>
             </div>
         </div>
     );

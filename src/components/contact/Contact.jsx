@@ -36,6 +36,9 @@ const Contact = () => {
             setErrors({})
             // Process the form (e.g., send it to an API)
             console.log('Form submitted:', { email, subject, message })
+
+
+            
             alert('Message sent successfully!')
             // Optionally, reset form fields
             setEmail('')

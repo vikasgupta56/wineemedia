@@ -89,7 +89,7 @@ const Benifits = () => {
         </div>
     </div>
     <div className='w-full py-[10vw] flex gap-[3vw]'>
-    <div className='marquee-about w-fit flex items-center text-white font-[font5] text-[6vw] gap-[3vw] uppercase'>
+    <div className='marquee-about w-fit flex items-center text-white font-[styles] text-[6vw] gap-[3vw] uppercase'>
         <span>-</span>
         <h1 className='whitespace-nowrap'>wineemedia</h1>
         <span>-</span>
@@ -99,7 +99,7 @@ const Benifits = () => {
         <span>-</span>
         <h1 className='whitespace-nowrap'>wineemedia</h1>
     </div>
-    <div className='marquee-about w-fit flex items-center text-white font-[font5] text-[6vw] gap-[3vw] uppercase'>
+    <div className='marquee-about w-fit flex items-center text-white font-[styles] text-[6vw] gap-[3vw] uppercase'>
         <span>-</span>
         <h1 className='whitespace-nowrap'>wineemedia</h1>
         <span>-</span>
