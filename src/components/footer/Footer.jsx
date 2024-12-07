@@ -51,8 +51,8 @@ const Footer = () => {
                     <h1 className='block  sm:block md:hidden logo-title text-[16.5vw]  whitespace-nowrap leading-none' >winemedia</h1>
                 </div>
                 <div className='w-full flex text-[2.3vw] sm:text-[2vw] md:text-[1vw] text-white/50 font-[font4] items-center justify-between'>
-                    <h2>Developed By <Link href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h2>
                     <h2>© 2023 by WineeMedia.</h2>
+                    <h2>Developed By <Link target='_block' href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h2>
                 </div>
             </div>
         </div>

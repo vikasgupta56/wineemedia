@@ -81,7 +81,7 @@ const index = () => {
                 <Navbar />
                 <h1 className='text-white text-[8vw] md:text-[7.5vw] leading-none  text-left md:text-center uppercase'>{filteredData?.projectname}</h1>
                 <p className='text-white text-[3vw] md:text-[2vw]   text-left md:text-center font-[font6] md:font-semibold leading-none my-[2.5vw] md:my-[1.5vw] mb-[5vw] md:mb-[3vw]'>An ever-evolving visual language</p>
-                <div className='w-full h-[50vh] md:h-[120vh]'>
+                <div className='w-full h-[50vh] md:h-[120vh] bg-[#ffffff27]'>
                     <img className='w-full h-full object-cover object-center' src={filteredData?.coverimage1} alt="" />
                 </div>
                 <div className='w-full py-[8vw] md:py-[3vw] text-white'>
@@ -94,9 +94,7 @@ const index = () => {
                                 <h4>2024</h4>
                                 <h4>Fielmann</h4>
                             </div>
-                            <p className='text-[3.5vw] md:text-[1.2vw] font-[font6] my-[2vw]'>Famed for my mastery in style and cityscape photography, I've fluently turned my zeal into a blossoming career, simultaneously integrating my exposures in the sectors of style, commerce, and brand tactics into my portfolio.<br /> <br />
-
-                                Opting for the expressiveness of visuals rather than text, I construct a pictorial tale that mirrors my persona, influences, and dreams, all while shrewdly integrating aspects of style, commerce, and branding.</p>
+                            <p className='text-[3.5vw] md:text-[1.2vw] font-[font6] my-[2vw]'>{filteredData?.para1}<br /> <br /> {filteredData?.para2}</p>
                         </div>
                     </div>
                     <div className='flex flex-col md:flex-row gap-[2vw] md:gap-0'>
@@ -123,12 +121,12 @@ const index = () => {
                     <img className='w-[58%] md:w-[60%] h-full object-cover object-center' src={filteredData?.image5} alt="" />
                     <img className='w-[38%] h-[45%] object-cover object-center' src={filteredData?.image6} alt="" />
                 </div>
-                <div className='w-full h-[50vh] md:h-[120vh] mt-[4vw] md:mt-[2vw] flex justify-between items-end'>
+              {filteredData?.image7 &&   <div className='w-full h-[50vh] md:h-[120vh] mt-[4vw] md:mt-[2vw] flex justify-between items-end'>
                     <img className='w-full md:w-[70%] h-full object-cover object-center' src={filteredData?.image7} alt="" />
-                </div>
-                <div className='w-full h-[40vh] sm:h-[100vh] mt-[4vw] md:mt-[2vw] flex justify-end items-end'>
+                </div>}
+               {filteredData?.image8 &&  <div className='w-full h-[40vh] sm:h-[100vh] mt-[4vw] md:mt-[2vw] flex justify-end items-end'>
                     <img className='w-[80%] h-full object-cover object-center' src={filteredData?.image8} alt="" />
-                </div>
+                </div>}
             </div>
             <div className='hidden  md:block open-p fixed z-[999] scale-0 mix-blend-difference -translate-x-1/2 -translate-y-1/2 bg-white pointer-events-none w-fit p-[.7vw] text-[1vw] py-[.1vw] rounded-full capitalize'>open project</div>
             <div className='w-full py-[3vw] pb-[10vw]'>
