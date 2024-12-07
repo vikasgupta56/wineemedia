@@ -255,6 +255,10 @@ body {
  
 }
 
-
-
+.dots:hover i{
+  transition: all ease .3s;
+}
+.dots:hover i{
+  opacity: 1;
+}
 

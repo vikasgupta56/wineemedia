@@ -79,25 +79,12 @@ const index = () => {
         <div onMouseMove={(e) => handleMouseMove(e)} className='relative bg-black'>
             <div className='w-full min-h-screen pt-[30vw] md:pt-[12vw] px-[4vw] md:px-[2vw]'>
                 <Navbar />
-                <h1 className='text-white text-[8vw] md:text-[7.5vw] leading-none  text-left md:text-center uppercase'>{filteredData?.projectname}</h1>
-                <p className='text-white text-[3vw] md:text-[2vw]   text-left md:text-center font-[font6] md:font-semibold leading-none my-[2.5vw] md:my-[1.5vw] mb-[5vw] md:mb-[3vw]'>An ever-evolving visual language</p>
+                <h1 className='text-white text-[8vw] md:text-[7.5vw] leading-none mb-[5vw] md:mb-[2vw] text-left md:text-center uppercase'>{filteredData?.projectname}</h1>
                 <div className='w-full h-[50vh] md:h-[120vh] bg-[#ffffff27]'>
                     <img className='w-full h-full object-cover object-center' src={filteredData?.coverimage1} alt="" />
                 </div>
                 <div className='w-full py-[8vw] md:py-[3vw] text-white'>
-                    <div className='flex flex-col md:flex-row gap-[2vw] md:gap-0'>
-                        <div className='w-[100%] md:w-[50%] font-[font6] text-[3vw] md:text-[1vw]'>
-                            <h4>Commercial</h4>
-                        </div>
-                        <div className='w-[100%] md:w-[50%]'>
-                            <div className='w-full flex justify-between items-center font-[font6] text-[3vw] md:text-[1vw]'>
-                                <h4>2024</h4>
-                                <h4>Fielmann</h4>
-                            </div>
-                            <p className='text-[3.5vw] md:text-[1.2vw] font-[font6] my-[2vw]'>{filteredData?.para1}<br /> <br /> {filteredData?.para2}</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-col md:flex-row gap-[2vw] md:gap-0'>
+                <div className='flex flex-col md:flex-row gap-[2vw] md:gap-0'>
                         <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1vw]'>
                             <h4>Services</h4>
                         </div>
@@ -107,6 +94,18 @@ const index = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='flex flex-col md:flex-row gap-[2vw] md:gap-0 mt-[2vw]'>
+                        <div className='w-[100%] md:w-[50%] font-[font6] text-[3vw] md:text-[1vw]'>
+                            <h4>Project Details</h4>
+                        </div>
+                        <div className='w-[100%] md:w-[50%]'>
+                            <div className='w-full flex justify-between items-center font-[font6] text-[3vw] md:text-[1vw]'>
+                                <h4>2024</h4>
+                            </div>
+                            <p className='text-[3.5vw] md:text-[1.2vw] font-[font6] my-[2vw]'>{filteredData?.para1}<br /> <br /> {filteredData?.para2}</p>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div className='w-full h-[45vh] md:h-[120vh]'>
                     <img className='w-full h-full object-cover object-center' src={filteredData?.coverimage2} alt="" />
