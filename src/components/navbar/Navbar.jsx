@@ -48,23 +48,23 @@ const Navbar = ({nav}) => {
 
   return (
     <div ref={nav} className='w-full  text-white absolute top-0 left-0 z-[99] flex items-center justify-between py-[4vw] sm:py-[2vw] p-[4vw] sm:p-[2vw]'>
-        <Link href="/" ><img className='w-[15vw] md:w-[5vw]' src="/logo.png" alt="" /></Link>
-        <div className='hidden sm:flex items-start sm:gap-[6vw] md:gap-[3vw] capitalize sm:text-[3vw] md:text-[1.2vw] font-[font6]'>
+        <Link href="/" ><img className='w-[15vw] md:w-[7vw] lg:w-[5vw]' src="/logo.png" alt="" /></Link>
+        <div className='hidden sm:flex items-start sm:gap-[6vw] md:gap-[2.5vw] capitalize sm:text-[3vw]  md:text-[1.8vw] lg:text-[1vw] font-[font6]'>
             <Link href="/work">
-            <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[1.3vw]'>
+            <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[2vw] lg:h-[1.2vw]'>
               <h2 className='one leading-1'>work</h2>
               <h2 className='one leading-1'>work</h2>
             </div>
             </Link>
 
             <Link href="/about">
-            <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[1.3vw]'>
+            <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[2vw] lg:h-[1.2vw]'>
               <h2 className='one leading-1'>about</h2>
               <h2 className='one leading-1'>about</h2>
             </div>
             </Link>
             <div>
-            <div onClick={()=>setisOpen(true)} className='cursor-pointer effecttxt overflow-hidden sm:h-[3.3vw] md:h-[1.3vw]'>
+            <div onClick={()=>setisOpen(true)} className='cursor-pointer effecttxt overflow-hidden sm:h-[3.3vw] md:h-[2vw] lg:h-[1.2vw]'>
               <h2 className='one leading-1'>contact</h2>
               <h2 className='one leading-1'>contact</h2>
             </div>

@@ -16,6 +16,19 @@ const OurClient = () => {
         })
     }
 
+    const clientData = [
+        "/clients/dawn.png",
+        "/clients/zerror.png",
+        "/clients/dawn.png",
+        "/clients/zerror.png",
+        "/clients/dawn.png",
+        "/clients/zerror.png",
+        "/clients/dawn.png",
+        "/clients/zerror.png",
+        "/clients/dawn.png",
+        "/clients/zerror.png",
+    ]
+
     useEffect(()=>{
         gsap.to(".client-txt",{
             transform:"translateY(0%)",
@@ -45,6 +58,7 @@ const OurClient = () => {
     },[])
    
 
+
     return (
         <div className='w-full py-[8vw] text-white px-[2vw]'>
             <div className='h-[11vw] sm:h-[6vw] client-txt-p overflow-hidden'>
@@ -55,11 +69,11 @@ const OurClient = () => {
             </div>
             <div className='w-full pt-[6vw] sm:pt-[3vw] flex flex-wrap gap-[1.5vw]'>
                 {
-                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
+                    clientData.map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
                         <div className='clipeffect absolute bottom-0 left-0 h-full w-full' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
-                            <img className='w-full h-full object-cover' src="https://luxeframe.netlify.app/project4.webp" alt="" />
+                            <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1729892935767-50bb36a38589?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                         </div>
-                        <img className='w-[50%] relative' src="https://luxeframe.netlify.app/client3.svg" alt="" />
+                        <img className='w-[50%] relative' src={c} alt="" />
                     </div>))
                 }
 

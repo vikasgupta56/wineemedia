@@ -12,42 +12,42 @@ const Section4 = () => {
         {
             title: "Branding",
             description: "Creating a unique identity for your business through design and strategy.",
-            imageUrl: "https://static.wixstatic.com/media/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg/v1/fit/w_480,h_281,q_90/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg"
+            imageUrl: "brand (1).png"
         },
         {
             title: "Marketing",
             description: "Developing strategies to increase your brand’s visibility and reach.",
-            imageUrl: "https://static.wixstatic.com/media/84770f_1dfd562b1f924f9180e2c4426ebf0980~mv2.jpg/v1/fit/w_699,h_466,q_90/84770f_1dfd562b1f924f9180e2c4426ebf0980~mv2.jpg"
+            imageUrl: "brand (2).png"
         },
         {
             title: "Social Media Management",
             description: "Building and managing your online presence across various platforms.",
-            imageUrl: "https://static.wixstatic.com/media/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg/v1/fit/w_699,h_480,q_90/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg"
+            imageUrl: "brand (3).png"
         },
         {
             title: "Motion Graphics",
             description: "Bringing visual elements to life through animations and motion design.",
-            imageUrl: "https://static.wixstatic.com/media/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg/v1/fit/w_1440,h_735,q_90/84770f_49c2a11793ec458fa07495dc0cb6db7b~mv2.jpg"
+            imageUrl: "brand (4).png"
         },
         {
             title: "3D Designs",
             description: "Creating immersive, lifelike 3D experiences for digital or physical spaces.",
-            imageUrl: "https://static.wixstatic.com/media/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg/v1/fill/w_1479,h_735,q_90/c837a6_cf7959a7bd3140778d51e15612c0f08f~mv2.jpg"
+            imageUrl: "brand (5).png"
         },
         {
             title: "Digital Marketing",
             description: "Using digital channels to promote your brand and drive sales.",
-            imageUrl: "https://static.wixstatic.com/media/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg/v1/fit/w_480,h_281,q_90/84770f_7de108fae3264cbc95f09174ef985f6b~mv2.jpg"
+            imageUrl: "brand (6).png"
         },
         {
             title: "Videography/Photography",
             description: "Capturing stunning visuals to tell your brand's story.",
-            imageUrl: "https://static.wixstatic.com/media/84770f_1dfd562b1f924f9180e2c4426ebf0980~mv2.jpg/v1/fit/w_699,h_466,q_90/84770f_1dfd562b1f924f9180e2c4426ebf0980~mv2.jpg"
+            imageUrl: "brand (7).png"
         },
         {
             title: "Influencer Marketing",
             description: "Partnering with influencers to promote your brand to a broader audience.",
-            imageUrl: "https://static.wixstatic.com/media/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg/v1/fit/w_699,h_480,q_90/84770f_a0871606658d4a66b7534edbd21b8dc9~mv2.jpg"
+            imageUrl: "brand (8).png"
         }
     ];
     

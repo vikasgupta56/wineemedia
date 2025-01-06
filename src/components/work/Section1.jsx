@@ -22,18 +22,18 @@ const Section1 = () => {
         duration: 0.8,
       }, "a")
 
-    const triggers = document.querySelectorAll(".project").forEach((p) => {
-      gsap.to(p.querySelectorAll(".project-ig"), {
-        scale: 1,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: p,
-          start: "top 70%",
-          end: "bottom bottom",
-          scrub: 1,
-        },
-      })
-    })
+    // const triggers = document.querySelectorAll(".project").forEach((p) => {
+    //   gsap.to(p.querySelectorAll(".project-ig"), {
+    //     scale: 1,
+    //     duration: 0.8,
+    //     scrollTrigger: {
+    //       trigger: p,
+    //       start: "top 70%",
+    //       end: "bottom bottom",
+    //       scrub: 1,
+    //     },
+    //   })
+    // })
 
   }, [])
 
@@ -46,24 +46,24 @@ const Section1 = () => {
         </div>
         <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
       </div>
-      <div className="projects w-full flex justify-between flex-wrap py-[5vw] md:py-[2vw]">
-        {workData.map((p, i) => (i + 1) % 3 !== 0 ? (<Link href={`/work/${p.projectname}`} className='project w-full mb-[15vw] sm:mb-[4vw] px-[2vw]'>
-          <div className='w-full h-[50vh] sm:h-[90vh] flex'>
-            <div className='w-full h-full overflow-hidden'>
-              <img className='project-ig scale-[1.2] w-full h-full object-cover object-center' src={p.coverimage1} alt="" />
-            </div>
+      <div className="projects w-full flex flex-col md:flex-row justify-between flex-wrap py-[5vw] md:py-[2vw] px-[2vw]">
+
+        {workData.map((project, i) => (i % 9 === 0 ? (<Link href={`/work/${project.projectname}`} key={i} className='project w-full md:w-[49.5%] mb-[8vw] cursor-pointer'>
+          <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[68vh] overflow-hidden'>
+            <img src={project.coverimage1} className='project-ig  w-full h-full object-cover object-center' alt="" />
           </div>
-          <h1 className='text-[5vw] md:text-[2vw] text-white mt-[2vw] sm:mt-[1vw] capitalize'>{p.projectname}</h1>
-          <h2 className='text-[3vw] md:text-[1.2vw] text-white/60 capitalize'>{p.serviceprovided}</h2>
-        </Link>) : (<Link href={`/work/${p.projectname}`} className='project w-full mb-[4vw]'>
-          <div className='w-full h-[70vh] sm:h-screen overflow-hidden'>
-            <img className='w-full h-full object-cover object-center project-ig scale-[1.2]' src={p.coverimage1} alt="" />
+          <h4 className='text-white text-[4vw] sm:text-[3.5vw] md:text-[2vw] lg:text-[1.3vw] mt-[1.5vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
+          <p className='text-white opacity-[.8] font-[font4] text-[3.5vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[.8vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
+        </Link>) : (<Link href={`/work/${project.projectname}`} key={i} className='project w-full sm:w-[24.5%] md:w-[49.5%] lg:w-[24.5%] mb-[8vw] cursor-pointer'>
+          <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[46.5vh] overflow-hidden'>
+            <img src={project.coverimage1} className='project-ig  w-full h-full object-cover object-center' alt="" />
           </div>
-          <div className='px-[2vw]'>
-            <h1 className='text-[5vw] md:text-[2vw] text-white mt-[2vw] sm:mt-[1vw] capitalize'>{p.projectname}</h1>
-            <h2 className='text-[3vw] md:text-[1.2vw] text-white/60 capitalize'>{p.serviceprovided}</h2>
-          </div>
-        </Link>))}
+          <h4 className='text-white text-[4vw] sm:text-[3.5vw]  md:text-[2vw] lg:text-[1.3vw] mt-[1.5vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
+          <p className='text-white opacity-[.8] font-[font4] text-[3.5vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[.8vw] capitalize w-full'>{project.serviceprovided}</p>
+        </Link>)))}
+
+
+
       </div>
     </div>
   )

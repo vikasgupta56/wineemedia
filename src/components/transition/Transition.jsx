@@ -77,28 +77,29 @@ const Transition = ({ children }) => {
         animateTransition()
     }, [children, isHomePage, isAboutPage, isWorkPage])
 
-  
+
 
     return (
         <contactContext.Provider value={[isOpen, setisOpen]}>
             <div className="relative overflow-x-hidden">
                 {displayChildren}
-                {isOpen && <Contact/>}
+                {isOpen && <Contact />}
                 <div id='curtain' ref={curtainRef}
                     style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
-                    className="w-full h-screen bg-[#111111] fixed top-0 left-0 z-[999] flex flex-col items-center justify-center"
+                    className="w-full h-screen bg-[#fff] fixed top-0 left-0 z-[999] flex flex-col items-center justify-center"
                 >
                     {getRouteName() === "wineemedia" ? <>
-                        <div className='relative font-[styles]'>
-                            <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#111111] opacity-[.7]'></div>
-                            <h1 className="text-[8vw] sm:text-[3vw] text-white uppercase text-center w-full">{getRouteName()}</h1>
-                        </div>
-                        <div className='flex items-center justify-between opacity-[.7] font-[styles] gap-[2vw] sm:gap-[.5vw] text-[4vw] sm:text-[2.2vw] lg:text-[1vw]'>
-                            <h4 className='text-white'>Loading...</h4>
-                            <div className='w-[2.5vw] text-white flex items-center justify-between'>{loading}<span>%</span></div>
+                        <div className='flex items-center gap-[.5vw]'>
+                            <h1 className="text-[8vw] sm:text-[1vw] font-[styles] text-black uppercase text-center w-full leading-[.8]">{getRouteName()}</h1>
+                            <div className='flex items-center justify-between  font-[styles] gap-[2vw] sm:gap-[.5vw] text-[4vw] sm:text-[2.2vw] lg:text-[1vw]'>
+                                <div className='relative font-[styles] w-[5vw] h-[2px] bg-black'>
+                                    <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#fff] opacity-[.7]'></div>
+                                </div>
+                                <div className='w-[2.5vw] text-black flex items-center justify-between'>{loading}<span>%</span></div>
+                            </div>
                         </div>
 
-                    </> : <h1 className="text-[8vw] font-[styles] sm:text-[3vw] text-white uppercase text-center">{getRouteName()}</h1>}
+                    </> : <h1 className="text-[8vw] font-[styles] sm:text-[3vw] text-black uppercase text-center">{getRouteName()}</h1>}
 
                 </div>
             </div>

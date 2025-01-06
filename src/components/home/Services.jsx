@@ -87,9 +87,9 @@ const Services = () => {
                 </h1>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
-            <img className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[20%] mix-blend-exclusion' src="https://selemen.liqium.com/img/lt1.jpg" alt="" />
-            <img className='igs absolute top-[60%] right-[0%] w-[20%] mix-blend-exclusion' src="https://static.wixstatic.com/media/84770f_a615c70590f74d388d5ec6398fd9bdbd~mv2.jpg/v1/fit/w_699,h_1049,q_90/84770f_a615c70590f74d388d5ec6398fd9bdbd~mv2.jpg" alt="" />
-            <img className='igs absolute bottom-[0%] left-[0%] w-[20%] mix-blend-exclusion' src="https://static.wixstatic.com/media/84770f_6ef0401202e74bfa8e138599b551766d~mv2.jpg/v1/fit/w_700,h_466,q_90/84770f_6ef0401202e74bfa8e138599b551766d~mv2.jpg" alt="" />
+            <img className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[20%] mix-blend-exclusion' src="/hero1.png" alt="" />
+            <img className='igs absolute top-[60%] right-[0%] w-[20%] mix-blend-exclusion' src="/hero2.png" alt="" />
+            <img className='igs absolute bottom-[0%] left-[0%] w-[20%] mix-blend-exclusion' src="/hero3.png" alt="" />
         </div>
     )
 }

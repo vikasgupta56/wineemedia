@@ -80,10 +80,10 @@ const Section2 = () => {
             </h2>
             <div className='clipimg w-full flex flex-col md:flex-row gap-[2vw]'>
                 <div className='w-full md:w-1/2 h-[80vh] md:h-[120vh]'>
-                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-[70%] md:h-[50%] object-cover' src="https://luxeframe.netlify.app/about1.webp" alt="" />'
+                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-[70%] md:h-[50%] object-cover' src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />'
                 </div>
                 <div className='w-full md:w-1/2 h-[80vh] md:h-[120vh]'>
-                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-full object-cover' src="https://luxeframe.netlify.app/about2.webp" alt="" />
+                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-full object-cover' src="https://images.unsplash.com/photo-1733036016861-0541eb76dac5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                 </div>
             </div>
             <div className='w-full py-[5vw] pb-[10vw] text-white font-[font4] text-[3vw] md:text-[1.1vw] flex flex-col items-center gap-[4vw]'>

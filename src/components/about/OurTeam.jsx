@@ -7,22 +7,22 @@ const OurTeam = () => {
     const membersRefs = useRef([])
     const teamMembers = [
         {
-            image: "https://luxeframe.netlify.app/team1.webp",
+            image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             name: "Ramkrishna Tripathi",
             profession: "Founder/CEO"
         },
         {
-            image: "https://luxeframe.netlify.app/team2.webp",
+            image: "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             name: "Dev Majumdar",
             profession: "3D Designer"
         },
         {
-            image: "https://luxeframe.netlify.app/team3.webp",
+            image: "https://images.unsplash.com/photo-1481077147437-4b5f9bb774df?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             name: "Niranjan Solanki",
             profession: "Data Scientist"
         },
         {
-            image: "https://luxeframe.netlify.app/team5.webp",
+            image: "https://images.unsplash.com/photo-1625689871386-70042bfbfccf?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             name: "Rishabh Pandey",
             profession: "Data Analyst"
         }
@@ -79,7 +79,7 @@ const OurTeam = () => {
                 <div className="line-about3 w-[0]] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
             </div>
             <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap justify-between py-[5vw] sm:py-[2vw]'>
-                {teamMembers.map((m, i) => (<div ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[47vw] md:w-[21vw]">
+                {teamMembers.map((m, i) => (<div key={i} ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[47vw] md:w-[21vw]">
                     <div key={i} className='w-full h-[50vh] '>
                         <img className='w-full h-full object-cover' src={m.image} alt="" />
                     </div>
