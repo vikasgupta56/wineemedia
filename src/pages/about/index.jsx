@@ -10,6 +10,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='relative bg-black'>
+      
         <Section1/>
         <Section2/>
         <Benifits/>
