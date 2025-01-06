@@ -89,10 +89,10 @@ const Transition = ({ children }) => {
                     className="w-full h-screen bg-[#fff] fixed top-0 left-0 z-[999] flex flex-col items-center justify-center"
                 >
                     {getRouteName() === "wineemedia" ? <>
-                        <div className='flex items-center gap-[.5vw]'>
-                            <h1 className="text-[8vw] sm:text-[1vw] font-[styles] text-black uppercase text-center w-full leading-[.8]">{getRouteName()}</h1>
+                        <div className='flex items-center gap-[1.5vw] sm:gap-[.5vw]'>
+                            <h1 className="text-[5vw] sm:text-[3vw] md:text-[2.2vw] lg:text-[1vw] font-[styles] text-black uppercase text-center w-full leading-[.8]">{getRouteName()}</h1>
                             <div className='flex items-center justify-between  font-[styles] gap-[2vw] sm:gap-[.5vw] text-[4vw] sm:text-[2.2vw] lg:text-[1vw]'>
-                                <div className='relative font-[styles] w-[5vw] h-[2px] bg-black'>
+                                <div className='relative font-[styles] w-[20vw] sm:w-[12vw] md:w-[10vw] lg:w-[5vw] h-[2px] bg-black'>
                                     <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#fff] opacity-[.7]'></div>
                                 </div>
                                 <div className='w-[2.5vw] text-black flex items-center justify-between'>{loading}<span>%</span></div>
