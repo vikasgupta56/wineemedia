@@ -1,5 +1,6 @@
 import Footer from '@/components/footer/Footer'
 import Section1 from '@/components/work/Section1'
+import Head from 'next/head'
 import React, { useEffect } from 'react'
 
 

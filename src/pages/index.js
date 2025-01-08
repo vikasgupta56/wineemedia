@@ -5,6 +5,7 @@ import Section1 from '@/components/home/Section1'
 import Section4 from '@/components/home/Section4'
 import Services from '@/components/home/Services'
 import gsap from 'gsap'
+import Head from 'next/head'
 import React, { useEffect, useRef, useState } from 'react'
 
 const index = () => {
