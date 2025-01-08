@@ -124,7 +124,7 @@ const Contact = () => {
                         <div className='w-full text-white text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] flex items-center border-b border-white/40 pt-[5vw] sm:pt-[1vw] pb-[5vw] sm:pb-[1vw]'>
                             <h2>To</h2>
                             <span className='bg-white/20 rounded-md mx-[.5vw] px-[2vw] sm:px-[.5vw] flex items-center gap-[.5vw]'>
-                                <div className='w-[1vw] h-[1vw] bg-white rounded-full text-black flex items-center justify-center text-[.8vw] font-[font5]'><img className='w-[50%] h-[50%] object-contain' src="/favicon.png" alt="" /></div>
+                                <div className='w-[1vw] h-[1vw] bg-white rounded-full text-black flex items-center justify-center text-[.8vw] font-[font5]'><img className='w-[75%] h-[75%] object-contain mix-blend-difference' src="/Sub-logo.png"  alt="" /></div>
                                 wineemedia</span>
                             <h2>(info@wineemedia.com)</h2>
                         </div>
