@@ -5,7 +5,7 @@ import Section1 from '@/components/home/Section1'
 import Section4 from '@/components/home/Section4'
 import Services from '@/components/home/Services'
 import gsap from 'gsap'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const index = () => {
 
@@ -13,6 +13,11 @@ const index = () => {
   const playerRef = useRef(null)
   const videoRef = useRef(null)
   const [player, setplayer] = useState("ri-volume-mute-line")
+
+
+  useEffect(()=>{
+    document.title = "WineeMedia"
+  },[])
 
   const handleMouseMove = (e) => {
     gsap.to(cursor.current, {

@@ -49,8 +49,7 @@ const Benifits = () => {
         <div className="line-about2 w-[0] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
     </div>
     <h2 className='benfit-txt1 text-white font-[font6] w-full md:w-[70%] text-[3vw] md:text-[2vw] capitalize my-[5vw]'>
-        At LuxeFrame, we pride ourselves on delivering unparalleled photography and videography services
-        that capture the essence of your unique story. Here are the key benefits of choosing our studio:
+    At WineeMedia, we believe in more than just delivering services; we craft experiences that connect brands with their audience on a deeper level. Our tailored solutions, innovative strategies, and creative expertise have made us a trusted partner for brands like Daroma and Nexpoze Production. We’re here to help your brand grow, inspire, and thrive in the digital age!
     </h2>
     <div className='w-full flex flex-col md:flex-row gap-[2vw]'>
         <div className='w-full relative'>
@@ -89,7 +88,7 @@ const Benifits = () => {
         </div>
     </div>
     <div className='w-full py-[10vw] flex gap-[3vw]'>
-    <div className='marquee-about w-fit flex items-center text-white font-[styles] text-[6vw] gap-[3vw] uppercase'>
+    <div className='marquee-about w-fit flex items-center text-white font-[font6] text-[6vw] gap-[3vw] uppercase'>
         <span>-</span>
         <h1 className='whitespace-nowrap'>wineemedia</h1>
         <span>-</span>
@@ -99,7 +98,7 @@ const Benifits = () => {
         <span>-</span>
         <h1 className='whitespace-nowrap'>wineemedia</h1>
     </div>
-    <div className='marquee-about w-fit flex items-center text-white font-[styles] text-[6vw] gap-[3vw] uppercase'>
+    <div className='marquee-about w-fit flex items-center text-white font-[font6] text-[6vw] gap-[3vw] uppercase'>
         <span>-</span>
         <h1 className='whitespace-nowrap'>wineemedia</h1>
         <span>-</span>

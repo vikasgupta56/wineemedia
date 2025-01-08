@@ -74,7 +74,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
     return (
         <div onMouseMove={handleMouseMove3d}   className='section1 overflow-hidden h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
             <Navbar nav={navRef} />
-            <div className='header-txt font-[styles] relative z-[9]'>
+            <div className='header-txt font-[font6] relative z-[9]'>
                 <div className='h-[7vw] overflow-hidden'>
                 <h1 className='text-header text-[6vw] leading-none '>Digital agency with a</h1>
                 </div>
@@ -83,7 +83,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
                 </div>
             </div>
             <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
-            <img ref={img3dRef} className='w-[100%] sm:w-[75%] object-center object-contain opacity-[.6]' src="https://i.pinimg.com/originals/c9/44/b1/c944b16f01f53a7be5d75c37a6e1babf.gif" alt="" />
+            <img ref={img3dRef} className='w-[100%] sm:w-[55%] object-center object-contain opacity-[.6]' src="https://i.pinimg.com/originals/e5/e6/63/e5e6635548920977766cd93efd38ec6b.gif" alt="" />
             </div>
             <div className='w-full flex justify-end pb-[10vw] sm:pb-[2vw] p-[2vw] absolute bottom-0'>
                 <div className='social flex items-center gap-[3vw] sm:gap-[3vw]   md:gap-[1vw]'>
@@ -95,7 +95,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
                     ))}
                 </div>
             </div>
-            <div onMouseMove={handlePlayerMove} onClick={handlePlayer} onMouseLeave={handlePlayerLeave} style={{ clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)" }} className='header-video  cursor-none absolute bottom-0 left-0 w-full h-screen z-[99]'>
+            <div onMouseMove={handlePlayerMove} onClick={handlePlayer} onMouseLeave={handlePlayerLeave} style={{ clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)" }} className='header-video bg-[#171717]  cursor-none absolute bottom-0 left-0 w-full h-screen z-[99]'>
                 <video ref={videoRef} autoPlay muted loop playsInline className='w-full h-full object-cover' src="/shortv.mp4"></video>
             </div>
         </div>

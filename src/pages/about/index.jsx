@@ -4,13 +4,16 @@ import OurTeam from '@/components/about/OurTeam'
 import Section1 from '@/components/about/Section1'
 import Section2 from '@/components/about/Section2'
 import Footer from '@/components/footer/Footer'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
 const About = () => {
+  useEffect(()=>{
+      document.title = "WineeMedia | About"
+    },[])
+
   return (
     <div className='relative bg-black'>
-      
         <Section1/>
         <Section2/>
         <Benifits/>

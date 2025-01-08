@@ -46,7 +46,7 @@ const Section1 = () => {
         </div>
         <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
       </div>
-      <div className="projects w-full flex flex-col md:flex-row justify-between flex-wrap py-[5vw] md:py-[2vw] px-[2vw]">
+      <div className="projects w-full flex flex-col md:flex-row justify-start gap-[0.5%] flex-wrap py-[5vw] md:py-[2vw] px-[2vw]">
 
         {workData.map((project, i) => (i % 9 === 0 ? (<Link href={`/work/${project.projectname}`} key={i} className='project w-full md:w-[49.5%] mb-[8vw] cursor-pointer'>
           <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[68vh] overflow-hidden'>

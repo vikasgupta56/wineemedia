@@ -20,8 +20,10 @@ const index = () => {
             const filtered = projectdata.find((project) =>
                 project.projectname === router.query.name
             )
+            const capitalize = str => str.replace(/\b\w/g, char => char.toUpperCase());
+            var titleName = capitalize(filtered.projectname);
+            document.title = `WineeMedia | ${titleName}`
             setFilteredData(filtered);
-            console.log(filtered);
         }
     }, [router.query.name])
 
@@ -136,7 +138,7 @@ const index = () => {
                     <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
                         <img className='w-full h-full object-cover object-center' src={filteredData?.image9} alt="" />
                     </div>
-                </div>):""}
+                </div>) : ""}
             </div>
             <div className='hidden  md:block open-p fixed z-[999] scale-0 mix-blend-difference -translate-x-1/2 -translate-y-1/2 bg-white pointer-events-none w-fit p-[.7vw] text-[1vw] py-[.1vw] rounded-full capitalize'>open project</div>
             <div className='w-full py-[3vw] pb-[10vw]'>

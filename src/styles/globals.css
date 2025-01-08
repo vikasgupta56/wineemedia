@@ -213,13 +213,13 @@ body {
   top: 0;
 }
 
-.project .project-ig{
+/* .project .project-ig{
   transition: all ease 0.3s;
 }
 
 .project:hover .project-ig{
   scale: 1.1;
-}
+} */
 
 @media (max-width:640px) {
   .swiper {

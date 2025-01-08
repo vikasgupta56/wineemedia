@@ -19,14 +19,12 @@ const OurClient = () => {
     const clientData = [
         "/clients/dawn.png",
         "/clients/zerror.png",
-        "/clients/dawn.png",
-        "/clients/zerror.png",
-        "/clients/dawn.png",
-        "/clients/zerror.png",
-        "/clients/dawn.png",
-        "/clients/zerror.png",
-        "/clients/dawn.png",
-        "/clients/zerror.png",
+        "/clients/brandCreation.png",
+        "/clients/ed.png",
+        "/clients/meera.png",
+        "/clients/nexPoze.png",
+        "/clients/Pace.png",
+        "/clients/pepe.png",
     ]
 
     useEffect(()=>{
@@ -70,10 +68,10 @@ const OurClient = () => {
             <div className='w-full pt-[6vw] sm:pt-[3vw] flex flex-wrap gap-[1.5vw]'>
                 {
                     clientData.map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
-                        <div className='clipeffect absolute bottom-0 left-0 h-full w-full' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
-                            <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1729892935767-50bb36a38589?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <div className='clipeffect absolute bottom-0 left-0 h-full w-full bg-zinc-800' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
+                            {/* <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1729892935767-50bb36a38589?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /> */}
                         </div>
-                        <img className='w-[50%] relative' src={c} alt="" />
+                        <img className='w-[50%] relative' style={{filter:" grayscale(100%) contrast(100%)"}} src={c} alt="" />
                     </div>))
                 }
 
