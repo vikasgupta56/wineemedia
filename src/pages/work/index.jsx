@@ -5,15 +5,19 @@ import React, { useEffect } from 'react'
 
 const index = () => {
 
-  useEffect(() => {
-    document.title = "WineeMedia | Work"
-  }, [])
+  
 
   return (
+   <>
+    <Head>
+    <title>WineeMedia | Work</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+   </Head>
     <div className='relative bg-black'>
       <Section1 />
       <Footer />
     </div>
+   </>
   )
 }
 
