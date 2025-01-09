@@ -3,14 +3,16 @@ import React, { createContext, useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 import Contact from '../contact/Contact'
 
+
 export const contactContext = createContext()
 
 const Transition = ({ children }) => {
     const [isOpen, setisOpen] = useState(false)
-    const router = useRouter()
     const [displayChildren, setDisplayChildren] = useState(children)
     const curtainRef = useRef(null)
     const [loading, setloading] = useState(0)
+    const router = useRouter();
+
 
     const isHomePage = router.pathname === '/'
     const isAboutPage = router.pathname === '/about'
@@ -26,8 +28,12 @@ const Transition = ({ children }) => {
         return ''
     }
 
+
+  
+
     useEffect(() => {
         const animateTransition = () => {
+
             if (isHomePage) {
                 gsap.set(curtainRef.current, {
                     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
@@ -55,12 +61,12 @@ const Transition = ({ children }) => {
                     })
             } else {
                 gsap.set(curtainRef.current, {
-                    clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)",
+                    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 })
                 gsap.to(curtainRef.current, {
                     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                     duration: 0.8,
-                    ease: 'power2.inOut'
+                    ease: 'power2.inOut',
                 }).then(() => {
                     setDisplayChildren(children)
                     gsap.to(curtainRef.current, {
@@ -75,8 +81,7 @@ const Transition = ({ children }) => {
         animateTransition()
     }, [children, isHomePage, isAboutPage, isWorkPage])
 
-
-
+ 
     return (
         <contactContext.Provider value={[isOpen, setisOpen]}>
             <div className="relative overflow-x-hidden">
