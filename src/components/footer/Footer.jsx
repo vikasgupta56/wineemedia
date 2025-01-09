@@ -41,6 +41,7 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]'>
                         <Link href="https://www.instagram.com/wineemedia/" className='link-hover'>Instagram</Link>
+                        <Link href="https://www.behance.net/wineemedia" className='link-hover'>Behance</Link>
                         <Link href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" className='link-hover'>Linkedin</Link>
                     </div>
                 </div>

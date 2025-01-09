@@ -67,7 +67,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
     }
     const socialLinks = [
         { icon: "instagram-line", link: "https://www.instagram.com/wineemedia/" },
-        { icon: "dribbble-line", link: "https://www.dribbble.com" },
+        { icon: "behance-line", link: "https://www.behance.net/wineemedia" },
         { icon: "linkedin-fill", link: "https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" },
       ];
   

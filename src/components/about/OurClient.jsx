@@ -20,11 +20,13 @@ const OurClient = () => {
         "/clients/dawn.png",
         "/clients/zerror.png",
         "/clients/brandCreation.png",
-        "/clients/ed.png",
+        "/clients/envision.png",
+        "/clients/daroma.png",
         "/clients/meera.png",
         "/clients/nexPoze.png",
         "/clients/Pace.png",
         "/clients/pepe.png",
+        "/clients/maab.png",
     ]
 
     useEffect(()=>{
