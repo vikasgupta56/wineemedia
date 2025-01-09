@@ -44,9 +44,9 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
         const offsetY = (e.clientY - bounds.top - bounds.height / 2) / bounds.height;
         
         gsap.to(img3dRef.current, {
-            x: offsetX * 10, 
-            y: offsetY * 10,
-            duration: 0.2,   
+            x: offsetX * 12, 
+            y: offsetY * 12,
+            duration: 0.1,   
         });
        
     };
@@ -76,14 +76,18 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
             <Navbar nav={navRef} />
             <div className='header-txt font-[font6] relative z-[9]'>
                 <div className='h-[7vw] overflow-hidden'>
-                <h1 className='text-header text-[6vw] leading-none '>Digital agency with a</h1>
+                <h1 className='text-header text-[5vw] leading-none '>Designing identities, </h1>
                 </div>
                 <div className='h-[7vw] overflow-hidden' >
-                <h1 className='text-header text-[6vw] '>human touch.</h1>
+                <h1 className='text-header text-[5vw] '> telling stories, and delivering </h1>
+                </div>
+                <div className='h-[7vw] overflow-hidden' >
+                <h1 className='text-header text-[5vw] '> results that matter.</h1>
                 </div>
             </div>
-            <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
-            <img ref={img3dRef} className='w-[100%] sm:w-[55%] object-center object-contain opacity-[.6]' src="https://i.pinimg.com/originals/e5/e6/63/e5e6635548920977766cd93efd38ec6b.gif" alt="" />
+            <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black'>
+                <video autoPlay muted loop playsInline ref={img3dRef} className='w-full h-full object-center object-cover' src="/herovid.mp4"></video>
+            {/* <img ref={img3dRef} className='w-[100%] sm:w-[55%] object-center object-contain opacity-[.6]' src="https://i.pinimg.com/originals/e5/e6/63/e5e6635548920977766cd93efd38ec6b.gif" alt="" /> */}
             </div>
             <div className='w-full flex justify-end pb-[10vw] sm:pb-[2vw] p-[2vw] absolute bottom-0'>
                 <div className='social flex items-center gap-[3vw] sm:gap-[3vw]   md:gap-[1vw]'>

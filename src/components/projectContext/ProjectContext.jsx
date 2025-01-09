@@ -19,6 +19,7 @@ const ProjectContext = ({ children }) => {
       image7: "/images/nexpoze-image7.png",
       image8: "/images/nexpoze-image8.png",
       image9: "/images/nexpoze-image9.png",
+      portraitVideo: "/videos/nexpoze.mp4",
     },
     {
       projectname: "daroma – an italian cafe",
@@ -34,6 +35,8 @@ const ProjectContext = ({ children }) => {
       image7: "/images/daroma-image7.png",
       image8: "/images/daroma-image8.png",
       image9: "/images/daroma-image9.png",
+      portraitVideo: "/videos/Daroma.mp4",
+
     },
     {
       projectname: "envision dazzling",
@@ -47,6 +50,7 @@ const ProjectContext = ({ children }) => {
       image5: "/images/envision-image5.png",
       image6: "/images/envision-image6.png",
       image7: "/images/envision-image7.png",
+      landScapeVideo: "/videos/envision.mp4",
     },
     {
       projectname: "zerror studios",
@@ -60,6 +64,7 @@ const ProjectContext = ({ children }) => {
       image5: "/images/zerror-image5.png",
       image6: "/images/zerror-image6.png",
       image7: "/images/zerror-image3.png",
+      portraitVideo: "/videos/Zerror.mp4",
     },
     {
       projectname: "pepe cafe",
@@ -75,6 +80,7 @@ const ProjectContext = ({ children }) => {
       image7: "/images/Pe-image7.png",
       image8: "/images/Pe-image8.png",
       image9: "/images/Pe-image9.png",
+      portraitVideo: "/videos/pepe.mp4",
     },
     {
       projectname: "pace entertainment",
@@ -90,6 +96,8 @@ const ProjectContext = ({ children }) => {
       image7: "/images/pace-image7.png",
       image8: "/images/pace-image8.jpg",
       image9: "/images/pace-image9.png",
+      portraitVideo: "/videos/paceE.mp4",
+
     },
     {
       projectname: "maab cosmetics",
@@ -132,6 +140,7 @@ const ProjectContext = ({ children }) => {
       image5: "/images/dawn-image5.png",
       image6: "/images/dawn-image6.png",
       image7: "/images/dawn-image7.png",
+      portraitVideo: "/videos/dawn.mp4",
     },
 
   ];

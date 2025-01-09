@@ -120,6 +120,14 @@ const index = () => {
                         <img className='w-full h-full object-cover object-center' src={filteredData?.image4} alt="" />
                     </div>
                 </div>
+                {filteredData?.portraitVideo && <div className='w-full my-[4vw] md:mb-0 h-[60vh]  md:md:h-[65vh] lg:h-[100vh] flex items-center justify-center '>
+                    <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
+                        <video autoPlay muted loop playsInline className='w-full h-full object-cover object-center' src={filteredData?.portraitVideo} alt="" />
+                    </div>
+                </div>}
+                {filteredData?.landScapeVideo && <div className='w-full h-[30vh] mb-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
+                    <video autoPlay muted loop playsInline  className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={filteredData?.landScapeVideo} alt="" />
+                </div>}
                 <div className='w-full h-[30vh] my-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
                     <img className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={filteredData?.image5} alt="" />
                 </div>

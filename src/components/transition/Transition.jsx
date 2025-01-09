@@ -50,7 +50,6 @@ const Transition = ({ children }) => {
                         duration: 0.8,
                         ease: 'power2.inOut',
                         onComplete: () => {
-                            window.scrollTo(0, 0)
                             setDisplayChildren(children)
                         },
                     })
@@ -63,7 +62,6 @@ const Transition = ({ children }) => {
                     duration: 0.8,
                     ease: 'power2.inOut'
                 }).then(() => {
-                    window.scrollTo(0, 0)
                     setDisplayChildren(children)
                     gsap.to(curtainRef.current, {
                         clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",

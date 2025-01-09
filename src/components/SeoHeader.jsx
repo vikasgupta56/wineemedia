@@ -43,9 +43,9 @@ const SeoHeader = ({ meta }) => {
         name="twitter:description"
         content={meta?.twitter?.description ?? meta?.description}
       />
-      {/* <meta name="twitter:site" content={"@THRIndia_"} /> */}
-      {/* <meta name="twitter:image" content={meta?.twitter?.image ?? ""} /> */}
-      {/* <meta name="twitter:creator" content={"@THRIndia_"} /> */}
+      <meta name="twitter:site" content={"@wineemedia"} /> 
+      <meta name="twitter:image" content={meta?.twitter?.image ?? ""} />
+      <meta name="twitter:creator" content={"@wineemedia"} />
       <meta charset="UTF-8" />
       <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
