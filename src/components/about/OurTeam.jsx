@@ -7,25 +7,45 @@ const OurTeam = () => {
     const membersRefs = useRef([])
     const teamMembers = [
         {
-            image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "/team/Ramkrishna Tripathi.jpg",
             name: "Ramkrishna Tripathi",
-            profession: "Founder/CEO"
+            profession: "Founder / CEO"
         },
         {
-            image: "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            name: "Dev Majumdar",
-            profession: "3D Designer"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1481077147437-4b5f9bb774df?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "/team/Niranjan Solanki.jpg",
             name: "Niranjan Solanki",
             profession: "Data Scientist"
         },
+        // {
+        //     image: "/team/Rishabh Pandey.jpg",
+        //     name: "Rishabh pandey",
+        //     profession: "Data Analyst"
+        // },
         {
-            image: "https://images.unsplash.com/photo-1625689871386-70042bfbfccf?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            name: "Rishabh Pandey",
-            profession: "Data Analyst"
-        }
+            image: "/team/Himanshu Khatri.jpg",
+            name: "Himanshu Khatri",
+            profession: "2D Generalist"
+        },
+        {
+            image: "/team/Swati Simran.jpg",
+            name: "Swati Simran",
+            profession: "Creative Director"
+        },
+        {
+            image: "/team/Jay Revandkar.jpg",
+            name: "Jay Revandkar",
+            profession: "3D Generalist"
+        },
+        {
+            image: "/team/Sumeet Patwa.jpg",
+            name: "Sumeet",
+            profession: "3D Character Artist"
+        },
+        {
+            image: "/team/Rituraj Bang.jpeg",
+            name: "Rituraj Bang",
+            profession: "Concept Artist"
+        },
     ];
     
     useEffect(() => {
@@ -78,10 +98,10 @@ const OurTeam = () => {
                 </div>
                 <div className="line-about3 w-[0]] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
             </div>
-            <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap justify-between py-[5vw] sm:py-[2vw]'>
+            <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap gap-[4vw] py-[5vw] sm:py-[2vw]'>
                 {teamMembers.map((m, i) => (<div key={i} ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[47vw] md:w-[21vw]">
                     <div key={i} className='w-full h-[50vh] '>
-                        <img className='w-full h-full object-cover' src={m.image} alt="" />
+                        <img className='w-full h-full object-cover object-center' src={m.image} alt="" />
                     </div>
                     <h2 className='text-white text-[5vw] sm:text-[2.5vw] md:text-[1.2vw] mt-[1.3vw] font-[font6] capitalize'>{m.name}</h2>
                     <p className='text-white/60 text-[3vw] sm:text-[2vw] md:text-[1vw] font-[font6] capitalize'>{m.profession}</p>
