@@ -14,7 +14,7 @@ const Work = ({meta}) => {
    <SeoHeader meta={meta}/>
     <div className='relative bg-black'>
       <Section1 />
-      <Footer />
+      {/* <Footer /> */}
     </div>
    </>
   )

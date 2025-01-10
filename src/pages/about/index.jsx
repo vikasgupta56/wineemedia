@@ -20,7 +20,7 @@ const About = ({meta}) => {
         <Benifits/>
         <OurTeam/>
         <OurClient/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
    </>
   )

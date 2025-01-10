@@ -50,7 +50,7 @@ const Home = ({meta}) => {
       <Services />
       <Section4 cursor={cursor} />
       <OurWorks />
-      <Footer />
+      {/* <Footer /> */}
     </div>
     </>
   )
