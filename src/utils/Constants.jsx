@@ -1,0 +1,22 @@
+export const Const = {
+    Success200: 200,
+    Created201: 201,
+    Invalid400: 400,
+    UnAuth401: 401,
+    Forbidden403: 403,
+    NotFound404: 404,
+    ServerError500: 500,
+    BadGateway502: 502,
+    ServiceUnavailable503: 503,
+    GatewayTimeout504: 504,
+    Redirect302: 302,
+    Inactive: 0,
+    Active: 1,
+    Trash: 2,
+    Draft: 3,
+    Scheduled: 4,
+    Limit: 20,
+    Offset: 0,
+    ClientLink: "https://www.wineemedia.com",
+  };
+  

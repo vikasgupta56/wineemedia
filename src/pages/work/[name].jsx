@@ -80,7 +80,7 @@ const index = () => {
     return (
         <div onMouseMove={(e) => handleMouseMove(e)} className='relative bg-black'>
             <div className='w-full min-h-screen pt-[30vw] md:pt-[12vw] px-[4vw] md:px-[2vw]'>
-                <Navbar />
+                {/* <Navbar /> */}
                 <h1 className='text-white text-[8vw] md:text-[7.5vw] leading-none mb-[5vw] md:mb-[2vw] text-left md:text-center uppercase'>{filteredData?.projectname}</h1>
                 <div className='w-full h-[50vh] md:h-[80vh] lg:h-[120vh] bg-[#ffffff27]'>
                     <img className='w-full h-full object-cover object-center' src={filteredData?.coverimage1} alt="" />

@@ -39,7 +39,7 @@ const Section1 = () => {
 
   return (
     <div className='w-full min-h-screen'>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='select-work relative w-full mx-[2vw] py-[5vw] md:py-[1.2vw] flex pt-[30vw] md:pt-[12vw]'>
         <div className='overflow-hidden'>
           <h2 className='work-txt text-white text-[10vw] sm:text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>Our Work</h2>

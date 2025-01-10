@@ -1,3 +1,4 @@
+import { Layout } from "@/components/layout/Layout";
 import ProductContext from "@/components/projectContext/ProjectContext";
 import SmoothScroll from "@/components/smoothscroll/SmoothScroll";
 import Transition from "@/components/transition/Transition";
@@ -9,7 +10,9 @@ export default function App({ Component, pageProps, router }) {
     <Transition>
       <ProductContext>
         <SmoothScroll>
-        <Component key={router.route} {...pageProps} />
+          <Layout>
+            <Component key={router.route} {...pageProps} />
+          </Layout>
         </SmoothScroll>
       </ProductContext>
     </Transition>

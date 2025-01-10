@@ -9,7 +9,7 @@ import gsap from 'gsap'
 import Head from 'next/head'
 import React, { useEffect, useRef, useState } from 'react'
 
-const index = ({meta}) => {
+const Home = ({meta}) => {
 
   const cursor = useRef(null)
   const playerRef = useRef(null)
@@ -56,7 +56,7 @@ const index = ({meta}) => {
   )
 }
 
-export default index;
+export default Home;
 
 
 export async function getStaticProps() {

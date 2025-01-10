@@ -6,37 +6,37 @@ import Link from 'next/link';
 gsap.registerPlugin(ScrollTrigger)
 
 const Section1 = ({videoRef,playerRef,handlePlayer}) => {
-    const navRef = useRef(null)
+    // const navRef = useRef(null)
     const img3dRef = useRef(null)
-    useEffect(() => {
+    // useEffect(() => {
 
-        var tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".section1",
-                start: "top 0%",
-                end: "top -100%",
-                scrub: 1,
-                pin: true,
-            }
-        })
-        tl
-            .to(navRef.current, {
-                y: "-100%",
-                duration: .3
-            }, "a")
-            .to(".header-txt", {
-                y: -50,
-            }, "a")
+    //     var tl = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: ".section1",
+    //             start: "top 0%",
+    //             end: "top -100%",
+    //             scrub: 1,
+    //             pin: true,
+    //         }
+    //     })
+    //     tl
+    //         .to(navRef.current, {
+    //             y: "-100%",
+    //             duration: .3
+    //         }, "a")
+    //         .to(".header-txt", {
+    //             y: -50,
+    //         }, "a")
       
-            .to(".header-video", {
-                clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)"
-            }, "a")
+    //         .to(".header-video", {
+    //             clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)"
+    //         }, "a")
 
-        return () => {
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        }
+    //     return () => {
+    //         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    //     }
 
-    }, []);
+    // }, []);
 
     const handleMouseMove3d = (e) => {
         const bounds = img3dRef.current.getBoundingClientRect();
@@ -73,7 +73,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
   
     return (
         <div onMouseMove={handleMouseMove3d}   className='section1 overflow-hidden h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
-            <Navbar nav={navRef} />
+            {/* <Navbar nav={navRef} /> */}
             <div className='header-txt font-[font6] relative z-[9]'>
                 <div className='h-[7vw] overflow-hidden'>
                 <h1 className='text-header text-[5vw] leading-none '>Designing identities, </h1>
