@@ -69,20 +69,14 @@ const OurTeam = () => {
             }, "a")
         if (membersRefs.current) {
             membersRefs.current.forEach((m, i) => {
-                gsap.fromTo(m, {
-                    scale: 0,
-                    rotateY:"45deg",
-                    opacity:0,
-                }, {
-                    scale: 1,
-                    opacity: 1,
-                    rotateY:"0",
+                gsap.to(m.querySelector(".team-img"), {
+                    clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
                     duration: 0.8,
                     stagger: .3,
                     scrollTrigger: {
                         trigger: m,
-                        start: "top 82%",
-                        end: "top 45%",
+                        start: "top 75%",
+                        end: "top 40%",
                         scrub: 1,
                     }
                 })
@@ -100,7 +94,7 @@ const OurTeam = () => {
             </div>
             <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap gap-[4vw] py-[5vw] sm:py-[2vw]'>
                 {teamMembers.map((m, i) => (<div key={i} ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[47vw] md:w-[21vw]">
-                    <div key={i} className='w-full h-[50vh] '>
+                    <div key={i} className='team-img w-full h-[50vh] ' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}>
                         <img className='w-full h-full object-cover object-center' src={m.image} alt="" />
                     </div>
                     <h2 className='text-white text-[5vw] sm:text-[2.5vw] md:text-[1.2vw] mt-[1.3vw] font-[font6] capitalize'>{m.name}</h2>
