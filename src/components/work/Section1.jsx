@@ -61,7 +61,7 @@ const Section1 = () => {
           <h4 className='text-white text-[4vw] sm:text-[3.5vw] md:text-[2vw] lg:text-[1.3vw] mt-[1.5vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
           <p className='text-white opacity-[.8] font-[font4] text-[3.5vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[.8vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
         </Link>
-        ) : i === 6 ? (<Link href={`/work/${project.projectname}`} key={i} className='project w-full md:w-[49.5%] mb-[8vw] cursor-pointer'>
+        ) : i === 6 ? (<Link href={`/work/${project.projectname}`} key={i} className='project w-full md:w-[49.5%] mb-[2vw] cursor-pointer'>
           <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[68vh] overflow-hidden'>
             <img src={project.coverimage1} className='project-ig  w-full h-full object-cover object-center' alt="" />
           </div>
