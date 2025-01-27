@@ -18,16 +18,31 @@ const Footer = () => {
                     start: "top 95%",
                     end: "bottom bottom",
                     scrub: 1,
-                    // markers:true
-                }
+                },
             });
-            return () => animation.kill()
+
+            ScrollTrigger.refresh(); // Refresh to fix route change issues
+
+            return () => {
+                animation.kill();
+            };
         }
     }, []);
+    const handleLogo = (e) => {
+        const bounds = document.querySelector(".logo-footer").getBoundingClientRect();
+        const offsetX = (e.clientX - bounds.left - bounds.width / 2) / bounds.width;
+        const offsetY = (e.clientY - bounds.top - bounds.height / 2) / bounds.height;
+        
+        gsap.to(".logo-footer", {
+            x: offsetX * 20, 
+            y: offsetY * 20,
+            duration: 0.1,   
+        });
+    }
 
 
     return (
-        <div className='w-full flex flex-col justify-between h-[70vh] sm:h-screen bg-black p-[4vw] sm:p-[2vw] pt-[10vw] sm:pt-[4vw] text-white'>
+        <div onMouseMove={handleLogo} className='w-full flex flex-col justify-between h-[70vh] relative sm:h-screen bg-black p-[4vw] sm:p-[2vw] pt-[10vw] sm:pt-[4vw] text-white'>
             <div className='w-full flex flex-col md:flex-row items-start justify-between'>
                 <div>
                     <h1 className='text-[15vw] sm:text-[15vw] md:text-[6vw] font-[font6] leading-[.8] whitespace-nowrap'>Let's Connect</h1>
@@ -49,14 +64,15 @@ const Footer = () => {
             </div>
             <div className='w-full text-white font-[font6]'>
                 <div className='overflow-hidden flex items-end justify-center md:h-[13.2vw]'>
-                    <h1 ref={titleRef} className='hidden sm:hidden  md:block logo-title text-[13vw] whitespace-nowrap font-[styles] leading-[.8]' >{"Winee Media".split("").map((l, i) => <span key={i} style={{transform:"translateY(-120%)"}} className='inline-block'>{l}</span>)}</h1>
+                    <h1 ref={titleRef} className='hidden sm:hidden  md:block logo-title text-[13vw] whitespace-nowrap font-[styles] leading-[.8]' >{"Winee Media".split("").map((l, i) => <span key={i} style={{ transform: "translateY(-120%)" }} className='inline-block'>{l}</span>)}</h1>
                     <h1 className='block  sm:block md:hidden logo-title text-[16.5vw]  whitespace-nowrap leading-none' >winemedia</h1>
                 </div>
                 <div className='w-full flex text-[2.3vw] sm:text-[2vw] md:text-[1.5vw]  lg:text-[1vw] text-white/50 font-[font4] items-center justify-between'>
-                    <h2>© 2023 by WineeMedia.</h2>
+                    <h2>© 2024 by WineeMedia.</h2>
                     <h2>Developed By <Link target='_block' href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h2>
                 </div>
             </div>
+            <img src="/Sub-logo.png" className='logo-footer absolute w-[20%] hidden sm:block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]' alt="" />
         </div>
     )
 }

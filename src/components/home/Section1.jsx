@@ -44,8 +44,8 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
         const offsetY = (e.clientY - bounds.top - bounds.height / 2) / bounds.height;
         
         gsap.to(img3dRef.current, {
-            x: offsetX * 12, 
-            y: offsetY * 12,
+            x: offsetX * 30, 
+            y: offsetY * 30,
             duration: 0.1,   
         });
        

@@ -7,7 +7,7 @@ import { projectContext } from '../projectContext/ProjectContext'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const Section4 = ({ cursor }) => {
+const Section4 = () => {
   const workrefs = useRef([])
   const workData = useContext(projectContext)
   const works = workData.slice(0, 6)
@@ -64,16 +64,7 @@ const Section4 = ({ cursor }) => {
       }, "a")
   }, [])
 
-  const handleMouseMove = () => {
-    gsap.to(cursor.current, {
-      scale: 1
-    })
-  }
-  const handleMouseLeave = () => {
-    gsap.to(cursor.current, {
-      scale: 0
-    })
-  }
+ 
 
   return (
     <div className='section4-h w-full min-h-screen bg-black'>
@@ -84,11 +75,11 @@ const Section4 = ({ cursor }) => {
         <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
       </div>
       <div className="projects w-full flex justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
-        {works.map((w, i) => (<Link href={`/work/${w.projectname}`} key={i} ref={el => workrefs.current[i] = el} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="project-h cursor-pointer w-full sm:w-full md:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
-          <div className='hidden sm:block black-strip transition-all duration-500 w-full h-[0%] bg-black absolute top-1/2 -translate-y-1/2 left-0 z-[9]'></div>
-          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[2vw] md:text-[.8vw] font-[font6] h-[4%]  absolute top-1/2 opacity-0 -translate-y-1/2 left-0 z-[10]  hidden sm:flex items-center justify-between'>
-            <h5>{w.projectname}</h5>
-            <div className='flex items-center gap-[8vw]'>
+        {works.map((w, i) => (<Link href={`/work/${w.projectname}`} key={i} ref={el => workrefs.current[i] = el}  className="project-h cursor-pointer w-full sm:w-full md:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
+          <div className='hidden sm:block black-strip transition-all duration-500 w-full h-[0%] bg-black absolute bottom-0 left-0 z-[9]'></div>
+          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[2vw] md:text-[1vw] font-[font6] h-[8%]  absolute  opacity-0 bottom-0 left-0 z-[10]  hidden sm:flex flex-col items-start justify-between'>
+            <h5 className='text-[1.5vw]'>{w.projectname}</h5>
+            <div className='flex items-center justify-between w-[100%]'>
               <h5>
                 {w.serviceprovided
                   ?.split(", ")
@@ -96,7 +87,7 @@ const Section4 = ({ cursor }) => {
                   .join(", ")}
                 {w.serviceprovided.split(", ").length > 3 && "..."}
               </h5>
-              <h1>2024</h1>
+              <h1>Discover <i class="ri-arrow-right-line"></i></h1>
             </div>
           </div>
           <img className='project-ig w-full h-full object-cover scale-[1.3]' src={w.coverimage1} alt="" />

@@ -89,7 +89,7 @@ const Services = () => {
             </div>
             <img className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[20%] mix-blend-exclusion' src="/hero1.png" alt="" />
             <img className='igs absolute top-[60%] right-[0%] w-[20%] mix-blend-exclusion' src="/hero2.png" alt="" />
-            <img className='igs absolute bottom-[0%] left-[0%] w-[20%] mix-blend-exclusion' src="/hero3.png" alt="" />
+            <img className='igs absolute bottom-[-10%] left-[0%] w-[20%] mix-blend-exclusion' src="/hero3.png" alt="" />
         </div>
     )
 }

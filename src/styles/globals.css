@@ -136,11 +136,18 @@ body {
 }
 
 .project-h:hover .black-strip{
-  height: 4%;
+  height: 8%;
 }
 
 .project-h:hover .strip-text{
   opacity: 1;
+}
+.our-work{
+  transition: all ease .2s;
+}
+.our-work:hover{
+  background-color: black !important;
+  color: white !important;;
 }
 
 
