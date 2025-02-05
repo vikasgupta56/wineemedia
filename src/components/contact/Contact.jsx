@@ -110,7 +110,7 @@ const Contact = () => {
                         }} className='w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-[#F3BF49] rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'><i className="ri-subtract-line  w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] flex items-center justify-center opacity-0"></i></div>
                         <div className='w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-[#58595B] rounded-full'></div>
                     </div>
-                    <h4 className='text-white font-[font6] text-[.9vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>Get in touch</h4>
+                    <h4 className='text-white font-[font6] text-[4vw] md:text-[.9vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>Get in touch</h4>
                     <button onClick={() => {
                         setErrors({})
                         setisOpen(false)
@@ -120,7 +120,7 @@ const Contact = () => {
                     }} className='text-white text-[4vw] font-[font4] sm:hidden'>Close</button>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <div className='w-full p-[1.5vw] font-[font3] pt-[10vw] sm:pt-[2vw] md:pt-[1.5vw]'>
+                    <div className='w-full p-[4vw]  md:p-[1.5vw] font-[font3] pt-[10vw] sm:pt-[2vw] md:pt-[1.5vw]'>
                         <div className='w-full text-white text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] flex items-center border-b border-white/40 pt-[5vw] sm:pt-[1vw] pb-[5vw] sm:pb-[1vw]'>
                             <h2>To</h2>
                             <span className='bg-white/20 rounded-md mx-[.5vw] px-[2vw] sm:px-[.5vw] flex items-center gap-[.5vw]'>
