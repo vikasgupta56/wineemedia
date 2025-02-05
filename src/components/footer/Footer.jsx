@@ -52,7 +52,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]'>
                         <Link href="/" className='link-hover'>Home</Link>
                         <Link href="/work" className='link-hover'>Work</Link>
-                        <Link href="/about" className='link-hover'>About</Link>
+                        <Link href="/about-us" className='link-hover'>About</Link>
                     </div>
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]'>
                         <Link target='_block' href="https://www.instagram.com/wineemedia/" className='link-hover'>Instagram</Link>
