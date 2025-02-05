@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 const WorkDetails = ({ data, meta }) => {
 
-
     useEffect(() => {
         document.querySelectorAll(".scroll-sp").forEach(igs => {
             gsap.to(igs, {

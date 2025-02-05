@@ -7,6 +7,7 @@ import NewsMediaOrganizationSchema from "@/components/seo/NewsMediaOrganizationS
 import SiteNavigationSchema from "@/components/seo/SiteNavigationSchema";
 
 const SeoHeader = ({ meta }) => {
+  
   const router = useRouter();
   const canonical = `${Const.ClientLink}/${router.asPath?.slice(1)}`;
   return (

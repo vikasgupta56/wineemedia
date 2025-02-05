@@ -4,14 +4,14 @@ const OrganizationSchema = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "The Hollywood Reporter India",
+    name: "Wineemedia",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.hollywoodreporterindia.com/thr-logo.png",
+      url: "https://www.wineemedia.com/favicon.png",
       width: "1800px",
       height: "900px",
     },
-    url: "https://www.hollywoodreporterindia.com/",
+    url: "https://www.wineemedia.com/",
   };
   return (
     <script
