@@ -34,62 +34,62 @@ const Services = () => {
     return (
         <div className='relative w-full h-fit sm:h-fit bg-black p-[2vw] py-[10vw]'>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     Collaborating
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     with passionate
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     individuals and ambitious
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     brands to craft
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     memorable,
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     captivating digital
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     experiences,
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     always striving for
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
-                <h1 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
                     a best possible solution.
-                </h1>
+                </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
-            <img className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[20%] mix-blend-exclusion' src="/hero1.png" alt="" />
-            <img className='igs absolute top-[60%] right-[0%] w-[20%] mix-blend-exclusion' src="/hero2.png" alt="" />
-            <img className='igs absolute bottom-[-10%] left-[0%] w-[20%] mix-blend-exclusion' src="/hero3.png" alt="" />
+            <img className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[20%] mix-blend-exclusion' src="/hero1.png" alt="service-image1" />
+            <img className='igs absolute top-[60%] right-[0%] w-[20%] mix-blend-exclusion' src="/hero2.png" alt="service-image2" />
+            <img className='igs absolute bottom-[-10%] left-[0%] w-[20%] mix-blend-exclusion' src="/hero3.png" alt="service-image3" />
         </div>
     )
 }

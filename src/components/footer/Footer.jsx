@@ -45,8 +45,8 @@ const Footer = () => {
         <div onMouseMove={handleLogo} className='w-full flex flex-col justify-between h-[70vh] relative sm:h-screen bg-black p-[4vw] sm:p-[2vw] pt-[10vw] sm:pt-[4vw] text-white'>
             <div className='w-full flex flex-col md:flex-row items-start justify-between'>
                 <div>
-                    <h1 className='text-[15vw] sm:text-[15vw] md:text-[6vw] font-[font6] leading-[.8] whitespace-nowrap'>Let's Connect</h1>
-                    <h2 className='font-[font6] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]  mb-[10vw] sm:mb-0 mt-[3vw] sm:mt-[1.4vw]'>info@wineemedia.com</h2>
+                    <h3 className='text-[15vw] sm:text-[15vw] md:text-[6vw] font-[font6] leading-[.8] whitespace-nowrap'>Let's Connect</h3>
+                    <h6 className='font-[font6] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]  mb-[10vw] sm:mb-0 mt-[3vw] sm:mt-[1.4vw]'>info@wineemedia.com</h6>
                 </div>
                 <div className='flex gap-[8vw] flex-col md:flex-row'>
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]'>
@@ -55,21 +55,21 @@ const Footer = () => {
                         <Link href="/about" className='link-hover'>About</Link>
                     </div>
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]'>
-                        <Link href="https://www.instagram.com/wineemedia/" className='link-hover'>Instagram</Link>
-                        <Link href="https://www.behance.net/wineemedia" className='link-hover'>Behance</Link>
-                        <Link href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" className='link-hover'>Linkedin</Link>
+                        <Link target='_block' href="https://www.instagram.com/wineemedia/" className='link-hover'>Instagram</Link>
+                        <Link target='_block' href="https://www.behance.net/wineemedia" className='link-hover'>Behance</Link>
+                        <Link target='_block' href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" className='link-hover'>Linkedin</Link>
                     </div>
                 </div>
 
             </div>
             <div className='w-full text-white font-[font6]'>
                 <div className='overflow-hidden flex items-end justify-center md:h-[13.2vw]'>
-                    <h1 ref={titleRef} className='hidden sm:hidden  md:block logo-title text-[13vw] whitespace-nowrap font-[styles] leading-[.8]' >{"Winee Media".split("").map((l, i) => <span key={i} style={{ transform: "translateY(-120%)" }} className='inline-block'>{l}</span>)}</h1>
-                    <h1 className='block  sm:block md:hidden logo-title text-[16.5vw]  whitespace-nowrap leading-none' >winemedia</h1>
+                    <h3 ref={titleRef} className='hidden sm:hidden  md:block logo-title text-[13vw] whitespace-nowrap font-[styles] leading-[.8]' >{"Winee Media".split("").map((l, i) => <span key={i} style={{ transform: "translateY(-120%)" }} className='inline-block'>{l}</span>)}</h3>
+                    <h3 className='block  sm:block md:hidden logo-title text-[16.5vw]  whitespace-nowrap leading-none' >winemedia</h3>
                 </div>
                 <div className='w-full flex text-[2.3vw] sm:text-[2vw] md:text-[1.5vw]  lg:text-[1vw] text-white/50 font-[font4] items-center justify-between'>
-                    <h2>© 2024 by WineeMedia.</h2>
-                    <h2>Developed By <Link target='_block' href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h2>
+                    <h6>© 2024 by WineeMedia.</h6>
+                    <h6>Developed By <Link target='_block' href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h6>
                 </div>
             </div>
             <img src="/Sub-logo.png" className='logo-footer absolute w-[20%] hidden sm:block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]' alt="" />

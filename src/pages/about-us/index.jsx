@@ -4,7 +4,7 @@ import OurTeam from '@/components/about/OurTeam'
 import Section1 from '@/components/about/Section1'
 import Section2 from '@/components/about/Section2'
 import Footer from '@/components/footer/Footer'
-import SeoHeader from '@/components/SeoHeader'
+import SeoHeader from '@/components/seo/SeoHeader'
 import Head from 'next/head'
 import React, { useEffect } from 'react'
 
@@ -31,10 +31,10 @@ export default About;
 export async function getStaticProps() {
   const meta = {
     title:
-      "WineeMedia | About",
+      "WineeMedia | Transforming Brands with Creativity & Innovation",
     description:
-      "WineeMedia is a branding and marketing agency specializing in providing comprehensive online solutions for businesses aiming to enhance their digital presence.",
-    keywords: [],
+      "Discover WineeMedia, a leading branding and digital marketing agency. We specialize in building powerful online presences with creative solutions in branding, social media, photography, videography, and more. Let us help your brand succeed.",
+    keywords: "digital marketing agency, branding agency, motion graphics, branding strategies, 3D design, influencer marketing, SEO services, social media campaigns, videography, creative branding, photography services, digital marketing, online presence, videography services, brand transformation, WineeMedia",
     author: "WineeMedia",
     robots: "index,follow",
   };

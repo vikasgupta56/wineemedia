@@ -4,18 +4,14 @@ import OurWorks from '@/components/home/OurWorks'
 import Section1 from '@/components/home/Section1'
 import Section4 from '@/components/home/Section4'
 import Services from '@/components/home/Services'
-import SeoHeader from '@/components/SeoHeader'
+import SeoHeader from '@/components/seo/SeoHeader'
 import gsap from 'gsap'
-import Head from 'next/head'
 import React, { useEffect, useRef, useState } from 'react'
 
-const index = ({meta}) => {
-
+const Home = ({meta}) => {
   const playerRef = useRef(null)
   const videoRef = useRef(null)
   const [player, setplayer] = useState("ri-volume-mute-line")
-
-
 
   const handleMouseMove = (e) => {
     gsap.to(playerRef.current, {
@@ -50,16 +46,16 @@ const index = ({meta}) => {
   )
 }
 
-export default index;
+export default Home;
 
 
 export async function getStaticProps() {
   const meta = {
     title:
-      "WineeMedia",
+      "WineeMedia | Elevate Your Brand with Creative Digital Solutions",
     description:
-      "WineeMedia is a branding and marketing agency specializing in providing comprehensive online solutions for businesses aiming to enhance their digital presence.",
-    keywords: [],
+      "Boost your brand’s presence with WineeMedia’s expert services in branding, social media marketing, motion graphics, 3D design, and influencer marketing. Let’s create extraordinary digital experiences.",
+    keywords: "digital branding, brand awareness campaigns, social media marketing, content marketing, motion graphics, graphic design services, 3D design, business growth strategies, influencer marketing, online brand promotion, brand identity, creative branding solutions, digital marketing agency, social media strategy, visual content creation",
     author: "WineeMedia",
     robots: "index,follow",
   };

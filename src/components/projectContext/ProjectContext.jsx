@@ -22,7 +22,7 @@ const ProjectContext = ({ children }) => {
       portraitVideo: "/videos/nexpoze.mp4",
     },
     {
-      projectname: "daroma – an italian cafe",
+      projectname: "daroma an italian cafe",
       serviceprovided: "Social Media Management, Brand Strategy, Video/Photo Shoot, Reels, Content Creation",
       para1: "At Daroma, an Italian café inspired by the rich culinary and cultural traditions of Italy, we embarked on a journey to elevate their brand presence and resonate with their audience. By immersing ourselves in Daroma’s unique identity, we crafted a digital strategy that celebrated their love for authentic flavors and cozy ambiance.",
       para2: "From curating aesthetically pleasing visuals to producing engaging video content and reels, we brought Daroma's story to life on digital platforms. Our social media management ensured consistent branding, while targeted campaigns effectively drove engagement and footfall to the café.",
@@ -144,9 +144,6 @@ const ProjectContext = ({ children }) => {
     },
 
   ];
-
-
-
 
   return (
     <projectContext.Provider value={projectData}>{children}</projectContext.Provider>

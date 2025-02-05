@@ -15,7 +15,7 @@ const Transition = ({ children }) => {
 
 
     const isHomePage = router.pathname === '/'
-    const isAboutPage = router.pathname === '/about'
+    const isAboutPage = router.pathname === '/about-us'
     const isWorkPage = router.pathname.startsWith('/work')
 
     const getRouteName = () => {
@@ -23,7 +23,7 @@ const Transition = ({ children }) => {
         if (isAboutPage) return 'about'
         if (isWorkPage) {
             const workName = router.query.name;
-            return workName ? `${workName}` : 'work'
+            return workName ? `${workName.split("-").join(" ")}` : 'work'
         }
         return ''
     }
@@ -93,7 +93,7 @@ const Transition = ({ children }) => {
                 >
                     {getRouteName() === "wineemedia" ? <>
                         <div className='flex items-center gap-[1.5vw] sm:gap-[.5vw]'>
-                            <h1 className="text-[5vw] sm:text-[3vw] md:text-[2.2vw] lg:text-[1vw] font-[font6] text-black uppercase text-center w-full leading-[.8]">{getRouteName()}</h1>
+                            <h4 className="text-[5vw] sm:text-[3vw] md:text-[2.2vw] lg:text-[1vw] font-[font6] text-black uppercase text-center w-full leading-[.8]">{getRouteName()}</h4>
                             <div className='flex items-center justify-between  font-[font6] gap-[2vw] sm:gap-[.5vw] text-[4vw] sm:text-[2.2vw] lg:text-[1vw]'>
                                 <div className='relative font-[font6] w-[20vw] sm:w-[12vw] md:w-[10vw] lg:w-[5vw] h-[2px] bg-black'>
                                     <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#fff] opacity-[.7]'></div>
@@ -102,7 +102,7 @@ const Transition = ({ children }) => {
                             </div>
                         </div>
 
-                    </> : <h1 className="text-[8vw] font-[font6] sm:text-[3vw] text-black uppercase text-center">{getRouteName()}</h1>}
+                    </> : <h4 className="text-[8vw] font-[font6] sm:text-[3vw] text-black uppercase text-center">{getRouteName()}</h4>}
 
                 </div>
             </div>

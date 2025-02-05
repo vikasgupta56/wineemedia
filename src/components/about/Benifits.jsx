@@ -86,27 +86,27 @@ const Benifits = () => {
                 location.
             </p>
         </div>
-    </div>
+    </div>  
     <div className='w-full py-[10vw] flex gap-[3vw]'>
     <div className='marquee-about w-fit flex items-center text-white font-[font6] text-[6vw] gap-[3vw] uppercase'>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
     </div>
     <div className='marquee-about w-fit flex items-center text-white font-[font6] text-[6vw] gap-[3vw] uppercase'>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
         <span>-</span>
-        <h1 className='whitespace-nowrap'>wineemedia</h1>
+        <h5 className='whitespace-nowrap'>wineemedia</h5>
     </div>
 </div>
 </div>

@@ -1,7 +1,6 @@
 import Footer from '@/components/footer/Footer'
-import SeoHeader from '@/components/SeoHeader'
+import SeoHeader from '@/components/seo/SeoHeader'
 import Section1 from '@/components/work/Section1'
-import Head from 'next/head'
 import React, { useEffect } from 'react'
 
 
@@ -23,12 +22,13 @@ const Work = ({meta}) => {
 export default Work;
 
 export async function getStaticProps() {
+
   const meta = {
     title:
-      "WineeMedia | Work",
+      "WineeMedia | Creative Branding & Digital Marketing services",
     description:
-      "WineeMedia is a branding and marketing agency specializing in providing comprehensive online solutions for businesses aiming to enhance their digital presence.",
-    keywords: [],
+      "Explore WineeMedia’s portfolio of branding, motion graphics, influencer marketing, and social media strategies. See how we transform ideas into impactful realities!",
+    keywords: "branding portfolio, creative agency work, influencer marketing case studies, digital marketing services, social media marketing, business growth strategies, cafe branding solutions, event branding, motion graphics design",
     author: "WineeMedia",
     robots: "index,follow",
   };

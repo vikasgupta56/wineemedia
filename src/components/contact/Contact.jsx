@@ -91,7 +91,7 @@ const Contact = () => {
                                 }
                             })
 
-                        }} className='w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-red-600 rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'><i class="ri-close-fill w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] flex items-center justify-center opacity-0"></i></div>
+                        }} className='w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-red-600 rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'><i className="ri-close-fill w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] flex items-center justify-center opacity-0"></i></div>
                         <div onClick={() => {
                             setErrors({})
                             setEmail('')
@@ -107,7 +107,7 @@ const Contact = () => {
                                 }
                             })
 
-                        }} className='w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-[#F3BF49] rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'><i class="ri-subtract-line  w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] flex items-center justify-center opacity-0"></i></div>
+                        }} className='w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-[#F3BF49] rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'><i className="ri-subtract-line  w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] flex items-center justify-center opacity-0"></i></div>
                         <div className='w-[4vw] sm:w-[1.5vw]  md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-[#58595B] rounded-full'></div>
                     </div>
                     <h4 className='text-white font-[font6] text-[.9vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>Get in touch</h4>

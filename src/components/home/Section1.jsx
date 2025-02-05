@@ -76,13 +76,13 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
             <Navbar nav={navRef} />
             <div className='header-txt font-[font6] relative z-[9]'>
                 <div className='h-[7vw] overflow-hidden'>
-                <h1 className='text-header text-[5vw] leading-none '>Designing identities, </h1>
+                <h2 className='text-header text-[5vw] leading-none '>Designing identities, </h2>
                 </div>
                 <div className='h-[7vw] overflow-hidden' >
-                <h1 className='text-header text-[5vw] '> telling stories, and delivering </h1>
+                <h2 className='text-header text-[5vw] '> telling stories, and delivering </h2>
                 </div>
                 <div className='h-[7vw] overflow-hidden' >
-                <h1 className='text-header text-[5vw] '> results that matter.</h1>
+                <h2 className='text-header text-[5vw] '> results that matter.</h2>
                 </div>
             </div>
             <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black'>
@@ -92,7 +92,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
             <div className='w-full flex justify-end pb-[10vw] sm:pb-[2vw] p-[2vw] absolute bottom-0'>
                 <div className='social flex items-center gap-[3vw] sm:gap-[3vw]   md:gap-[1vw]'>
                     {socialLinks.map((s, idx) => (
-                        <Link href={s.link} key={idx} className="w-[10vw] sm:w-[7vw] md:w-[3vw]  h-[10vw] sm:h-[7vw] md:h-[3vw] border border-white rounded-full flex items-center justify-center text-white relative overflow-hidden social-i cursor-pointer">
+                        <Link href={s.link} target='_block' key={idx} className="w-[10vw] sm:w-[7vw] md:w-[3vw]  h-[10vw] sm:h-[7vw] md:h-[3vw] border border-white rounded-full flex items-center justify-center text-white relative overflow-hidden social-i cursor-pointer">
                             <span className='cir transition-all duration-300 w-full h-full absolute bg-white rounded-full left-1/2 -translate-x-1/2 top-full'></span>
                             <i className={`text-[4vw] sm:text-[3vw] md:text-[1.2vw] transition-all duration-300 relative ri-${s.icon}`}></i>
                         </Link>
