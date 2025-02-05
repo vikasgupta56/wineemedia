@@ -45,7 +45,7 @@ const Footer = () => {
         <div onMouseMove={handleLogo} className='w-full flex flex-col justify-between h-[70vh] relative sm:h-screen bg-black p-[4vw] sm:p-[2vw] pt-[10vw] sm:pt-[4vw] text-white'>
             <div className='w-full flex flex-col md:flex-row items-start justify-between'>
                 <div>
-                    <h3 className='text-[15vw] sm:text-[15vw] md:text-[6vw] font-[font6] leading-[.8] whitespace-nowrap'>Let's Connect</h3>
+                    <h3 className='text-[10vw] sm:text-[15vw] md:text-[6vw] font-[font6] leading-[.8] whitespace-nowrap'>Let's Connect</h3>
                     <h6 className='font-[font6] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]  mb-[10vw] sm:mb-0 mt-[3vw] sm:mt-[1.4vw]'>info@wineemedia.com</h6>
                 </div>
                 <div className='flex gap-[8vw] flex-col md:flex-row'>

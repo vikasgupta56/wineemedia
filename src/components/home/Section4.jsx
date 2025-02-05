@@ -15,7 +15,7 @@ const Section4 = () => {
 
 
   useEffect(() => {
-    if (workrefs.current) {
+    if (workrefs.current && window.innerWidth > 600) {
       workrefs.current.forEach(p => {
         gsap.to(p.querySelector(".project-ig"), {
           scale: 1,
