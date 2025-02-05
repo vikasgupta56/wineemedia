@@ -3,12 +3,11 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import React, { useContext, useLayoutEffect } from 'react'
 import Navbar from '../navbar/Navbar'
 import Link from 'next/link'
-import { projectContext } from '../projectContext/ProjectContext'
-
+import { workData } from '@/helpers/WorkData'
 gsap.registerPlugin(ScrollTrigger)
 
 const Section1 = () => {
-  const workData = useContext(projectContext)
+  const data = Object.values(workData)
   useLayoutEffect(() => {
     const tl = gsap.timeline()
     tl
@@ -48,7 +47,7 @@ const Section1 = () => {
       </div>
       <div className="projects w-full flex flex-col md:flex-row justify-start gap-[0.5%] flex-wrap py-[5vw] md:py-[2vw] px-[2vw]">
 
-        {workData.map((project, i) => (i === 0 ? (<Link href={`/work/${project.projectname.split(" ").join("-")}`} key={i} className='project w-full md:w-[49.5%] mb-[2vw] cursor-pointer'>
+        {data.map((project, i) => (i === 0 ? (<Link href={`/work/${project.projectname.split(" ").join("-")}`} key={i} className='project w-full md:w-[49.5%] mb-[2vw] cursor-pointer'>
           <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[68vh] overflow-hidden'>
             <img src={project.coverimage1} className='project-ig  w-full h-full object-cover object-center' alt="" />
           </div>
@@ -74,8 +73,6 @@ const Section1 = () => {
           <h4 className='text-white text-[4vw] sm:text-[3.5vw]  md:text-[2vw] lg:text-[1.3vw] mt-[1.5vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
           <p className='text-white opacity-[.8] font-[font4] text-[3.5vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[.8vw] capitalize w-full'>{project.serviceprovided}</p>
         </Link>)))}
-
-
       </div>
     </div>
   )

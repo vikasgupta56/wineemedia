@@ -1,16 +1,15 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Link from 'next/link'
-import React, { useContext, useEffect, useRef } from 'react'
-import { projectContext } from '../projectContext/ProjectContext'
+import React, {  useEffect, useRef } from 'react'
+import { workData } from '@/helpers/WorkData'
 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const Section4 = () => {
   const workrefs = useRef([])
-  const workData = useContext(projectContext)
-  const works = workData.slice(0, 6)
+  const works = Object.values(workData).slice(0, 6)
 
 
 
