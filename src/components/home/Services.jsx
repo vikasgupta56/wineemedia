@@ -87,9 +87,9 @@ const Services = () => {
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
-            <img className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[20%] mix-blend-exclusion' src="/hero1.png" alt="service-image1" />
-            <img className='igs absolute top-[60%] right-[0%] w-[20%] mix-blend-exclusion' src="/hero2.png" alt="service-image2" />
-            <img className='igs absolute bottom-[-10%] left-[0%] w-[20%] mix-blend-exclusion' src="/hero3.png" alt="service-image3" />
+            <img className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[20%] h-auto mix-blend-exclusion' src="/hero1.webp" alt="service-image1" />
+            <img className='igs absolute top-[60%] right-[0%] w-[20%] h-auto mix-blend-exclusion' src="/hero2.webp" alt="service-image2" />
+            <img className='igs absolute bottom-[-10%] left-[0%] w-[20%] h-auto mix-blend-exclusion' src="/hero3.webp" alt="service-image3" />
         </div>
     )
 }

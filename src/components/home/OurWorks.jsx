@@ -12,42 +12,42 @@ const Section4 = () => {
         {
             title: "Branding",
             description: "Creating a unique identity for your business through design and strategy.",
-            imageUrl: "brand (1).png"
+            imageUrl: "brand (1).webp"
         },
         {
             title: "Marketing",
             description: "Developing strategies to increase your brand’s visibility and reach.",
-            imageUrl: "brand (2).png"
+            imageUrl: "brand (2).webp"
         },
         {
             title: "Social Media Management",
             description: "Building and managing your online presence across various platforms.",
-            imageUrl: "brand (3).png"
+            imageUrl: "brand (3).webp"
         },
         {
             title: "Motion Graphics",
             description: "Bringing visual elements to life through animations and motion design.",
-            imageUrl: "brand (4).png"
+            imageUrl: "brand (4).webp"
         },
         {
             title: "3D Designs",
             description: "Creating immersive, lifelike 3D experiences for digital or physical spaces.",
-            imageUrl: "brand (5).png"
+            imageUrl: "brand (5).webp"
         },
         {
             title: "Digital Marketing",
             description: "Using digital channels to promote your brand and drive sales.",
-            imageUrl: "brand (6).png"
+            imageUrl: "brand (6).webp"
         },
         {
             title: "Videography/Photography",
             description: "Capturing stunning visuals to tell your brand's story.",
-            imageUrl: "brand (7).png"
+            imageUrl: "brand (7).webp"
         },
         {
             title: "Influencer Marketing",
             description: "Partnering with influencers to promote your brand to a broader audience.",
-            imageUrl: "brand (8).png"
+            imageUrl: "brand (8).webp"
         }
     ];
 

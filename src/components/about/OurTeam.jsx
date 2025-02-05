@@ -7,42 +7,42 @@ const OurTeam = () => {
     const membersRefs = useRef([])
     const teamMembers = [
         {
-            image: "/team/Ramkrishna Tripathi.jpg",
+            image: "/team/Ramkrishna Tripathi.webp",
             name: "Ramkrishna Tripathi",
             profession: "Founder / CEO"
         },
         {
-            image: "/team/Niranjan Solanki.jpg",
+            image: "/team/Niranjan Solanki.webp",
             name: "Niranjan Solanki",
             profession: "Data Scientist"
         },
         // {
-        //     image: "/team/Rishabh Pandey.jpg",
+        //     image: "/team/Rishabh Pandey.webp",
         //     name: "Rishabh pandey",
         //     profession: "Data Analyst"
         // },
         {
-            image: "/team/Himanshu Khatri.jpg",
+            image: "/team/Himanshu Khatri.webp",
             name: "Himanshu Khatri",
             profession: "2D Generalist"
         },
         {
-            image: "/team/Swati Simran.jpg",
+            image: "/team/Swati Simran.webp",
             name: "Swati Simran",
             profession: "Creative Director"
         },
         {
-            image: "/team/Jay Revandkar.jpg",
+            image: "/team/Jay Revandkar.webp",
             name: "Jay Revandkar",
             profession: "3D Generalist"
         },
         {
-            image: "/team/Sumeet Patwa.jpg",
+            image: "/team/Sumeet Patwa.webp",
             name: "Sumeet",
             profession: "3D Character Artist"
         },
         {
-            image: "/team/Rituraj Bang.jpeg",
+            image: "/team/Rituraj Bang.webp",
             name: "Rituraj Bang",
             profession: "Concept Artist"
         },
@@ -95,7 +95,7 @@ const OurTeam = () => {
             <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap gap-[4vw] py-[5vw] sm:py-[2vw]'>
                 {teamMembers.map((m, i) => (<div key={i} ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[47vw] md:w-[21vw]">
                     <div key={i} className='team-img w-full h-[50vh] ' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}>
-                        <img className='w-full h-full object-cover object-center' src={m.image} alt={m.name} />
+                        <img className='w-[100%] h-[100%] object-cover object-center' src={m.image} alt={m.name} />
                     </div>
                     <h5 className='text-white text-[5vw] sm:text-[2.5vw] md:text-[1.2vw] mt-[1.3vw] font-[font6] capitalize'>{m.name}</h5>
                     <p className='text-white/60 text-[3vw] sm:text-[2vw] md:text-[1vw] font-[font6] capitalize'>{m.profession}</p>

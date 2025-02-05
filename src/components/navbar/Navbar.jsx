@@ -49,7 +49,7 @@ const Navbar = ({ nav }) => {
 
   return (
     <div ref={nav} className='w-full  text-white absolute top-0 left-0 z-[99] flex items-center justify-between py-[4vw] sm:py-[2vw] p-[4vw] sm:p-[2vw]'>
-      <Link href="/" ><img className='w-[15vw] md:w-[7vw] lg:w-[5vw]' src="/logo.png" alt="" /></Link>
+      <Link href="/" ><img className='w-[15vw] md:w-[7vw] h-auto lg:w-[5vw]' src="/logo.png" alt="" /></Link>
       <div className='hidden sm:flex items-start sm:gap-[6vw] md:gap-[2.5vw] capitalize sm:text-[3vw]  md:text-[1.8vw] lg:text-[1vw] font-[font6]'>
         {menus.map((m, i) => <Link key={i} href={m.link}>
           <div className='effecttxt overflow-hidden sm:h-[3.3vw] md:h-[2vw] lg:h-[1.2vw]'>

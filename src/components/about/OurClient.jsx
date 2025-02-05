@@ -18,44 +18,44 @@ const OurClient = () => {
 
     const clientData = [
         {
-            logo: "/clients/dawn.png",
+            logo: "/clients/dawn.webp",
             name: "dawn knight",
         },
         {
-            logo: "/clients/zerror.png",
+            logo: "/clients/zerror.webp",
             name: "zerror studios",
         },
         {
-            logo: "/clients/brandCreation.png",
+            logo: "/clients/brandCreation.webp",
             name: "brand creation",
         },
         {
-            logo: "/clients/envision.png",
+            logo: "/clients/envision.webp",
             name: "envision dazzling",
         },
         {
-            logo: "/clients/daroma.png",
+            logo: "/clients/daroma.webp",
             name: "daroma an italian cafe",
         },
         {
-            logo: "/clients/meera.png",
+            logo: "/clients/meera.webp",
             name: "meera",
         },
         {
-            logo: "/clients/nexPoze.png",
+            logo: "/clients/nexPoze.webp",
             name: "nexpoze production",
         },
 
         {
-            logo: "/clients/pepe.png",
+            logo: "/clients/pepe.webp",
             name: "pepe cafe",
         },
         {
-            logo: "/clients/Pace.png",
+            logo: "/clients/Pace.webp",
             name: "pace",
         },
         {
-            logo: "/clients/maab.png",
+            logo: "/clients/maab.webp",
             name: "maab cosmetics",
         },
     ]
@@ -103,7 +103,7 @@ const OurClient = () => {
                     clientData.map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
                         <div className='clipeffect absolute bottom-0 left-0 h-full w-full bg-zinc-800' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
                         </div>
-                        <img className='w-[50%] relative' style={{ filter: " grayscale(100%) contrast(100%)" }} src={c.logo} alt={c.name} />
+                        <img className='w-[50%] h-auto relative' style={{ filter: " grayscale(100%) contrast(100%)" }} src={c.logo} alt={c.name} />
                     </div>))
                 }
 
