@@ -64,7 +64,7 @@ const WorkDetails = ({ data, meta }) => {
                     <Navbar />
                     <h2 className='text-white text-[8vw] md:text-[7.5vw] leading-none mb-[5vw] md:mb-[2vw] text-left md:text-center uppercase'>{data?.projectname}</h2>
                     <div className='w-full h-[50vh] md:h-[80vh] lg:h-[120vh] bg-[#ffffff27]'>
-                        <img className='w-full h-full object-cover object-center' src={data?.coverimage1} alt="" />
+                        <img className='w-full h-full object-cover object-center' src={data?.coverimage1} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div className='w-full py-[8vw] md:py-[3vw] text-white'>
                         <div className='flex flex-col md:flex-row gap-[2vw] md:gap-0'>
@@ -91,41 +91,41 @@ const WorkDetails = ({ data, meta }) => {
 
                     </div>
                     <div className='w-full h-[30vh] mb-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <img className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.coverimage2} alt={data?.projectname} />
+                        <img className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.coverimage2} alt={data?.projectname} title={data?.projectname}/>
                     </div>
                     <div className='w-full md:pt-[2vw]  flex flex-col md:flex-row items-center gap-[4vw] md:gap-0 justify-between'>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image3} alt={data?.projectname} />
+                            <img className='w-full h-full object-cover object-center' src={data?.image3} alt={data?.projectname} title={data?.projectname} />
                         </div>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image4} alt={data?.projectname} />
+                            <img className='w-full h-full object-cover object-center' src={data?.image4} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>
                     {data?.portraitVideo && <div className='w-full my-[4vw] md:mb-0 h-[60vh]  md:md:h-[65vh] lg:h-[100vh] flex items-center justify-center '>
                         <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
-                            <video autoPlay muted loop playsInline className='w-full h-full object-cover object-center' src={data?.portraitVideo} alt={data?.projectname} />
+                            <video autoPlay muted loop playsInline className='w-full h-full object-cover object-center' src={data?.portraitVideo} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>}
                     {data?.landScapeVideo && <div className='w-full h-[30vh] mb-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <video autoPlay muted loop playsInline className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.landScapeVideo} alt="" />
+                        <video autoPlay muted loop playsInline className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.landScapeVideo} alt={data?.projectname} title={data?.projectname} />
                     </div>}
                     <div className='w-full h-[30vh] my-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <img className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.image5} alt={data?.projectname} />
+                        <img className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.image5} alt={data?.projectname} title={data?.projectname}/>
                     </div>
                     <div className='w-full md:pt-[2vw]  flex flex-col md:flex-row items-center gap-[4vw] md:gap-0 justify-between'>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image6} alt={data?.projectname} />
+                            <img className='w-full h-full object-cover object-center' src={data?.image6} alt={data?.projectname} title={data?.projectname}/>
                         </div>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image7} alt={data?.projectname} />
+                            <img className='w-full h-full object-cover object-center' src={data?.image7} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>
                     {data?.image8 && data?.image9 ? (<div className='w-full mt-[4vw] md:mt-0 md:pt-[2vw] flex flex-col  md:flex-row items-center justify-center gap-[4vw] md:gap-[1%]'>
                         <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image8} alt={data?.projectname} />
+                            <img className='w-full h-full object-cover object-center' src={data?.image8} alt={data?.projectname} title={data?.projectname} />
                         </div>
                         <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image9} alt={data?.projectname} />
+                            <img className='w-full h-full object-cover object-center' src={data?.image9} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>) : ""}
                 </div>
@@ -140,9 +140,10 @@ const WorkDetails = ({ data, meta }) => {
                                 <Link
                                     key={i}
                                     href={`/work/${p.projectname.split(" ").join("-")}`}
+                                    title={p.projectname}
                                     className="w-[40vw] md:w-[20vw] h-[25vw] md:h-[12vw] cursor-pointer"
                                 >
-                                    <img className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} />
+                                    <img className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} title={p.projectname} />
                                 </Link>
                             ))}
                         </div>
@@ -151,9 +152,10 @@ const WorkDetails = ({ data, meta }) => {
                                 <Link
                                     key={i}
                                     href={`/work/${p.projectname.split(" ").join("-")}`}
+                                    title={p.projectname}
                                     className="w-[40vw] md:w-[20vw] h-[25vw] md:h-[12vw] cursor-pointer"
                                 >
-                                    <img className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} />
+                                    <img className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} title={p.projectname}/>
                                 </Link>
                             ))}
                         </div>

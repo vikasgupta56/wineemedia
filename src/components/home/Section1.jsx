@@ -92,7 +92,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
             <div className='w-full flex justify-end pb-[10vw] sm:pb-[2vw] p-[2vw] absolute bottom-0'>
                 <div className='social flex items-center gap-[3vw] sm:gap-[3vw]   md:gap-[1vw]'>
                     {socialLinks.map((s, idx) => (
-                        <Link href={s.link} target='_blank' aria-label={`Follow us on ${s.alt}`} key={idx} className="w-[10vw] sm:w-[7vw] md:w-[3vw]  h-[10vw] sm:h-[7vw] md:h-[3vw] border border-white rounded-full flex items-center justify-center text-white relative overflow-hidden social-i cursor-pointer">
+                        <Link href={s.link} target='_blank' aria-label={`Follow us on ${s.alt}`} title={s.alt} key={idx} className="w-[10vw] sm:w-[7vw] md:w-[3vw]  h-[10vw] sm:h-[7vw] md:h-[3vw] border border-white rounded-full flex items-center justify-center text-white relative overflow-hidden social-i cursor-pointer">
                             <span className='cir transition-all duration-300 w-full h-full absolute bg-white rounded-full left-1/2 -translate-x-1/2 top-full'></span>
                             <i className={`text-[4vw] sm:text-[3vw] md:text-[1.2vw] transition-all duration-300 relative ri-${s.icon}`}></i>
                         </Link>

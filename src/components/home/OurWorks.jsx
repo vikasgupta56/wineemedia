@@ -1,6 +1,5 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
-import Link from 'next/link'
 import React, { useEffect } from 'react'
 
 
@@ -156,6 +155,7 @@ const Section4 = () => {
                                 className='w-full h-full object-cover object-center'
                                 src={service.imageUrl}
                                 alt={service.title}
+                                title={service.title}
                             />
                         </div>
                     </div>

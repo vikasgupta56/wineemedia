@@ -50,14 +50,14 @@ const Footer = () => {
                 </div>
                 <div className='flex gap-[8vw] flex-col md:flex-row'>
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]'>
-                        <Link href="/" className='link-hover'>Home</Link>
-                        <Link href="/work" className='link-hover'>Work</Link>
-                        <Link href="/about-us" className='link-hover'>About</Link>
+                        <Link href="/" className='link-hover' title='Home'>Home</Link>
+                        <Link href="/work" className='link-hover' title='Work'>Work</Link>
+                        <Link href="/about-us" className='link-hover' title='About'>About</Link>
                     </div>
                     <div className='flex flex-col gap-[.3vw] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]'>
-                        <Link target='_blank' href="https://www.instagram.com/wineemedia/" className='link-hover'>Instagram</Link>
-                        <Link target='_blank' href="https://www.behance.net/wineemedia" className='link-hover'>Behance</Link>
-                        <Link target='_blank' href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" className='link-hover'>Linkedin</Link>
+                        <Link target='_blank' href="https://www.instagram.com/wineemedia/" title='Instagram' className='link-hover'>Instagram</Link>
+                        <Link target='_blank' href="https://www.behance.net/wineemedia" title='Behance' className='link-hover'>Behance</Link>
+                        <Link target='_blank' href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" title='Linkedin' className='link-hover'>Linkedin</Link>
                     </div>
                 </div>
 
@@ -69,10 +69,10 @@ const Footer = () => {
                 </div>
                 <div className='w-full flex text-[2.3vw] sm:text-[2vw] md:text-[1.5vw]  lg:text-[1vw] text-white/50 font-[font4] items-center justify-between'>
                     <h6>© 2024 by WineeMedia.</h6>
-                    <h6>Developed By <Link target='_blank' href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h6>
+                    <h6>Developed By <Link target='_blank' title='zerrorstudios' href="https://www.zerrorstudios.com/" className='font-[font6] text-white/80'>Zerror Studios</Link></h6>
                 </div>
             </div>
-            <img src="/Sub-logo.png" className='logo-footer absolute w-[20%] hidden sm:block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]' alt="" />
+            <img src="/Sub-logo.png" className='logo-footer absolute w-[20%] hidden sm:block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]' alt="Sub-logo" title='Sub-logo' />
         </div>
     )
 }
