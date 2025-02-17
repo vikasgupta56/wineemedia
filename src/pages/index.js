@@ -52,9 +52,9 @@ export default Home;
 export async function getStaticProps() {
   const meta = {
     title:
-      "WineeMedia | Elevate Your Brand with Creative Digital Solutions",
+      "WineeMedia | Elevate Your Brand with Creative Solutions",
     description:
-      "Boost your brand’s presence with WineeMedia’s expert services in branding, social media marketing, motion graphics, 3D design, and influencer marketing. Let’s create extraordinary digital experiences.",
+      "Boost your brand’s presence with WineeMedia’s expert digital marketing, branding, and creative storytelling strategies for business growth.",
     keywords: "digital branding, brand awareness campaigns, social media marketing, content marketing, motion graphics, graphic design services, 3D design, business growth strategies, influencer marketing, online brand promotion, brand identity, creative branding solutions, digital marketing agency, social media strategy, visual content creation",
     author: "WineeMedia",
     robots: "index,follow",

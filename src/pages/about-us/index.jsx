@@ -31,9 +31,9 @@ export default About;
 export async function getStaticProps() {
   const meta = {
     title:
-      "WineeMedia | Transforming Brands with Creativity & Innovation",
+      "WineeMedia | Transforming Brands with Creativity & Strategy",
     description:
-      "Discover WineeMedia, a leading branding and digital marketing agency. We specialize in building powerful online presences with creative solutions in branding, social media, photography, videography, and more. Let us help your brand succeed.",
+      "Discover WineeMedia, a leading branding and digital marketing agency, delivering customized marketing strategies to elevate your brand.",
     keywords: "digital marketing agency, branding agency, motion graphics, branding strategies, 3D design, influencer marketing, SEO services, social media campaigns, videography, creative branding, photography services, digital marketing, online presence, videography services, brand transformation, WineeMedia",
     author: "WineeMedia",
     robots: "index,follow",

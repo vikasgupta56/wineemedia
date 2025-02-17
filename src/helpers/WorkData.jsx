@@ -16,9 +16,9 @@ export const workData = {
         portraitVideo: "/videos/nexpoze.mp4",
         meta: {
             title:
-                "Nexpoze Production | Digital Storytelling & Branding by WineeMedia",
+                "Digital Storytelling & Brand Identity by Wineemedia",
             description:
-                "Discover how WineeMedia helped Nexpoze Production craft a distinct brand identity, execute creative social media marketing campaigns, and enhance their digital presence with innovative storytelling solutions.",
+                "Discover how WineeMedia helped Nexpoze Production with expert storytelling, branding, and marketing strategies to increase their digital presence.",
             keywords: "Nexpose Production, digital presence, WineeMedia, digital storytelling, brand identity, branding, video marketing, social media marketing, creative agency, portfolio design",
             author: "WineeMedia",
             robots: "index,follow",
@@ -41,9 +41,9 @@ export const workData = {
         portraitVideo: "/videos/Daroma.mp4",
         meta: {
             title:
-                "Daroma – An Italian Café | Authentic Italian Cuisine & Creative Digital Branding",
+                "Authentic Italian Cuisine Cafes Brands Strategy | Wineemedia",
             description:
-                "Explore Daroma, a cozy Italian café offering authentic Italian cuisine. Learn how WineeMedia helped elevate its brand with creative digital marketing, food photography, and social media strategies.",
+                "Explore Daroma, a cozy Italian café offering authentic flavors, beautifully branded by WineeMedia to enhance customer experience and visibility.",
             keywords: "Italian café, restaurant social media campaigns, authentic Italian cuisine, Daroma café, café branding, restaurant branding services, digital marketing for restaurants, food photography, Italian café near me",
             author: "WineeMedia",
             robots: "index,follow",
@@ -64,7 +64,7 @@ export const workData = {
         landScapeVideo: "/videos/envision.mp4",
         meta: {
             title:
-                "Envision Dazzling - Crafting Exceptional Brand Experiences | WineeMedia",
+                "Crafting Exceptional Branding Strategies | Winemedia",
             description:
                 "Explore how WineeMedia brought Envision Dazzling to life through creative branding, innovative digital marketing, and exceptional event management.",
             keywords: "Event Management Services, Branding and Digital Marketing, Creative Event Branding, Innovative Marketing Campaigns, Brand Experience Creation, Social Media Campaigns for Events, Event Branding Experts, Creative Design for Events, Digital Presence for Events, Event Experience Strategy",
@@ -89,9 +89,9 @@ export const workData = {
         portraitVideo: "/videos/pepe.mp4",
         meta: {
             title:
-                "Social Media Strategies & Content Creation for Italian Cafes – wineemedia",
+                "Social Media Strategies & Content Creation | Wineemedia",
             description:
-                "Discover how WineeMedia helped Pepe Cafe enhance its online presence with a custom social media strategy, professional photography, and engaging content creation to attract more customers and build a strong brand identity.",
+                "Discover how WineeMedia helped Pepe Cafe enhance its brand identity and online visibility with strategic digital marketing campaigns.",
             keywords: "Pepe Cafe, Italian cafe branding, Social media strategy for cafes, Professional photography for cafes, Content creation for restaurants, Content creation for restaurants, WineeMedia social media services, Italian coffee shop online marketing, Social media engagement for cafes, Customer testimonials content",
             author: "WineeMedia",
             robots: "index,follow",
@@ -114,7 +114,7 @@ export const workData = {
             title:
                 "Crafting Visual Excellence with Zerror Studios | WineeMedia",
             description:
-                "At Winee Media, we partnered with Zerror Studios to create captivating logo animations and video graphics that align with their brand vision. Our work demonstrates the power of visual storytelling through dynamic motion graphics.",
+                "At WineeMedia, we partnered with Zerror Studios to create impactful digital campaigns, boosting their online presence and audience reach.",
             keywords: "Logo animation services, Motion graphics design, Visual storytelling design, Brand identity animation, Video production for brands, Creative logo animation, Motion graphics for businesses, Visual design and animation, Video graphic design services, Innovative brand animation",
             author: "WineeMedia",
             robots: "index,follow",
@@ -137,9 +137,9 @@ export const workData = {
         portraitVideo: "/videos/paceE.mp4",
         meta: {
             title:
-                "Digital Marketing and Social Media Management for Entertainment | WineeMedia",
+                "Digital Marketing & Social Media Management by WineeMedia",
             description:
-                "Discover how WineeMedia helped Pace Entertainment enhance their digital presence with tailored social media management, video/photo shoots, and engaging content creation. Boost your brand's visibility with effective SEO strategies.",
+                "Discover how WineeMedia helped Pace Entertainment enhance brand engagement through strategic digital marketing and social media management.",
             keywords: "Digital marketing for entertainment brands, Entertainment brand social media management, Video/photo shoots for entertainment, Content creation for entertainment businesses, SEO for entertainment industry, Social media campaigns for events, Brand visibility for entertainment companies, Digital presence for entertainment industry, Creative marketing for entertainment brands, Online presence for entertainment businesses",
             author: "WineeMedia",
             robots: "index,follow",
@@ -208,7 +208,7 @@ export const workData = {
             title:
                 "Dawn Knight - Creative Digital Branding by WineeMedia",
             description:
-                "Discover how WineeMedia crafted a strong digital identity for Dawn Knight through strategic design, branding, and marketing to enhance engagement and visibility.",
+                "Discover how WineeMedia crafted a strong digital identity for Dawn Knight, blending creativity and strategic branding for business success.",
             keywords: "Digital branding services, Creative web design, Social media integration for businesses, Building a digital identity, Brand presence strategies, Website design for branding, Branding and marketing agency, Enhancing business image online, Innovative digital marketing solutions",
             author: "WineeMedia",
             robots: "index,follow",

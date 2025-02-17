@@ -27,7 +27,7 @@ export async function getStaticProps() {
     title:
       "WineeMedia | Creative Branding & Digital Marketing services",
     description:
-      "Explore WineeMedia’s portfolio of branding, motion graphics, influencer marketing, and social media strategies. See how we transform ideas into impactful realities!",
+      "Explore WineeMedia’s portfolio of branding, motion graphics, and digital marketing projects, delivering innovative solutions for business growth.",
     keywords: "branding portfolio, creative agency work, influencer marketing case studies, digital marketing services, social media marketing, business growth strategies, cafe branding solutions, event branding, motion graphics design",
     author: "WineeMedia",
     robots: "index,follow",
