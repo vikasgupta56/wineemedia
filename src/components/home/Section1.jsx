@@ -76,13 +76,13 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
             <Navbar nav={navRef} />
             <div className='header-txt font-[font6] relative z-[9]'>
                 <div className='h-[7vw] overflow-hidden'>
-                <h2 className='text-header text-[5vw] leading-none '>Designing identities, </h2>
+                <h2 className='text-header text-[5vw] leading-none '>Ideas, Innovation</h2>
                 </div>
                 <div className='h-[7vw] overflow-hidden' >
-                <h2 className='text-header text-[5vw] '> telling stories, and delivering </h2>
+                <h2 className='text-header text-[5vw] '>  & Digital Success</h2>
                 </div>
                 <div className='h-[7vw] overflow-hidden' >
-                <h2 className='text-header text-[5vw] '> results that matter.</h2>
+                <h2 className='text-header text-[5vw] '> Marketing That Moves You!</h2>
                 </div>
             </div>
             <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black'>

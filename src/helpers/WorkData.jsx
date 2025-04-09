@@ -1,6 +1,15 @@
 export const workData = {
     "nexpoze-production": {
         projectname: "nexpoze production",
+        intro:"A photography and videography studio.",
+        brief:"Wanted to reposition themselves as a premium creative agency.",
+        problem:"Needed brand development and consistent content curation.",
+        solution:"Developed a cohesive identity with targeted content calendars and campaigns.",
+        result:[
+            "Strengthened credibility",
+            "Expanded client base",
+            "Elevated brand perception"
+        ],
         serviceprovided: "Brand Development, Portfolio Management, Social Media Marketing, Dynamic Presentations, Video/Photo Editing",
         para1: "Nexpoze Production, a studio dedicated to capturing memories and crafting stunning visuals, partnered with us to elevate their digital presence and redefine their brand identity. We meticulously worked on positioning Nexpoze as the go-to destination for premium photography and videography services.",
         para2: "Our approach included creating a cohesive brand strategy that emphasized their creativity and attention to detail. We designed a content calendar filled with engaging posts, behind-the-scenes footage, and portfolio highlights, showcasing their expertise in delivering exceptional results.",
@@ -26,6 +35,15 @@ export const workData = {
     },
     "daroma-an-italian-cafe": {
         projectname: "daroma an italian cafe",
+        intro:"An Italian café delivering authentic experiences and dishes.",
+        brief:"Wanted to establish a unique brand identity and community presence.",
+        problem:"Lack of strong digital branding to express the café’s charm.",
+        solution:"Built a content-rich brand strategy using visuals, storytelling, and reels.",
+        result:[
+            "Greater brand loyalty",
+            "Increased foot traffic",
+            "Enhanced engagement"
+        ],
         serviceprovided: "Social Media Management, Brand Strategy, Video/Photo Shoot, Reels, Content Creation",
         para1: "At Daroma, an Italian café inspired by the rich culinary and cultural traditions of Italy, we embarked on a journey to elevate their brand presence and resonate with their audience. By immersing ourselves in Daroma’s unique identity, we crafted a digital strategy that celebrated their love for authentic flavors and cozy ambiance.",
         para2: "From curating aesthetically pleasing visuals to producing engaging video content and reels, we brought Daroma's story to life on digital platforms. Our social media management ensured consistent branding, while targeted campaigns effectively drove engagement and footfall to the café.",
@@ -51,7 +69,15 @@ export const workData = {
     },
     "envision-dazzling": {
         projectname: "envision dazzling",
-        serviceprovided: "event management, branding, digital marketing",
+        intro:"An event and branding agency.",
+        brief:"Wanted end-to-end support for event execution and digital outreach.",
+        problem:"Required a comprehensive execution plan for brand visibility and audience engagement.",
+        solution:"Managed event logistics, created digital buzz, and amplified reach.",
+        result:[
+            "High event participation",
+            "Strengthened brand presence"
+        ],
+        serviceprovided: "Event Management, Branding, Digital Marketing",
         para1: "Wineemedia played a crucial role in helping Envision Dazzling organize their event, ensuring every detail was meticulously planned and executed for a seamless experience. Our team not only managed the event logistics but also handled the branding and digital marketing, creating a cohesive and visually appealing brand presence.",
         para2: "By crafting engaging promotional content and leveraging digital platforms, we successfully boosted event visibility and engagement. This comprehensive support helped Envision Dazzling deliver a memorable event, strengthening their brand and expanding their reach.",
         coverimage1: "/images/envision-cover1.webp",
@@ -74,7 +100,16 @@ export const workData = {
     },
     "pepe-cafe": {
         projectname: "pepe cafe",
-        serviceprovided: "social media management, video/photo shoot, reels",
+        intro:"A warm, vibrant café known for its rich flavours and cosy ambiance.",
+        brief:"They aimed to build a strong online identity and customer community.",
+        problem:"Their digital presence did not convey the essence of the brand.",
+        solution:"We created a digital strategy focused on immersive visuals and storytelling to connect with their audience.",
+        result:[
+            "Growing online followers",
+            "Increased footfall at the café",
+            "Higher engagement"
+        ],
+        serviceprovided: "Social Media Management, Video/Photo Shoot, Reels",
         para1: "With our tailored approaches, we worked closely with Pepe Cafe to develop a comprehensive strategy that aligned with their brand identity and business goals. From creating engaging content to implementing effective advertising campaigns, we utilized our expertise to build a vibrant online community around Pepe Cafe.",
         para2: "Through captivating visuals, compelling storytelling, and strategic engagement tactics, we helped Pepe Cafe connect with their audience, increase brand awareness, and drive customer engagement. It's been a pleasure to partner with Pepe Cafe on their digital journey, and we look forward to continuing to support their success in the future",
         coverimage1: "/images/Pe-cover1.webp",
@@ -99,7 +134,15 @@ export const workData = {
     },
     "zerror-studios": {
         projectname: "zerror studios",
-        serviceprovided: "video graphics, logo animation",
+        intro:"A creative agency focused on design, video, and animation.",
+        brief:"Wanted to expand their visual offerings and portfolio.",
+        problem:"Required high-quality video and logo animations for branding.",
+        solution:"Delivered sleek animations and professional video editing for enhanced appeal.",
+        result:[
+            "Elevated portfolio quality",
+            "Attracted new business opportunities"
+        ],
+        serviceprovided: "Video Graphics, Logo Animation",
         para1: "We were instrumental in helping Zerror deliver a top-notch video for their client, Reside In Being. Our exceptional video production skills ensured a polished and engaging final product that perfectly encapsulated the client's vision. Additionally, we crafted a dynamic logo animation for Zerror, enhancing their brand identity and professional appeal.",
         para2: " This seamless blend of high-quality video content and eye-catching logo animation significantly elevated Zerror's service offering, impressing their client and strengthening their market position.",
         coverimage1: "/images/zerror-cover1.webp",
@@ -122,7 +165,16 @@ export const workData = {
     },
     "pace-entertainment": {
         projectname: "pace entertainment",
-        serviceprovided: "social media management, video/photo shoot, reels",
+        intro:"An entertainment brand offering diverse and engaging experiences.",
+        brief:"Wanted a digital presence that captured their excitement and variety.",
+        problem:"Wanted a digital presence that captured their excitement and variety.",
+        solution:"Developed a dynamic content strategy with interactive campaigns and visual storytelling.",
+        result:[
+            "Enhanced brand recognition",
+            "Strong audience engagement",
+            "Increased loyalty"
+        ],
+        serviceprovided: "Social Media Management, Video/Photo Shoot, Reels",
         para1: "With our tailored approaches, we worked closely with Pepe Cafe to develop a comprehensive strategy that aligned with their brand identity and business goals. From creating engaging content to implementing effective advertising campaigns, we utilized our expertise to build a vibrant online community around Pepe Cafe.",
         para2: "Through captivating visuals, compelling storytelling, and strategic engagement tactics, we helped Pepe Cafe connect with their audience, increase brand awareness, and drive customer engagement. It's been a pleasure to partner with Pepe Cafe on their digital journey, and we look forward to continuing to support their success in the future",
         coverimage1: "/images/pace-cover1.webp",
@@ -147,7 +199,16 @@ export const workData = {
     },
     "maab-cosmetics": {
         projectname: "maab cosmetics",
-        serviceprovided: "graphic posts, social media management",
+        intro:"MA’AB Cosmetics is a premier destination for skin, laser, and hair treatments dedicated to enhancing beauty and confidence.",
+        brief:"They needed to build a compelling digital identity that mirrored their expertise.",
+        problem:"Despite offering excellent services, their online presence lacked engagement and failed to reflect their premium image.",
+        solution:"We developed a strategic social media plan, integrating service-based education with aesthetic content.",
+        result:[
+            "Boosted brand recognition",
+            "Higher engagement rates",
+            "Noticeable rise in customer inquiries"
+        ],
+        serviceprovided: "Graphic Posts, Social Media Management",
         para1: "Leveraging our expertise in design and social media management, we seamlessly integrated MA’AB Cosmetics' which is one of the leading destinations for skin, laser and hair treatment, to build and identity treatment offerings into captivating visuals that resonate with their audience. ",
         para2: "Our strategic approach ensured that each graphic post not only showcased MA’AB Cosmetics' expertise but also conveyed their commitment to enhancing beauty and confidence. We're proud to have played a part in elevating MA’AB Cosmetics' digital presence and look forward to continued success together.",
         coverimage1: "/images/maab-cover1.webp",
@@ -171,7 +232,15 @@ export const workData = {
     },
     "pace-premium": {
         projectname: "pace premium",
-        serviceprovided: "graphics, creatives",
+        intro:"A luxury footwear brand focused on elegance and craftsmanship.",
+        brief:"Needed an elevated digital identity to reflect exclusivity.",
+        problem:"Visual content did not reflect the premium nature of the products.",
+        solution:"Crafted sophisticated graphics that matched their brand tone.",
+        result:[
+            "Improved brand perception",
+            "Strengthened customer connection"
+        ],
+        serviceprovided: "Graphics, Creatives",
         para1: "By understanding Pace Premium's unique identity, Wineemedia created visually stunning and cohesive graphics that enhanced the brand's appeal, effectively capturing the elegance and exclusivity of its luxury footwear.",
         para2: " This collaboration significantly boosted Pace Premium's market presence and engagement with discerning customers.",
         coverimage1: "/images/pacep-cover1.webp",
@@ -193,7 +262,15 @@ export const workData = {
     },
     "dawn-knight": {
         projectname: "dawn knight",
-        serviceprovided: "videography, video editing",
+        intro:"A tech brand promoting innovative PC models.",
+        brief:"Sought a visually strong promotional video to highlight product features.",
+        problem:"Needed engaging content to communicate tech value and design appeal.",
+        solution:"Executed a visually driven shoot and narrative-driven video edit.",
+        result:[
+            "Boosted interest in the product",
+            "Strengthened market positioning"
+        ],
+        serviceprovided: "Videography, Video Editing",
         para1: "We assisted Dawn Knight in executing a spectacular shoot for their latest PC model, bringing out the best features and design elements through expert photography and videography. Our team ensured every shot was meticulously planned and captured, highlighting the PC model's cutting-edge technology and sleek aesthetics.",
         para2: "Additionally, we created a captivating video edit that seamlessly integrated these visuals with dynamic effects and engaging narrative elements. This comprehensive approach not only showcased Dawn Knight's product in the best light but also enhanced their promotional efforts and market appeal.",
         coverimage1: "/images/dawn-cover1.webp",

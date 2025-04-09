@@ -9,43 +9,43 @@ const Section4 = () => {
 
     const servicesData = [
         {
-            title: "Branding",
-            description: "Creating a unique identity for your business through design and strategy.",
+            title: "360° Branding",
+            description: "We create a cohesive brand identity that shines across every touchpoint, ensuring consistency and recognition in a competitive market.",
             imageUrl: "brand (1).webp"
         },
         {
-            title: "Marketing",
-            description: "Developing strategies to increase your brand’s visibility and reach.",
+            title: "Consultation",
+            description: "Our expert strategies are designed to align with your business goals, helping you navigate the ever-evolving digital landscape with confidence.",
             imageUrl: "brand (2).webp"
         },
         {
-            title: "Social Media Management",
-            description: "Building and managing your online presence across various platforms.",
+            title: "Web & App Development",
+            description: "We build engaging, high-performing platforms that enhance user experience and drive conversions, making your brand digitally unstoppable.",
             imageUrl: "brand (3).webp"
         },
         {
-            title: "Motion Graphics",
-            description: "Bringing visual elements to life through animations and motion design.",
+            title: "Digital Marketing",
+            description: "With cutting-edge SEO, PPC, and social media strategies, we amplify your brand’s reach and deliver measurable growth.",
             imageUrl: "brand (4).webp"
         },
         {
-            title: "3D Designs",
-            description: "Creating immersive, lifelike 3D experiences for digital or physical spaces.",
+            title: "Branding & Design",
+            description: "From logos to packaging, we craft visually compelling assets that tell your brand’s story and leave a lasting impact.",
             imageUrl: "brand (5).webp"
         },
         {
-            title: "Digital Marketing",
-            description: "Using digital channels to promote your brand and drive sales.",
+            title: "Photography",
+            description: "High-quality, brand-focused visuals that capture attention, evoke emotions, and set you apart in a crowded marketplace.",
             imageUrl: "brand (6).webp"
         },
         {
-            title: "Videography/Photography",
-            description: "Capturing stunning visuals to tell your brand's story.",
+            title: "Video & Audio",
+            description: "Engaging storytelling through dynamic video and audio content that resonates with your audience and builds lasting connections.",
             imageUrl: "brand (7).webp"
         },
         {
-            title: "Influencer Marketing",
-            description: "Partnering with influencers to promote your brand to a broader audience.",
+            title: "Graphic Design",
+            description: "Striking, on-brand creatives that enhance your brand’s visual appeal and make every campaign unforgettable.",
             imageUrl: "brand (8).webp"
         }
     ];

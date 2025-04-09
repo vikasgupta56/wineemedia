@@ -35,55 +35,61 @@ const Services = () => {
         <div className='relative w-full h-fit sm:h-fit bg-black p-[2vw] py-[10vw]'>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    Collaborating
+                Clicks, Tricks & Profit Fix
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    with passionate
+                We Make Digital 
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    individuals and ambitious
+                Work Like Magic!
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    brands to craft
+                Strategic Marketing
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    memorable,
+                for the Digital Age.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    captivating digital
+                Creating Iconic Brands
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    experiences,
+                with Digital Power.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    always striving for
+                Smart Strategies.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt relative '>
                 <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
-                    a best possible solution.
+                Creative Execution.
+                </h4>
+                <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
+            </div>
+            <div className='wrapper-txt relative '>
+                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                Results that Matter.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
