@@ -6,6 +6,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { workData } from '@/helpers/WorkData'
+import Image from 'next/image'
 gsap.registerPlugin(ScrollTrigger)
 
 
@@ -64,7 +65,7 @@ const WorkDetails = ({ data, meta }) => {
                     <Navbar />
                     <h2 className='text-white text-[8vw] md:text-[7.5vw] leading-none mb-[5vw] md:mb-[2vw] text-left md:text-center uppercase'>{data?.projectname}</h2>
                     <div className='w-full h-[50vh] md:h-[80vh] lg:h-[120vh] bg-[#ffffff27]'>
-                        <img className='w-full h-full object-cover object-center' src={data?.coverimage1} alt={data?.projectname} title={data?.projectname} />
+                        <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.coverimage1} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div className='w-full py-[8vw] md:py-[3vw] text-white'>
                         <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
@@ -77,19 +78,21 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Brand’s Brief:</h4>
-                            </div>
-                            <div className='w-full md:w-[50%]'>
-                                <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.brief}</h4>
+                        {data?.brief &&
+                            <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                                <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                    <h4 className='font-semibold'>Brand’s Brief:</h4>
+                                </div>
+                                <div className='w-full md:w-[50%]'>
+                                    <div className='w-full flex justify-between items-center'>
+                                        <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.brief}</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                         <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Problem Faced by the Brand:</h4>
+                                <h4 className='font-semibold'>Problem Faced by the Brand / Brief:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
@@ -109,37 +112,50 @@ const WorkDetails = ({ data, meta }) => {
                         </div>
                         <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Content - Deliverables:</h4>
+                                <h4 className='font-semibold'>Conclusion</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.serviceprovided}</h4>
+                                    <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.conclusion}</h4>
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Result/Outcome - Growth Conversion:</h4>
-                            </div>
-                            <div className='w-full md:w-[50%]'>
-                                <div className='w-full flex justify-between items-center'>
-                                    <ul className='list-disc text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize ml-4'>
-                                        {data?.result?.map((item, index) => <li className='mb-[1vw]'>{item}</li>)}
-                                    </ul>
 
+                        {data?.result && <>
+                            <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                                <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                    <h4 className='font-semibold'>Content - Deliverables:</h4>
+                                </div>
+                                <div className='w-full md:w-[50%]'>
+                                    <div className='w-full flex justify-between items-center'>
+                                        <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.serviceprovided}</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                                <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                    <h4 className='font-semibold'>Result/Outcome - Growth Conversion:</h4>
+                                </div>
+                                <div className='w-full md:w-[50%]'>
+                                    <div className='w-full flex justify-between items-center'>
+                                        <ul className='list-disc text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize ml-4'>
+                                            {data?.result?.map((item, index) => <li key={index} className='mb-[1vw]'>{item}</li>)}
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </>}
                     </div>
                     <div className='w-full h-[30vh] mb-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <img className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.coverimage2} alt={data?.projectname} title={data?.projectname} />
+                        <Image width={1000} height={1000} className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.coverimage2} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div className='w-full md:pt-[2vw]  flex flex-col md:flex-row items-center gap-[4vw] md:gap-0 justify-between'>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image3} alt={data?.projectname} title={data?.projectname} />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image3} alt={data?.projectname} title={data?.projectname} />
                         </div>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image4} alt={data?.projectname} title={data?.projectname} />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image4} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>
                     {data?.portraitVideo && <div className='w-full my-[4vw] md:mb-0 h-[60vh]  md:md:h-[65vh] lg:h-[100vh] flex items-center justify-center '>
@@ -151,22 +167,22 @@ const WorkDetails = ({ data, meta }) => {
                         <video autoPlay muted loop playsInline className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.landScapeVideo} alt={data?.projectname} title={data?.projectname} />
                     </div>}
                     <div className='w-full h-[30vh] my-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <img className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.image5} alt={data?.projectname} title={data?.projectname} />
+                        <Image width={1000} height={1000} className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.image5} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div className='w-full md:pt-[2vw]  flex flex-col md:flex-row items-center gap-[4vw] md:gap-0 justify-between'>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image6} alt={data?.projectname} title={data?.projectname} />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image6} alt={data?.projectname} title={data?.projectname} />
                         </div>
                         <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image7} alt={data?.projectname} title={data?.projectname} />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image7} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>
                     {data?.image8 && data?.image9 ? (<div className='w-full mt-[4vw] md:mt-0 md:pt-[2vw] flex flex-col  md:flex-row items-center justify-center gap-[4vw] md:gap-[1%]'>
                         <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image8} alt={data?.projectname} title={data?.projectname} />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image8} alt={data?.projectname} title={data?.projectname} />
                         </div>
                         <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
-                            <img className='w-full h-full object-cover object-center' src={data?.image9} alt={data?.projectname} title={data?.projectname} />
+                            <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image9} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>) : ""}
                 </div>
@@ -184,7 +200,7 @@ const WorkDetails = ({ data, meta }) => {
                                     title={p.projectname}
                                     className="w-[40vw] md:w-[20vw] h-[25vw] md:h-[12vw] cursor-pointer"
                                 >
-                                    <img className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} title={p.projectname} />
+                                    <Image width={1000} height={1000} className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} title={p.projectname} />
                                 </Link>
                             ))}
                         </div>
@@ -196,7 +212,7 @@ const WorkDetails = ({ data, meta }) => {
                                     title={p.projectname}
                                     className="w-[40vw] md:w-[20vw] h-[25vw] md:h-[12vw] cursor-pointer"
                                 >
-                                    <img className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} title={p.projectname} />
+                                    <Image width={1000} height={1000} className="w-full h-full object-cover" src={p.coverimage1} alt={p.projectname} title={p.projectname} />
                                 </Link>
                             ))}
                         </div>

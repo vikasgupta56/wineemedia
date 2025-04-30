@@ -1,15 +1,10 @@
 export const workData = {
     "nexpoze-production": {
         projectname: "nexpoze production",
-        intro:"A photography and videography studio.",
-        brief:"Wanted to reposition themselves as a premium creative agency.",
-        problem:"Needed brand development and consistent content curation.",
-        solution:"Developed a cohesive identity with targeted content calendars and campaigns.",
-        result:[
-            "Strengthened credibility",
-            "Expanded client base",
-            "Elevated brand perception"
-        ],
+        intro: "Nexpoze Production is a high-end photography and videography studio catering to fashion, luxury, and lifestyle brands. With a fine eye for detail and visual mood, they bring emotion into every frame. Their USP lies in cinematic storytelling and premium aesthetics. From model portfolios to product films, Nexpoze works across mediums with finesse. The studio also offers pre-wedding, commercial, and social media content solutions. Their goal is to shift perception from ‘photographers’ to ‘visual directors’. They aim to be known for content that feels editorial, yet accessible.",
+        problem: "Despite strong execution, Nexpoze lacked consistent branding and digital positioning. They weren’t perceived as premium as they intended to be. The content output was strong—but the brand presentation was missing cohesion and recall. The problem was not talent but packaging. The brief was to reposition them as a high-value, boutique creative agency. They also wanted to scale their clientele and pitch for larger campaigns with structured presentation material.",
+        solution: "We redesigned their brand identity with premium, monochrome visual templates and cinematic treatments. A portfolio deck was created with curated case studies, shoot themes, and service buckets. Content calendars were introduced for their own marketing—no more sporadic posts. We also developed an ongoing series of behind-the-scenes videos, stylised edits, and client testimonials. Their brand tone was refined—professional yet artistic. Every piece of communication was made to reflect luxury and thoughtfulness. Nexpoze’s story was now as sharp as their camera work.",
+        conclusion:"Deliverables, Hype, Strategy & Viral Energy: Deliverables included full brand revamp, social media marketing strategy, presentation design, and video content. Nexpoze began attracting fashion brands and luxury pre-wedding clients. Their conversion rate from inquiry to booking improved noticeably. Industry professionals began citing their work as benchmark-worthy. Their credibility as a visual partner—not just a vendor—was firmly established. The brand gained media attention for its aesthetic discipline. Nexpoze is no longer just a studio—it’s a signature.",
         serviceprovided: "Brand Development, Portfolio Management, Social Media Marketing, Dynamic Presentations, Video/Photo Editing",
         para1: "Nexpoze Production, a studio dedicated to capturing memories and crafting stunning visuals, partnered with us to elevate their digital presence and redefine their brand identity. We meticulously worked on positioning Nexpoze as the go-to destination for premium photography and videography services.",
         para2: "Our approach included creating a cohesive brand strategy that emphasized their creativity and attention to detail. We designed a content calendar filled with engaging posts, behind-the-scenes footage, and portfolio highlights, showcasing their expertise in delivering exceptional results.",
@@ -35,15 +30,10 @@ export const workData = {
     },
     "daroma-an-italian-cafe": {
         projectname: "daroma an italian cafe",
-        intro:"An Italian café delivering authentic experiences and dishes.",
-        brief:"Wanted to establish a unique brand identity and community presence.",
-        problem:"Lack of strong digital branding to express the café’s charm.",
-        solution:"Built a content-rich brand strategy using visuals, storytelling, and reels.",
-        result:[
-            "Greater brand loyalty",
-            "Increased foot traffic",
-            "Enhanced engagement"
-        ],
+        intro: "DaRoma is an authentic Italian café offering handcrafted cuisine in a warm, European-style ambience. Known for their wood-fired pizzas, homemade pastas, and artisanal desserts, they bring Italy to your table. With a focus on fresh ingredients and traditional recipes, DaRoma appeals to food lovers who value quality and culture. The café blends modern minimalism with rustic charm—offering a visual and sensory experience. Beyond food, they wanted to become a lifestyle brand that celebrates Italian slow living. Their interiors, plating, and presentation reflect elegance with a casual flair.",
+        problem: "The café’s real-world charm wasn’t translating into digital traction. Footfall was decent, but brand recognition beyond the neighbourhood was lacking. The problem was a scattered identity—visually inconsistent and lacking storytelling. They weren’t capitalising on their unique differentiators: authenticity, vibe, and quality. The brief was to build a strong, aspirational digital presence that translated into loyalty. They also wanted to attract new demographics, especially young professionals and foodies.",
+        solution: "We introduced a storytelling-led content plan built on four core pillars: authenticity, behind-the-scenes, customer stories, and seasonal menus. Every shoot was designed to highlight the café’s natural charm—from bubbling sauces to latte art. Reels focused on ambience, daily specials, and chef features. We used rustic fonts, beige colour palettes, and soft motion transitions to stay on brand. Community-driven campaigns like “Your First Bite” and “Table For Two” added relatability. The brand voice was reworked to reflect passion, warmth, and Italian finesse. Each piece of content felt like a scene from an indie film.",
+        conclusion:"Deliverables, Hype, Strategy & Viral Energy: Deliverables included Instagram content calendars, reel production, content shoots, and digital brand strategy. The café saw a 3X rise in engagement and a sharp uptick in foot traffic. Signature dishes became talking points online, often selling out post-reel uploads. Their Google reviews improved as customers began engaging more digitally. DaRoma became a ‘destination café’ instead of just a neighbourhood eatery. The brand now has a cult following that celebrates food, moments, and lifestyle. Online storytelling met offline delight—and it worked.",
         serviceprovided: "Social Media Management, Brand Strategy, Video/Photo Shoot, Reels, Content Creation",
         para1: "At Daroma, an Italian café inspired by the rich culinary and cultural traditions of Italy, we embarked on a journey to elevate their brand presence and resonate with their audience. By immersing ourselves in Daroma’s unique identity, we crafted a digital strategy that celebrated their love for authentic flavors and cozy ambiance.",
         para2: "From curating aesthetically pleasing visuals to producing engaging video content and reels, we brought Daroma's story to life on digital platforms. Our social media management ensured consistent branding, while targeted campaigns effectively drove engagement and footfall to the café.",
@@ -69,14 +59,10 @@ export const workData = {
     },
     "envision-dazzling": {
         projectname: "envision dazzling",
-        intro:"An event and branding agency.",
-        brief:"Wanted end-to-end support for event execution and digital outreach.",
-        problem:"Required a comprehensive execution plan for brand visibility and audience engagement.",
-        solution:"Managed event logistics, created digital buzz, and amplified reach.",
-        result:[
-            "High event participation",
-            "Strengthened brand presence"
-        ],
+        intro: "Envision Dazzling is an end-to-end event and branding agency known for curating unforgettable experiences. From corporate activations to luxury weddings, their events strike the perfect balance between elegance and creativity. The brand brings a full-service mindset—handling everything from ideation to execution. Their portfolio boasts immersive brand installations, high-energy public events, and niche BTL activities. With a vision to dazzle, they combine aesthetics, precision, and audience psychology. Their clientele spans across industries including fashion, lifestyle, and real estate. Envision Dazzling is where detail meets drama.",
+        problem: "The brand wanted to scale its digital footprint while simultaneously elevating event engagement. Despite executing standout events, they struggled to showcase them effectively online. They lacked a digital narrative that matched the real-world vibe of their events. The challenge was to create not just buzz, but brand recall through strategic storytelling. They needed help building an online presence that amplified their offline energy. The brief also included packaging their services into a more cohesive brand identity.",
+        solution: "We offered comprehensive event management services—handling branding touchpoints, digital marketing, and influencer integrations. We documented events with dynamic reels, behind-the-scenes storytelling, and client testimonials. Our strategy also included social-first content buckets for real-time audience interaction. Design support included invites, event signage, and mood-board aligned decor planning. We aligned the brand tone across print, digital, and physical spaces. Content was created in phases—pre-event hype, event-day storytelling, and post-event highlights. The execution created a 360-degree experience for both attendees and online followers.",
+        conclusion:"Deliverables, Hype, Strategy & Viral Energy : Deliverables included complete event branding kits, Instagram campaigns, and live event coverage. The brand saw heightened digital buzz, with one event video garnering over 50K views organically. Footfall and vendor interest increased with every activation. Their social media following doubled in just three months. Multiple collaborations were secured off the back of real-time content engagement. Envision Dazzling moved from being a service provider to a lifestyle experience. They became known not just for events—but for unforgettable moments.",
         serviceprovided: "Event Management, Branding, Digital Marketing",
         para1: "Wineemedia played a crucial role in helping Envision Dazzling organize their event, ensuring every detail was meticulously planned and executed for a seamless experience. Our team not only managed the event logistics but also handled the branding and digital marketing, creating a cohesive and visually appealing brand presence.",
         para2: "By crafting engaging promotional content and leveraging digital platforms, we successfully boosted event visibility and engagement. This comprehensive support helped Envision Dazzling deliver a memorable event, strengthening their brand and expanding their reach.",
@@ -100,15 +86,10 @@ export const workData = {
     },
     "pepe-cafe": {
         projectname: "pepe cafe",
-        intro:"A warm, vibrant café known for its rich flavours and cosy ambiance.",
-        brief:"They aimed to build a strong online identity and customer community.",
-        problem:"Their digital presence did not convey the essence of the brand.",
-        solution:"We created a digital strategy focused on immersive visuals and storytelling to connect with their audience.",
-        result:[
-            "Growing online followers",
-            "Increased footfall at the café",
-            "Higher engagement"
-        ],
+        intro: "A warm, vibrant café known for its rich flavours and cosy ambiance.",
+        problem: "Pepe Café was known among regulars but lacked an engaging online presence. Its ambience and food experience were not translated into digital storytelling. They struggled to differentiate themselves from competitors online. Content was sporadic, visually inconsistent, and not aligned with brand vibe. Community engagement was low, and footfall depended solely on walk-ins. They needed a digital refresh to capture the warmth of their space. Their brief focused on community-building and brand storytelling.",
+        solution: "We started with a mood board and visual identity that echoed the café’s lively spirit. Our team shot high-quality imagery and video content capturing ambience, behind-the-scenes, and featured dishes. We designed an engagement-driven social media plan that included contests, polls, and UGC initiatives. Instagram Reels brought food stories alive with fun transitions and soothing café visuals. Each piece of content focused on evoking warmth, taste, and connection. Content buckets included ‘Chef’s Specials’, ‘Pepe People’, and ‘Mood @ Pepe’. Story highlights, menu showcases, and live event teasers were also rolled out.",
+        conclusion:"Deliverables, Hype, Strategy & Viral Energy: The strategy resulted in increased café footfall, organic reach, and follower interaction. Customers started tagging the café in their stories and engaging in polls. A loyal community began forming around the brand’s online presence. We transformed the brand into a digital hangout spot. Pepe Café became known for its content as much as its food. The café successfully brought its offline experience into the online world.",
         serviceprovided: "Social Media Management, Video/Photo Shoot, Reels",
         para1: "With our tailored approaches, we worked closely with Pepe Cafe to develop a comprehensive strategy that aligned with their brand identity and business goals. From creating engaging content to implementing effective advertising campaigns, we utilized our expertise to build a vibrant online community around Pepe Cafe.",
         para2: "Through captivating visuals, compelling storytelling, and strategic engagement tactics, we helped Pepe Cafe connect with their audience, increase brand awareness, and drive customer engagement. It's been a pleasure to partner with Pepe Cafe on their digital journey, and we look forward to continuing to support their success in the future",
@@ -134,11 +115,11 @@ export const workData = {
     },
     "zerror-studios": {
         projectname: "zerror studios",
-        intro:"A creative agency focused on design, video, and animation.",
-        brief:"Wanted to expand their visual offerings and portfolio.",
-        problem:"Required high-quality video and logo animations for branding.",
-        solution:"Delivered sleek animations and professional video editing for enhanced appeal.",
-        result:[
+        intro: "A creative agency focused on design, video, and animation.",
+        brief: "Wanted to expand their visual offerings and portfolio.",
+        problem: "Required high-quality video and logo animations for branding.",
+        solution: "Delivered sleek animations and professional video editing for enhanced appeal.",
+        result: [
             "Elevated portfolio quality",
             "Attracted new business opportunities"
         ],
@@ -165,15 +146,10 @@ export const workData = {
     },
     "pace-entertainment": {
         projectname: "pace entertainment",
-        intro:"An entertainment brand offering diverse and engaging experiences.",
-        brief:"Wanted a digital presence that captured their excitement and variety.",
-        problem:"Wanted a digital presence that captured their excitement and variety.",
-        solution:"Developed a dynamic content strategy with interactive campaigns and visual storytelling.",
-        result:[
-            "Enhanced brand recognition",
-            "Strong audience engagement",
-            "Increased loyalty"
-        ],
+        intro: "Pace Entertainment is a dynamic brand offering event curation, artist management, and creative entertainment services. Known for its fresh energy and innovative campaigns, it caters to young, thrill-seeking audiences. The brand thrives on spontaneity, music, culture, and fun. Whether it’s live events or digital experiences, Pace is all about high-voltage engagement. They aim to build emotional resonance through moments that entertain, inspire, and connect. With a growing digital-savvy base, Pace blends content and experiences to stay ahead. The brand is positioned as a vibrant player in India’s entertainment scene.",
+        problem: "Despite their exciting offerings, Pace was struggling to build momentum online. Their digital content lacked continuity and did not capture their real-world vibrancy. Their engagement was dropping, and audiences weren’t resonating with the brand tone. They wanted their brand to feel immersive, energetic, and relatable to Gen Z and millennials. The brand needed structured visual storytelling to convey the excitement of their experiences. They also sought to increase recall among both audiences and collaborators. A digital overhaul was essential for long-term brand evolution.",
+        solution: "We initiated a full-fledged content strategy that was fast-paced, interactive, and trend-savvy. Using reels, memes, countdowns, and live event stories, we captured their core DNA. Visuals were kept colourful and motion-rich, mimicking the energy of their events. Collaborations and teasers were timed to build anticipation. We integrated audience polls, trivia, and Q&A formats to keep followers involved. Monthly themes and interactive calendars ensured continuity and freshness. The goal was to not just inform but involve the audience at every touchpoint.",
+        conclusion:"Deliverables, Hype, Strategy & Viral Energy: Our deliverables included social media management, reels, campaign planning, and branded edits. The brand saw a significant rise in engagement, particularly through short-form video content. Followers began actively participating in digital activities and challenges. Artists and collaborators reposted content, extending the brand’s reach. The visual identity now truly reflected the thrill and chaos Pace offers. It wasn’t just about views—it was about community building. Today, Pace has become synonymous with ‘hype content done right’.",
         serviceprovided: "Social Media Management, Video/Photo Shoot, Reels",
         para1: "With our tailored approaches, we worked closely with Pepe Cafe to develop a comprehensive strategy that aligned with their brand identity and business goals. From creating engaging content to implementing effective advertising campaigns, we utilized our expertise to build a vibrant online community around Pepe Cafe.",
         para2: "Through captivating visuals, compelling storytelling, and strategic engagement tactics, we helped Pepe Cafe connect with their audience, increase brand awareness, and drive customer engagement. It's been a pleasure to partner with Pepe Cafe on their digital journey, and we look forward to continuing to support their success in the future",
@@ -199,15 +175,10 @@ export const workData = {
     },
     "maab-cosmetics": {
         projectname: "maab cosmetics",
-        intro:"MA’AB Cosmetics is a premier destination for skin, laser, and hair treatments dedicated to enhancing beauty and confidence.",
-        brief:"They needed to build a compelling digital identity that mirrored their expertise.",
-        problem:"Despite offering excellent services, their online presence lacked engagement and failed to reflect their premium image.",
-        solution:"We developed a strategic social media plan, integrating service-based education with aesthetic content.",
-        result:[
-            "Boosted brand recognition",
-            "Higher engagement rates",
-            "Noticeable rise in customer inquiries"
-        ],
+        intro: "MA’AB Cosmetics is a premier skincare and aesthetics brand offering specialised treatments in skin rejuvenation, laser services, and hair solutions. With state-of-the-art equipment and a team of certified dermatologists, MA’AB champions beauty transformations. The brand has steadily built a loyal clientele by combining clinical precision with luxurious care. Positioned as a pioneer in self-care excellence, it caters to a growing market that seeks science-backed beauty solutions. MA’AB focuses on redefining confidence, one treatment at a time. With multiple branches and a reputation for trusted results, MA’AB has emerged as a go-to destination for personalised aesthetic care.",
+        problem: "While the brand had loyal customers offline, it struggled to replicate this success in the digital realm. Their online presence lacked the finesse and professional appeal that their physical service centres exuded. There was no structured content strategy to highlight their services, offers, or success stories. The digital look and feel failed to communicate their medical expertise and premium experience. Low engagement and limited awareness meant missed opportunities for organic and paid growth. MA’AB needed an identity that matched their real-world value proposition. They sought a digital makeover that inspired trust and reflected their excellence.",
+        solution: "We initiated a brand overhaul across social media platforms, focusing on educating the audience while maintaining a visually premium aesthetic. A well-researched content strategy was rolled out featuring skincare tips, treatment breakdowns, and real client testimonials. Consistency was introduced in posting schedules and thematic content buckets were created to ensure relevance. We also developed seasonal campaigns to keep the content fresh and timely. Engaging formats like carousels, short-form videos, and highlights were used to boost interaction. The strategy was built not just to attract but to retain and convert leads.",
+        conclusion:"Deliverables, Hype, Strategy & Viral Energy: We delivered complete social media management, with high-quality graphics, service-focused narratives, and timely engagement strategies. Our content brought a sense of expertise, relatability, and aspiration that resonated with potential clients. The digital buzz around MA’AB elevated their industry standing, attracting influencers and micro-partnerships. Engagement skyrocketed, with increased saves, shares, and profile visits.",
         serviceprovided: "Graphic Posts, Social Media Management",
         para1: "Leveraging our expertise in design and social media management, we seamlessly integrated MA’AB Cosmetics' which is one of the leading destinations for skin, laser and hair treatment, to build and identity treatment offerings into captivating visuals that resonate with their audience. ",
         para2: "Our strategic approach ensured that each graphic post not only showcased MA’AB Cosmetics' expertise but also conveyed their commitment to enhancing beauty and confidence. We're proud to have played a part in elevating MA’AB Cosmetics' digital presence and look forward to continued success together.",
@@ -232,14 +203,10 @@ export const workData = {
     },
     "pace-premium": {
         projectname: "pace premium",
-        intro:"A luxury footwear brand focused on elegance and craftsmanship.",
-        brief:"Needed an elevated digital identity to reflect exclusivity.",
-        problem:"Visual content did not reflect the premium nature of the products.",
-        solution:"Crafted sophisticated graphics that matched their brand tone.",
-        result:[
-            "Improved brand perception",
-            "Strengthened customer connection"
-        ],
+        intro: "Pace Premium is a luxury footwear label focused on refined craftsmanship and design elegance. Their offerings are a blend of traditional techniques and modern silhouettes. The brand speaks to a discerning clientele that values comfort, sophistication, and exclusivity. Their limited-edition releases, quality materials, and minimal branding make them stand out. Every pair is handmade with precision and attention to detail. Their tone is sleek, bold, and rooted in understated luxury. They are not just selling footwear—they’re selling quiet confidence.",
+        problem: "The brand’s digital identity lacked the finesse and sophistication of its product. Their visuals didn’t reflect exclusivity and premium cues. The overall tone was generic and didn’t differentiate them in a saturated market. This led to lower engagement and limited conversion from social media platforms. There was also no unified colour palette or storytelling style in place. Their brief was to elevate the aesthetic and give the brand a luxury-grade polish. They needed content that resonated with high-end buyers.",
+        solution: "We designed a visual strategy rooted in clean layouts, bold product photography, and minimal colour blocking. The tone of voice was refined—focusing on quality, craftsmanship, and slow fashion. We highlighted product textures, close-up shots, and lifestyle scenarios. Graphic posts featured editorial fonts, negative space, and minimalist design rules. Every post served to build aspiration and attention to detail. Seasonal campaigns were tied to emotion, not urgency. The overall look and feel mirrored premium fashion brands while staying unique to Pace.",
+        conclusion:"Deliverables, Hype, Strategy & Viral Energy: We delivered sharp creatives, brand-aligned templates, and social content that elevated perception. The audience began associating the brand with style, precision, and uniqueness. Website traffic and social saves increased, signalling deeper interest. Pace Premium started receiving inquiries for bespoke and pre-launch editions. Customer loyalty grew due to the refined brand experience. This wasn’t about volume—it was about value. The digital touch matched the product’s craftsmanship, and the brand found its rightful premium space online.",
         serviceprovided: "Graphics, Creatives",
         para1: "By understanding Pace Premium's unique identity, Wineemedia created visually stunning and cohesive graphics that enhanced the brand's appeal, effectively capturing the elegance and exclusivity of its luxury footwear.",
         para2: " This collaboration significantly boosted Pace Premium's market presence and engagement with discerning customers.",
@@ -262,11 +229,11 @@ export const workData = {
     },
     "dawn-knight": {
         projectname: "dawn knight",
-        intro:"A tech brand promoting innovative PC models.",
-        brief:"Sought a visually strong promotional video to highlight product features.",
-        problem:"Needed engaging content to communicate tech value and design appeal.",
-        solution:"Executed a visually driven shoot and narrative-driven video edit.",
-        result:[
+        intro: "A tech brand promoting innovative PC models.",
+        brief: "Sought a visually strong promotional video to highlight product features.",
+        problem: "Needed engaging content to communicate tech value and design appeal.",
+        solution: "Executed a visually driven shoot and narrative-driven video edit.",
+        result: [
             "Boosted interest in the product",
             "Strengthened market positioning"
         ],

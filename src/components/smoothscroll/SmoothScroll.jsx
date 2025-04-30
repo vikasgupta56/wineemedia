@@ -1,24 +1,42 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
+import Tempus from '@studio-freight/tempus';
+import Lenis from '@studio-freight/lenis';
+import { usePathname, useSearchParams } from 'next/navigation';
 
-const SmoothScroll = ({ children }) => {
+export default function SmoothScroller() {
+  const lenis = useRef(null);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
   useEffect(() => {
-    let scroll;
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroll = new locomotiveModule.default({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: 2,
-        smoothMobile: false,
-        resetNativeScroll: true,
-      });
+    if (lenis.current) lenis.current.scrollTo(0, { immediate: true });
+  }, [pathname, searchParams]);
+
+  useLayoutEffect(() => {
+    lenis.current = new Lenis({
+      smoothWheel: true,
+      // Customize other instance settings here
     });
 
-    // useEffect's cleanup phase
+    const resize = setInterval(() => {
+      if (lenis.current) lenis.current.resize();
+    }, 150);
+
+    function onFrame(time) {
+      if (lenis.current) lenis.current.raf(time);
+    }
+
+    const unsubscribe = Tempus.add(onFrame);
+
     return () => {
-      if (scroll) scroll.destroy();
+      unsubscribe();
+      clearInterval(resize);
+      if (lenis.current) {
+        lenis.current.destroy();
+        lenis.current = null;
+      }
     };
-  });
+  }, []);
 
-  return <div>{children}</div>;
-};
-
-export default SmoothScroll;
+  return null;
+}

@@ -135,7 +135,7 @@ body {
 }
 
 .project-h:hover .black-strip{
-  height: 8%;
+  height: 10%;
 }
 
 .project-h:hover .strip-text{
@@ -144,10 +144,17 @@ body {
 .our-work{
   transition: all ease .2s;
 }
-.our-work:hover{
-  background-color: black !important;
+/* .our-work:hover{
   color: white !important;;
+} */
+.back-slide{
+  transition: all ease-out .4s;
 }
+.our-work:hover .back-slide{
+  top: 0;
+  transition: all ease-in .4s;
+}
+
 
 
 .swiper {

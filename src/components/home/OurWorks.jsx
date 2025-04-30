@@ -1,5 +1,6 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import Image from 'next/image'
 import React, { useEffect } from 'react'
 
 
@@ -11,42 +12,42 @@ const Section4 = () => {
         {
             title: "360° Branding",
             description: "We create a cohesive brand identity that shines across every touchpoint, ensuring consistency and recognition in a competitive market.",
-            imageUrl: "brand (1).webp"
+            imageUrl: "/brand (1).webp"
         },
         {
             title: "Consultation",
             description: "Our expert strategies are designed to align with your business goals, helping you navigate the ever-evolving digital landscape with confidence.",
-            imageUrl: "brand (2).webp"
+            imageUrl: "/brand (2).webp"
         },
         {
             title: "Web & App Development",
             description: "We build engaging, high-performing platforms that enhance user experience and drive conversions, making your brand digitally unstoppable.",
-            imageUrl: "brand (3).webp"
+            imageUrl: "/brand (3).webp"
         },
         {
             title: "Digital Marketing",
             description: "With cutting-edge SEO, PPC, and social media strategies, we amplify your brand’s reach and deliver measurable growth.",
-            imageUrl: "brand (4).webp"
+            imageUrl: "/brand (4).webp"
         },
         {
             title: "Branding & Design",
             description: "From logos to packaging, we craft visually compelling assets that tell your brand’s story and leave a lasting impact.",
-            imageUrl: "brand (5).webp"
+            imageUrl: "/brand (5).webp"
         },
         {
             title: "Photography",
             description: "High-quality, brand-focused visuals that capture attention, evoke emotions, and set you apart in a crowded marketplace.",
-            imageUrl: "brand (6).webp"
+            imageUrl: "/brand (6).webp"
         },
         {
             title: "Video & Audio",
             description: "Engaging storytelling through dynamic video and audio content that resonates with your audience and builds lasting connections.",
-            imageUrl: "brand (7).webp"
+            imageUrl: "/brand (7).webp"
         },
         {
             title: "Graphic Design",
             description: "Striking, on-brand creatives that enhance your brand’s visual appeal and make every campaign unforgettable.",
-            imageUrl: "brand (8).webp"
+            imageUrl: "/brand (8).webp"
         }
     ];
 
@@ -88,38 +89,38 @@ const Section4 = () => {
         var diff = e.clientY - e.target.getBoundingClientRect().top
         diffrot = e.clientX - rotate
         rotate = e.clientX
-        gsap.to(e.target.querySelector(".over-img"), {
+        gsap.to(e.currentTarget.querySelector(".over-img"), {
             left: e.clientX,
             top: diff,
             rotate: gsap.utils.clamp(-20, 20, diffrot * 0.2),
             ease: "power1",
         })
 
-        gsap.to(e.target.querySelector(".over-img"), {
+        gsap.to(e.currentTarget.querySelector(".over-img"), {
             opacity: 1,
             duration: .2
         })
 
-        gsap.to(e.target.querySelector("h4"), {
-            x: 50,
-            ease: "power1",
-        })
+        // gsap.to(e.target.querySelector("h4"), {
+        //     x: 50,
+        //     ease: "power1",
+        // })
         gsap.to(e.target.querySelector(".shadow-over"), {
             width: 0,
             ease: "power1",
         })
     }
     const handleMouseLeave = (e) => {
-        gsap.to(e.target.querySelector(".over-img"), {
+        gsap.to(e.currentTarget.querySelector(".over-img"), {
             opacity: 0,
             duration: 0.5, // Add duration here
             ease: "power4.out",
         })
-        gsap.to(e.target.querySelector("h4"), {
-            x: 0,
-            duration: 0.5, // Ensure duration is set
-            ease: "power1",
-        })
+        // gsap.to(e.target.querySelector("h4"), {
+        //     x: 0,
+        //     duration: 0.5, // Ensure duration is set
+        //     ease: "power1",
+        // })
         gsap.to(e.target.querySelector(".shadow-over"), {
             width: "100%",
             duration: 0.5, // Set duration
@@ -144,19 +145,25 @@ const Section4 = () => {
                         onMouseLeave={(e) => handleMouseLeave(e)}
                         className='our-work relative px-[2vw] flex items-center justify-between text-black py-[8vw] sm:py-[7vw] md:py-[4vw] border-b border-black'
                     >
-                        <h4 className='text-[6vw] sm:text-[4vw] md:text-[3vw] font-[font4] font-semibold pointer-events-none'>{service.title}</h4>
-                        <h5 className='hidden md:block w-[15%] text-right md:text-[1.1vw]'>{service.description}</h5>
-                        <div className='hidden sm:block shadow-over w-full h-full absolute right-0 top-1/2 -translate-y-1/2  pointer-events-none'></div>
+                        <h4 className='z-10 text-[6vw] sm:text-[4vw] md:text-[3vw] font-[font4] font-semibold pointer-events-none'>{service.title}</h4>
+                        <h5 className='z-10 hidden md:block w-[20%] text-right md:text-[1.1vw]'>{service.description}</h5>
+                        <div className='z-10 hidden sm:block shadow-over w-full h-full absolute right-0 top-1/2 -translate-y-1/2  pointer-events-none'></div>
                         <div
                             style={{ transform: "translate(-50%,-50%)" }}
-                            className="hidden sm:block  over-img z-10 pointer-events-none h-[20vw] opacity-0 w-[27vw] top-1/2 left-1/2 absolute overflow-hidden"
+                            className="hidden  sm:block  over-img z-[999] pointer-events-none h-[20vw] opacity-0 w-[27vw] top-1/2 left-1/2 absolute overflow-hidden"
                         >
-                            <img
+                            <Image width={1000} height={1000}
                                 className='w-full h-full object-cover object-center'
                                 src={service.imageUrl}
                                 alt={service.title}
                                 title={service.title}
                             />
+                        </div>
+                        <div className='w-full h-full overflow-hidden absolute pointer-events-none top-0 z-[11] left-0'>
+                            <div className='back-slide w-full h-full absolute px-[2vw] top-full z-[9] left-0 bg-black text-white flex items-center justify-between'>
+                            <h4 className='text-[6vw] sm:text-[4vw] md:text-[3vw] font-[font4] font-semibold pointer-events-none'>{service.title}</h4>
+                            <h5 className='hidden md:block w-[20%] text-right md:text-[1.1vw]'>{service.description}</h5>
+                            </div>
                         </div>
                     </div>
                 ))}

@@ -2,6 +2,7 @@ import gsap from 'gsap'
 import React, { useEffect, useRef } from 'react'
 import Reviews from '@/components/about/Reviews'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import Image from 'next/image'
 gsap.registerPlugin(ScrollTrigger)
 const OurClient = () => {
     const clipRefs = useRef([])
@@ -103,7 +104,7 @@ const OurClient = () => {
                     clientData.map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
                         <div className='clipeffect absolute bottom-0 left-0 h-full w-full bg-zinc-800' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
                         </div>
-                        <img className='w-[50%] h-auto relative' style={{ filter: " grayscale(100%) contrast(100%)" }} src={c.logo} alt={c.name} title={c.name} />
+                        <Image width={1000} height={1000} className='w-[50%] h-auto relative' style={{ filter: " grayscale(100%) contrast(100%)" }} src={c.logo} alt={c.name} title={c.name} />
                     </div>))
                 }
 

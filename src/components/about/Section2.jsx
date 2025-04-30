@@ -1,5 +1,6 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import Image from 'next/image'
 import React, { useEffect } from 'react'
 gsap.registerPlugin(ScrollTrigger)
 
@@ -80,10 +81,10 @@ const Section2 = () => {
             </h2>
             <div className='clipimg w-full flex flex-col md:flex-row gap-[2vw]'>
                 <div className='w-full md:w-1/2 h-[80vh] md:h-[120vh]'>
-                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-[70%] md:h-[50%] object-cover' src="/aboutimg1.avif" alt="about-us-banner1" title="about-us-banner1" />'
+                    <Image width={1000} height={1000} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-[70%] md:h-[50%] object-cover' src="/aboutimg1.webp" alt="about-us-banner1" title="about-us-banner1" />'
                 </div>
                 <div className='w-full md:w-1/2 h-[80vh] md:h-[120vh]'>
-                    <img style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-full object-cover' src="/aboutimg2.avif" alt="about-us-banner2" title="about-us-banner2" />
+                    <Image width={1000} height={1000} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-full object-cover' src="/aboutimg2.webp" alt="about-us-banner2" title="about-us-banner2" />
                 </div>
             </div>
             <div className='w-full py-[5vw] pb-[10vw] text-white font-[font4] text-[3vw] md:text-[1.1vw] flex flex-col items-center gap-[4vw]'>
