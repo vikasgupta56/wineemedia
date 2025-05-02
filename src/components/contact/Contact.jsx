@@ -22,7 +22,6 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
         const newErrors = {
             email: validateField('email', email),
             subject: validateField('subject', subject),
@@ -40,7 +39,7 @@ const Contact = () => {
 
         setTimeout(() => {
             console.log('Form submitted:', { email, subject, message })
-            alert('Message sent successfully!')
+            toast.success('Message sent successfully. Thank you!')
             setEmail('')
             setSubject('')
             setMessage('')
