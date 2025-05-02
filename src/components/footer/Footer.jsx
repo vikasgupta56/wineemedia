@@ -21,7 +21,9 @@ const Footer = () => {
                 },
             });
 
-            ScrollTrigger.refresh(); // Refresh to fix route change issues
+            setTimeout(()=>{
+                ScrollTrigger.refresh();
+            },100) 
 
             return () => {
                 animation.kill();

@@ -17,15 +17,15 @@ const Section4 = () => {
   useEffect(() => {
     if (workrefs.current && window.innerWidth > 600) {
       workrefs.current.forEach(p => {
-        gsap.to(p.querySelector(".project-ig"), {
-          scale: 1,
-          duration: .8,
-          scrollTrigger: {
-            trigger: p,
-            start: "top 70%",
-            end: "bottom bottom",
-            scrub: 1,
-          }
+        gsap.to(p, {
+          clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+            scrollTrigger: {
+                trigger: p,
+                start: "top 80%",
+                end: "top 20%",
+                // scrub: 1,
+                // markers:true
+            }
         })
       })
     }
@@ -76,7 +76,7 @@ const Section4 = () => {
       </div>
       <div className="projects w-full hidden sm:flex justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
         {works.map((w, i) => (
-          <Link href={`/work/${w.projectname.split(" ").join("-")}`} title={w.projectname} key={i} ref={el => workrefs.current[i] = el}  className="project-h cursor-pointer w-full sm:w-full md:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
+          <Link href={`/work/${w.projectname.split(" ").join("-")}`} title={w.projectname} key={i} ref={el => workrefs.current[i] = el} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}   className="img-clip project-h cursor-pointer w-full sm:w-full md:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
           <div className='hidden sm:block black-strip transition-all duration-500 w-full h-[0%] bg-black absolute bottom-0 left-0 z-[9]'></div>
           <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[2vw] md:text-[1vw] font-[font6] h-[10%]  absolute  opacity-0 bottom-0 left-0 z-[10]  hidden sm:flex flex-col items-start justify-center'>
             <h5 className='text-[1.5vw]'>{w.projectname}</h5>
@@ -91,7 +91,7 @@ const Section4 = () => {
               <h6>Discover <i className="ri-arrow-right-line"></i></h6>
             </div>
           </div>
-          <Image width={1000} height={1000} className='project-ig w-full h-full object-cover scale-[1.3]' src={w.coverimage1} alt={w.projectname} title={w.projectname} />
+          <Image width={1000} height={1000} className='project-ig w-full h-full object-cover' src={w.coverimage1} alt={w.projectname} title={w.projectname} />
         </Link>
         ))}
       </div>

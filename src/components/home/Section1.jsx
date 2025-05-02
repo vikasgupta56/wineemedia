@@ -74,7 +74,7 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
     return (
         <div   className='section1 overflow-hidden h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
             <Navbar nav={navRef} />
-            <div className='header-txt font-[font6] relative z-[9]'>
+            <div className='header-txt hidden font-[font6] relative z-[9]'>
                 <div className='h-[7vw] overflow-hidden'>
                 <h2 className='text-header text-[5vw] leading-none '>Ideas, Innovation</h2>
                 </div>

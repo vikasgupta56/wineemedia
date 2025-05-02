@@ -21,43 +21,53 @@ const OurClient = () => {
         {
             logo: "/clients/dawn.webp",
             name: "dawn knight",
+            images:"/images/dawn-cover1.webp"
         },
         {
             logo: "/clients/zerror.webp",
             name: "zerror studios",
+            images:"/images/zerror-cover1.webp"
         },
         {
             logo: "/clients/brandCreation.webp",
             name: "brand creation",
+            images:"/images/brand-cover1.webp"
         },
         {
             logo: "/clients/envision.webp",
             name: "envision dazzling",
+            images:"/images/envision-cover1.webp"
         },
         {
             logo: "/clients/daroma.webp",
             name: "daroma an italian cafe",
+            images:"/images/daroma-cover1.webp"
         },
         {
             logo: "/clients/meera.webp",
             name: "meera",
+            images:"/images/meera-cover1.webp"
         },
         {
             logo: "/clients/nexPoze.webp",
             name: "nexpoze production",
+            images:"/images/nexpoze-cover1.webp"
         },
 
         {
             logo: "/clients/pepe.webp",
             name: "pepe cafe",
+            images:"/images/Pe-cover1.webp"
         },
         {
             logo: "/clients/Pace.webp",
             name: "pace",
+            images:"/images/pacep-cover1.webp"
         },
         {
             logo: "/clients/maab.webp",
             name: "maab cosmetics",
+            images:"/images/maab-cover1.webp"
         },
     ]
 
@@ -103,6 +113,7 @@ const OurClient = () => {
                 {
                     clientData.map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-white/10 flex items-center justify-center'>
                         <div className='clipeffect absolute bottom-0 left-0 h-full w-full bg-zinc-800' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
+                            <Image width={1000} height={1000} className='w-full h-full object-cover' src={c.images} alt={c.name}/>
                         </div>
                         <Image width={1000} height={1000} className='w-[50%] h-auto relative' style={{ filter: " grayscale(100%) contrast(100%)" }} src={c.logo} alt={c.name} title={c.name} />
                     </div>))

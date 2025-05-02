@@ -36,7 +36,7 @@ const Transition = ({ children }) => {
 
             if (isHomePage) {
                 gsap.set(curtainRef.current, {
-                    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
                 })
                 const loader = gsap.timeline()
                 loader
@@ -52,7 +52,7 @@ const Transition = ({ children }) => {
                         onStart: () => {
                             setloading(100)
                         },
-                        clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
+                        clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
                         duration: 0.8,
                         ease: 'power2.inOut',
                         onComplete: () => {
@@ -61,16 +61,16 @@ const Transition = ({ children }) => {
                     })
             } else {
                 gsap.set(curtainRef.current, {
-                    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
                 })
                 gsap.to(curtainRef.current, {
-                    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
                     duration: 0.8,
                     ease: 'power2.inOut',
                 }).then(() => {
                     setDisplayChildren(children)
                     gsap.to(curtainRef.current, {
-                        clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
+                        clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
                         duration: 0.8,
                         ease: 'power2.inOut'
                     })
