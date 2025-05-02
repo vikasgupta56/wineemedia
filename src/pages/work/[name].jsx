@@ -171,53 +171,53 @@ const WorkDetails = ({ data, meta }) => {
                     <div className='w-full py-[8vw] md:py-[3vw] text-white'>
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Brand Introduction & Their Details:</h4>
+                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Brand Introduction & Their Details:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.intro}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.intro}</h4>
                                 </div>
                             </div>
                         </div>
                         {data?.brief &&
                             <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                                 <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                    <h4 className='font-semibold'>Brand’s Brief:</h4>
+                                    <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Brand’s Brief:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
                                     <div className='w-full flex justify-between items-center'>
-                                        <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.brief}</h4>
+                                        <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.brief}</h4>
                                     </div>
                                 </div>
                             </div>
                         }
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Problem Faced by the Brand / Brief:</h4>
+                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Problem Faced by the Brand / Brief:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.problem}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.problem}</h4>
                                 </div>
                             </div>
                         </div>
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Solution Provided:</h4>
+                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Solution Provided:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.solution}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.solution}</h4>
                                 </div>
                             </div>
                         </div>
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-semibold'>Conclusion</h4>
+                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Conclusion</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.conclusion}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.conclusion}</h4>
                                 </div>
                             </div>
                         </div>
@@ -225,21 +225,21 @@ const WorkDetails = ({ data, meta }) => {
                         {data?.result && <>
                             <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                                 <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                    <h4 className='font-semibold'>Content - Deliverables:</h4>
+                                    <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Content - Deliverables:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
                                     <div className='w-full flex justify-between items-center'>
-                                        <h4 className='text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize'>{data?.serviceprovided}</h4>
+                                        <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.serviceprovided}</h4>
                                     </div>
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                                 <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                    <h4 className='font-semibold'>Result/Outcome - Growth Conversion:</h4>
+                                    <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Result/Outcome - Growth Conversion:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
                                     <div className='w-full flex justify-between items-center'>
-                                        <ul className='list-disc text-[3.5vw] md:text-[1.5vw] lg:text-[1.2vw] font-[font6] capitalize ml-4'>
+                                        <ul className='list-disc text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize ml-4'>
                                             {data?.result?.map((item, index) => <li key={index} className='mb-[1vw]'>{item}</li>)}
                                         </ul>
 
