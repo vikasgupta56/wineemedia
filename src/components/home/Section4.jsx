@@ -101,8 +101,8 @@ const Section4 = () => {
          <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[68vh] overflow-hidden'>
            <Image width={1000} height={1000} src={project.coverimage1} className='project-ig  w-full h-full object-cover object-center' alt={project.projectname} title={project.projectname}/>
          </div>
-         <h4 className='text-white text-[4vw] sm:text-[3.5vw] md:text-[2vw] lg:text-[1.3vw] mt-[1.5vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
-         <p className='text-white opacity-[.8] font-[font4] text-[3.5vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[.8vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
+         <h4 className='text-white font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]  mt-[1.5vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
+         <p className='text-white opacity-[.8]  mt-[2vw] sm:mt-0 font-[font1] text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
        </Link>
         ))}
       </div>

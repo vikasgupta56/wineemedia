@@ -6,7 +6,7 @@ import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 
 export default function App() {
     return (
-        <div className='w-full h-[50vh] md:h-[60vh]'>
+        <div className='w-full h-[45vh] md:h-[60vh]'>
             <Swiper
                 csmdode={true}
                 navigation={true} // Enables navigation arrows
@@ -39,13 +39,11 @@ export default function App() {
                                 <span>
                                     <i className="ri-double-quotes-l mb-[2vw] md:mb-[1vw] text-[8vw] sm:text-[6vw] md:text-[3vw] inline-block text-white/30"></i>
                                 </span>
-                                <p className='font-[font4] text-[3.5vw] sm:text-[1.8vw] md:text-[.8vw] text-white/60'>
-                                    The LuxeFrame team has brought their exceptional talent and charm to our properties. Their remarkable work resonated wonderfully with our audience and enhanced our marketing efforts. We eagerly anticipate their return.
-                                </p>
+                                <p className='font-[font1] text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] text-white/60'>WineeMedia brought creativity and professionalism that elevated our marketing and deeply connected with our audience. We’re excited to work with them again.</p>
                             </div>
                             <div>
                                 <h2 className='text-[4vw] sm:text-[1.8vw] md:text-[1.2vw] capitalize'>Mike Green</h2>
-                                <h4 className='text-[3vw] sm:text-[1.5vw] md:text-[1vw] leading-none'>Manager at Comdic</h4>
+                                <h4 className='text-[3.5vw] sm:text-[1.5vw] md:text-[1vw] leading-none'>Manager at Comdic</h4>
                             </div>
                         </div>
                     </SwiperSlide>

@@ -46,7 +46,6 @@ const Navbar = ({ nav }) => {
   }, [isOpenm])
 
 
-
   return (
     <div ref={nav} className='w-full  text-white absolute top-0 left-0 z-[99] flex items-center justify-between py-[4vw] sm:py-[2vw] p-[4vw] sm:p-[2vw]'>
       <Link href="/" title='home' ><img className='w-[15vw] md:w-[7vw] h-auto lg:w-[5vw]' src="/logo.png" alt="Wineemedia-logo" title='Wineemedia-logo' /></Link>
@@ -84,7 +83,7 @@ const Navbar = ({ nav }) => {
           </div>
         </div>
         <div className='border-t w-full border-white'>
-          <h4 className='text-[5vw] font-[font4] pt-[3vw] text-left px-[3vw] sm:hidden uppercase'>wineemedia</h4>
+          <h4 className='text-[5vw] pt-[3vw] font-[styles] text-left px-[3vw] sm:hidden'>WineeMedia</h4>
         </div>
       </div>
     </div>

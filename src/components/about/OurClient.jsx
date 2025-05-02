@@ -120,7 +120,7 @@ const OurClient = () => {
                 }
 
             </div>
-            <p className='client-txt1 text-white font-[font6] w-full md:w-[70%] text-[3vw] md:text-[2vw] capitalize my-[5vw]'>
+            <p className='client-txt1 text-white font-[font6] w-full md:w-[70%] text-[4vw] md:text-[2vw] capitalize my-[10vw] sm:my-[5vw]'>
                 Our clients had an amazing experience collaborating with us, praising our dedication,
                 creativity, and
                 professionalism every step of the way. We're confident you'll feel the same and enjoy a

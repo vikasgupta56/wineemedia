@@ -132,10 +132,10 @@ const Contact = () => {
                     <div className='w-full p-[4vw] md:p-[1.5vw] font-[font3] pt-[10vw] sm:pt-[2vw] md:pt-[1.5vw]'>
 
                         {/* To line */}
-                        <div className='w-full text-white text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] flex items-center border-b border-white/40 pt-[5vw] sm:pt-[1vw] pb-[5vw] sm:pb-[1vw]'>
+                        <div className='w-full text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center border-b border-white/40 pt-[5vw] sm:pt-[1vw] pb-[5vw] sm:pb-[1vw]'>
                             <h2>To</h2>
-                            <span className='bg-white/20 rounded-md mx-[.5vw] px-[2vw] sm:px-[.5vw] flex items-center gap-[.5vw]'>
-                                <div className='w-[1vw] h-[1vw] bg-white rounded-full text-black flex items-center justify-center text-[.8vw] font-[font5]'>
+                            <span className='bg-white/20 rounded-md mx-[.5vw] px-[2vw] sm:px-[.5vw] flex items-center gap-[2vw] sm:gap-[.5vw]'>
+                                <div className='sm:w-[1vw] w-[3.5vw] sm:h-[1vw] h-[3.5vw] bg-white rounded-full text-black flex items-center justify-center text-[.8vw] font-[font5]'>
                                     <Image width={1000} height={1000} className='w-[75%] h-[75%] object-contain mix-blend-difference' src="/Sub-logo.png" alt="" />
                                 </div>
                                 wineemedia
@@ -145,7 +145,7 @@ const Contact = () => {
 
                         {/* Email */}
                         <div className='w-full border-b border-white/40'>
-                            <div className='text-white text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] flex items-center'>
+                            <div className='text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center'>
                                 {errors.email && <div className='w-[5vw] sm:w-[.6vw] h-[4vw] sm:h-[.6vw] bg-red-600 rounded-full mr-[3vw] sm:mr-[.5vw]'></div>}
                                 <h2>From</h2>
                                 <input
@@ -160,7 +160,7 @@ const Contact = () => {
 
                         {/* Subject */}
                         <div className='w-full border-b border-white/40 mt-[4vw] sm:mt-[1vw]'>
-                            <div className='text-white text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] flex items-center'>
+                            <div className='text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center'>
                                 {errors.subject && <div className='w-[5vw] sm:w-[.6vw] h-[4vw] sm:h-[.6vw] bg-red-600 rounded-full mr-[3vw] sm:mr-[.5vw]'></div>}
                                 <h2>Subject</h2>
                                 <input
@@ -176,7 +176,7 @@ const Contact = () => {
                         {/* Message */}
                         <div className='w-full border-b border-white/40 mt-[4vw] sm:mt-[1vw]'>
                             <textarea
-                                className='w-full outline-none bg-transparent text-white text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] flex items-center py-[1vw] h-[30vh] resize-none'
+                                className='w-full outline-none bg-transparent text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center py-[1vw] h-[30vh] resize-none'
                                 placeholder='Say something,'
                                 value={message}
                                 onChange={(e) => handleFieldChange('message', e.target.value)}
@@ -185,9 +185,9 @@ const Contact = () => {
                         </div>
 
                         {/* Submit Button */}
-                        <div className={`w-full flex items-center ${Object.keys(errors).length > 0 ? 'justify-between' : 'justify-end'} mt-[20vh] sm:mt-[2vw] md:mt-0`}>
+                        <div className={`w-full  flex flex-col  sm:flex-row items-center ${Object.keys(errors).length > 0 ? 'justify-between' : 'justify-end'} mt-[20vh] sm:mt-[2vw] md:mt-0`}>
                             {Object.keys(errors).length > 0 && (
-                                <div className='text-[3.5vw] sm:text-[1.7vw] md:text-[1vw] text-red-600'>
+                                <div className='text-[4vw]  sm:text-[1.7vw] md:text-[1vw] text-red-600'>
                                     {errors.email || errors.subject || errors.message}
                                 </div>
                             )}

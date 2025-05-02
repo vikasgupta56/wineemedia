@@ -169,8 +169,8 @@ const WorkDetails = ({ data, meta }) => {
                         <Image width={1000} height={1000} priority className='w-full h-full object-cover object-center' src={data?.coverimage1} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div className='w-full py-[8vw] md:py-[3vw] text-white'>
-                        <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                        <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                 <h4 className='font-semibold'>Brand Introduction & Their Details:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
@@ -180,8 +180,8 @@ const WorkDetails = ({ data, meta }) => {
                             </div>
                         </div>
                         {data?.brief &&
-                            <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                                <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                            <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                                <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                     <h4 className='font-semibold'>Brand’s Brief:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
@@ -191,8 +191,8 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                         }
-                        <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                        <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                 <h4 className='font-semibold'>Problem Faced by the Brand / Brief:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
@@ -201,8 +201,8 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                        <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                 <h4 className='font-semibold'>Solution Provided:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
@@ -211,8 +211,8 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                        <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                 <h4 className='font-semibold'>Conclusion</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
@@ -224,7 +224,7 @@ const WorkDetails = ({ data, meta }) => {
 
                         {data?.result && <>
                             <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                                <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                     <h4 className='font-semibold'>Content - Deliverables:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
@@ -234,7 +234,7 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                                <div className='w-full md:w-[50%] font-[font6] text-[3vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                     <h4 className='font-semibold'>Result/Outcome - Growth Conversion:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>

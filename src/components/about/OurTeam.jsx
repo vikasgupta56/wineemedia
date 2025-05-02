@@ -98,8 +98,8 @@ const OurTeam = () => {
                     <div key={i} className='team-img w-full h-[50vh] ' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}>
                         <Image width={1000} height={1000} className='w-[100%] h-[100%] object-cover object-center' src={m.image} alt={m.name} title={m.name} />
                     </div>
-                    <h5 className='text-white text-[5vw] sm:text-[2.5vw] md:text-[1.2vw] mt-[1.3vw] font-[font6] capitalize'>{m.name}</h5>
-                    <p className='text-white/60 text-[3vw] sm:text-[2vw] md:text-[1vw] font-[font6] capitalize'>{m.profession}</p>
+                    <h5 className='text-white text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] mt-[1.3vw] font-[font6] capitalize'>{m.name}</h5>
+                    <p className='text-white/60 text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{m.profession}</p>
                 </div>))}
 
             </div>
