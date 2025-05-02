@@ -46,6 +46,7 @@ const Navbar = ({ nav }) => {
   }, [isOpenm])
 
 
+
   return (
     <div ref={nav} className='w-full  text-white absolute top-0 left-0 z-[99] flex items-center justify-between py-[4vw] sm:py-[2vw] p-[4vw] sm:p-[2vw]'>
       <Link href="/" title='home' ><img className='w-[15vw] md:w-[7vw] h-auto lg:w-[5vw]' src="/logo.png" alt="Wineemedia-logo" title='Wineemedia-logo' /></Link>

@@ -20,7 +20,7 @@ const Contact = () => {
     }
     
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const newErrors = {
             email: validateField('email', email),
@@ -37,15 +37,40 @@ const Contact = () => {
         setErrors({})
         setLoading(true)
 
-        setTimeout(() => {
-            console.log('Form submitted:', { email, subject, message })
-            toast.success('Message sent successfully. Thank you!')
-            setEmail('')
-            setSubject('')
-            setMessage('')
-            setLoading(false)
-            setisOpen(false)
-        }, 1500)
+        try {
+            const response = await fetch('/api/submitEmail', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({email, subject, message })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                toast.success('Message sent successfully. Thank you!')
+                setEmail('')
+                setSubject('')
+                setMessage('')
+                setLoading(false)
+                setisOpen(false)
+            } else {
+                toast.error(data.error || 'Submission failed');
+            }
+        } catch (error) {
+            toast.error("An error occurred.");
+        } finally {
+            setLoading(false);
+        }
+
+        // setTimeout(() => {
+        //     console.log('Form submitted:', { email, subject, message })
+        //     toast.success('Message sent successfully. Thank you!')
+        //     setEmail('')
+        //     setSubject('')
+        //     setMessage('')
+        //     setLoading(false)
+        //     setisOpen(false)
+        // }, 1500)
     }
 
     const handleFieldChange = (field, value) => {
