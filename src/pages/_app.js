@@ -2,14 +2,14 @@ import Transition from "@/components/transition/Transition";
 import "@/styles/globals.css";
 import 'remixicon/fonts/remixicon.css'
 import { ToastContainer, toast } from 'react-toastify';
-import SmoothScroller from "@/components/smoothScroll/SmoothScroller";
+// import SmoothScroller from "@/components/smoothScroll/SmoothScroller";
 
 
 export default function App({ Component, pageProps, router }) {
   return (
     <>
       <Transition>
-        <SmoothScroller/>
+        {/* <SmoothScroller/> */}
         <Component key={router.route} {...pageProps} />
       </Transition>
       <ToastContainer 
