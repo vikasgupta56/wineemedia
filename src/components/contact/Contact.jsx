@@ -100,7 +100,7 @@ const Contact = () => {
                         setisOpen(false)
                     }
                 })
-            }} className='w-full h-[100dvh] fixed top-0 left-0 z-40'></div>
+            }} className='w-full h-screen fixed top-0 left-0 z-40'></div>
 
             <div id='contact-page' ref={contactRef} className='fixed top-1/2 left-1/2 border border-zinc-800 -translate-x-1/2 -translate-y-1/2 z-[99] w-full sm:w-[70%] md:w-[50%] h-full sm:h-fit overflow-hidden bg-black/50 sm:rounded-2xl flex flex-col' style={{ backdropFilter: "blur(50px)" }}>
                 {/* Header */}
@@ -210,7 +210,7 @@ const Contact = () => {
                         </div>
 
                         {/* Submit Button */}
-                        <div className={`w-full  flex flex-col  sm:flex-row items-center ${Object.keys(errors).length > 0 ? 'justify-between' : 'justify-end'} mt-[18vh] sm:mt-[2vw] md:mt-0`}>
+                        <div className={`w-full  flex flex-col  sm:flex-row items-center ${Object.keys(errors).length > 0 ? 'justify-between' : 'justify-end'} mt-[20vh] sm:mt-[2vw] md:mt-0`}>
                             {Object.keys(errors).length > 0 && (
                                 <div className='text-[4vw]  sm:text-[1.7vw] md:text-[1vw] text-red-600'>
                                     {errors.email || errors.subject || errors.message}
