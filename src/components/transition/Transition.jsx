@@ -2,11 +2,14 @@ import gsap from 'gsap'
 import React, { createContext, useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 import Contact from '../contact/Contact'
+import Menu from '../navbar/Menu'
 
 export const contactContext = createContext()
 
 const Transition = ({ children }) => {
     const [isOpen, setisOpen] = useState(false)
+      const [isOpenm, setisOpenm] = useState(false)
+    
     const router = useRouter()
     const [displayChildren, setDisplayChildren] = useState(children)
     const curtainRef = useRef(null)
@@ -80,10 +83,11 @@ const Transition = ({ children }) => {
   
 
     return (
-        <contactContext.Provider value={[isOpen, setisOpen]}>
+        <contactContext.Provider value={[isOpen, setisOpen,isOpenm, setisOpenm]}>
             <div className="relative overflow-x-hidden">
                 {displayChildren}
                 {isOpen && <Contact/>}
+                <Menu/>
                 <div id='curtain' ref={curtainRef}
                     style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
                     className="w-full h-screen bg-[#111111] fixed top-0 left-0 z-[999] flex flex-col items-center justify-center"

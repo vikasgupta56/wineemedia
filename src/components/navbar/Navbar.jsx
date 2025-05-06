@@ -6,9 +6,9 @@ import gsap from 'gsap'
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = ({ nav }) => {
-  const [isOpen, setisOpen] = useContext(contactContext)
+  const [isOpen, setisOpen,isOpenm, setisOpenm] = useContext(contactContext)
   const navigation = useRef()
-  const [isOpenm, setisOpenm] = useState(false)
+  // const [isOpenm, setisOpenm] = useState(false)
 
   useEffect(() => {
     if (navigation.current) {
@@ -54,7 +54,7 @@ const Navbar = ({ nav }) => {
         </div>
       </div>
       <h2 onClick={() => setisOpenm(true)} className='block sm:hidden text-white font-[font6] text-[4vw]'>Menu</h2>
-      <div ref={navigation} style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' }} className='menu-pg sm:hidden fixed top-0 left-0 w-full h-[100dvh] bg-[#111111] flex flex-col justify-between pb-3'>
+      {/* <div ref={navigation} style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' }} className='menu-pg sm:hidden fixed top-0 left-0 w-full h-[100dvh] bg-[#111111] flex flex-col justify-between pb-3'>
         <div className={`w-full font-[second]  py-6  px-4 flex text-white  items-center justify-end `}>
           <h4 onClick={() => setisOpenm(false)} className='text-[6vw] font-[font4] sm:hidden'><AiOutlineClose/></h4>
         </div>
@@ -84,7 +84,7 @@ const Navbar = ({ nav }) => {
         <div className='border-t w-full border-white/20'>
           <h4 className='text-[5vw] pt-[3vw] font-[styles] text-left px-[3vw] sm:hidden'>WineeMedia</h4>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

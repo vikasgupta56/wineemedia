@@ -83,20 +83,20 @@ const OurClient = () => {
             }
         })
 
-        gsap.fromTo(".client-txt1", {
-            y: 10,
-            opacity: 0,
-        }, {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-                trigger: ".client-txt1",
-                start: "top 70%",
-                end: "top 40%",
-                scrub: 1,
-            }
-        })
+        // gsap.fromTo(".client-txt1", {
+        //     y: 10,
+        //     opacity: 0,
+        // }, {
+        //     y: 0,
+        //     opacity: 1,
+        //     duration: 1,
+        //     scrollTrigger: {
+        //         trigger: ".client-txt1",
+        //         start: "top 70%",
+        //         end: "top 40%",
+        //         scrub: 1,
+        //     }
+        // })
     }, [])
 
 
