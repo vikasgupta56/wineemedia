@@ -154,9 +154,9 @@ const Section4 = () => {
                         // onMouseEnter={(e) => handleMouseMove(e)}
                         // onMouseMove={(e) => handleMouseMove(e)}
                         // onMouseLeave={(e) => handleMouseLeave(e)}
-                        className='our-work relative px-[2vw] flex items-center justify-between text-black py-[8vw] sm:py-[7vw] md:py-[4vw] border-b border-black'
+                        className='our-work relative px-[4vw] sm:px-[2vw] flex items-center justify-between text-black py-[6vw] sm:py-[7vw] md:py-[4vw] border-b  border-black'
                     >
-                        <h4 className='z-10 text-[6.2vw] sm:text-[4.2vw] md:text-[3.2vw] font-[font4] font-semibold pointer-events-none'>{service.title}</h4>
+                        <h4 className='z-10 text-[6.2vw] sm:text-[4.2vw] md:text-[3.2vw] font-[font4] sm:font-semibold pointer-events-none'>{service.title}</h4>
                         <h5 className='z-10 hidden md:block w-[25%] text-right md:text-[1.1vw]'>{service.description}</h5>
                         <div className='z-10 hidden sm:block shadow-over w-full h-full absolute right-0 top-1/2 -translate-y-1/2  pointer-events-none'></div>
                         <div
@@ -171,8 +171,8 @@ const Section4 = () => {
                             /> */}
                         </div>
                         <div className='w-full h-full overflow-hidden absolute pointer-events-none top-0 z-[11] left-0'>
-                            <div  style={{ backgroundColor: service.color }} className={`back-slide w-full h-full absolute px-[2vw] top-full z-[9] left-0  text-white flex items-center justify-between`}>
-                            <h4 style={{ color: service.text }} className='text-[6vw] sm:text-[4vw] md:text-[3vw] font-[font4] font-semibold pointer-events-none'>{service.title}</h4>
+                            <div  style={{ backgroundColor: service.color }} className={`back-slide w-full h-full absolute px-[4vw] sm:px-[2vw] top-full z-[9] left-0  text-white flex items-center justify-between`}>
+                            <h4 style={{ color: service.text }} className='text-[6vw] sm:text-[4vw] md:text-[3vw] font-[font4] sm:font-semibold pointer-events-none'>{service.title}</h4>
                             <h5 style={{ color: service.text }} className='hidden md:block w-[25%] text-right md:text-[1.1vw]'>{service.description}</h5>
                             </div>
                         </div>

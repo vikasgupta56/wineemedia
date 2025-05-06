@@ -84,7 +84,7 @@ export default async function handler(req, res) {
 
       const mailOptions = {
         from: process.env.MAIL_EMAIL_ADDRESS,
-        to: ["ayush.zerror@gmail.com"],
+        to: ["info@wineemedia.com"],
         subject: `New WineeMedia Contact Form Submission`,
         html: `
         <html>
