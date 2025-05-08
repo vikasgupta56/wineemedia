@@ -210,7 +210,7 @@ const Contact = () => {
                         </div>
 
                         {/* Submit Button */}
-                        <div className={`w-full  flex flex-col  sm:flex-row items-center ${Object.keys(errors).length > 0 ? 'justify-between' : 'justify-end'} mt-[20vh] sm:mt-[2vw] md:mt-0`}>
+                        <div className={`w-full  flex flex-col  sm:flex-row items-center ${Object.keys(errors).length > 0 ? 'justify-between' : 'justify-end'} mt-[12vh] sm:mt-[2vw] md:mt-0`}>
                             {Object.keys(errors).length > 0 && (
                                 <div className='text-[4vw]  sm:text-[1.7vw] md:text-[1.8vw] lg:text-[1vw] text-red-600'>
                                     {errors.email || errors.subject || errors.message}
