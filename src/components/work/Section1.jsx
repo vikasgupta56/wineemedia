@@ -46,7 +46,7 @@ const Section1 = () => {
         </div>
         <div className="line sm:w-[0%] h-[1px] bg-white/20 absolute left-0 bottom-0"></div>
       </div>
-      <div className="projects w-full flex flex-col md:flex-row justify-start gap-[0.5%] md:gap-[3%] lg:gap-[0.5%] flex-wrap py-[5vw] md:py-[2vw] px-[4vw] sm:px-[2vw]">
+      <div className="projects w-full flex flex-col md:flex-row justify-start gap-[0.5%] md:gap-[3%] lg:gap-[1.15%] flex-wrap py-[5vw] md:py-[2vw] px-[4vw] sm:px-[2vw]">
 
         {data.map((project, i) => (i === 0 ? (<Link href={`/work/${project.projectname.split(" ").join("-")}`} key={i}  title={project.projectname} className='project w-full md:w-[48.5%] mb-[10vw] sm:mb-[2vw] cursor-pointer'>
           <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[46.5vh] lg:h-[68vh] overflow-hidden'>
