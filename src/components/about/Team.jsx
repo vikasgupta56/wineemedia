@@ -116,7 +116,7 @@ const Team = () => {
         });
       }, []);
     return (
-        <div className='team-section w-full relative min-h-screen hidden sm:block  text-black px-[2vw] py-[8vw]'>
+        <div className='team-section w-full relative min-h-screen hidden lg:block  text-black px-[2vw] py-[8vw]'>
             <div className='h-[11vw] sm:h-[5vw] client-txt-pp overflow-hidden'>
                 <h3 className='client-txtt text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Meet the Team</h3>
             </div>
@@ -126,7 +126,7 @@ const Team = () => {
             <div className='team-names w-full h-full mt-[8vw]'>
                 {
                     teamMembers.map((m, i) => (<div key={i} className='name-box flex opacity-[.3] items-center py-[.5vw]'>
-                        <div className='w-[35%]  text-right  pr-[1vw] text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[heading2] capitalize'>{m.profession}</div>
+                        <div className='w-[35%]  text-right  pr-[1vw] text-[4vw] sm:text-[2vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] font-[heading2] capitalize'>{m.profession}</div>
                         <div className='w-[65%] text-left text-[10vw] sm:text-[4.3vw] font-[heading] leading-none capitalize'>{m.name}</div>
                     </div>))
                 }

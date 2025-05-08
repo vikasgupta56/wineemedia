@@ -84,20 +84,20 @@ const OurTeam = () => {
     }, [])
 
     return (
-        <div className='w-full px-[4vw] py-[12vw]  sm:hidden text-black'>
+        <div className='w-full px-[4vw] py-[12vw]  md:pb-[4vw] lg:hidden text-black'>
            <div className='h-[11vw] sm:h-[5vw] client-txt-pp overflow-hidden'>
                 <h3 className='client-txtt text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Meet the Team</h3>
             </div>
             <div className='h-[11vw] sm:h-[5vw] client-txt-pp overflow-hidden'>
                 <h3 className='client-txtt text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Behind the Design</h3>
             </div>
-            <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap gap-[4vw] py-[5vw] sm:py-[2vw]'>
-                {teamMembers.map((m, i) => (<div key={i} ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[47vw] md:w-[21vw]">
-                    <div key={i} className='team-img w-full h-[50vh] ' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}>
+            <div style={{perspective:"1000px"}} className='team-container w-full flex flex-wrap gap-[4vw] md:gap-[2vw] py-[5vw] sm:py-[2vw]'>
+                {teamMembers.map((m, i) => (<div key={i} ref={(el => membersRefs.current[i] = el)} className="member mt-[1vw] shrink-0 w-full sm:w-[44vw] md:w-[29.2vw]">
+                    <div key={i} className='team-img w-full h-[50vh] md:h-[45vh] ' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}>
                         <Image width={1000} height={1000} className='w-[100%] h-[100%] object-cover object-center' src={m.image} alt={m.name} title={m.name} />
                     </div>
-                    <h5 className='text-black text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw] mt-[4vw] font-[heading] tracking-wide sm:tracking-tight capitalize'>{m.name}</h5>
-                    <p className='text-black/60 text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[heading2] mt-[1.5vw] tracking-wide sm:tracking-tight capitalize'>{m.profession}</p>
+                    <h5 className='text-black text-[4vw] sm:text-[3vw] md:text-[1.8vw] lg:text-[1.4vw] mt-[4vw] md:mt-[2vw] font-[heading] tracking-wide lg:tracking-tight capitalize'>{m.name}</h5>
+                    <p className='text-black/60 text-[4vw] sm:text-[2vw] md:text-[1.8vw] lg:text-[1.2vw] font-[heading2] mt-[1.5vw] md:mt-[.6vw] tracking-wide lg:tracking-tight capitalize'>{m.profession}</p>
                 </div>))}
 
             </div>

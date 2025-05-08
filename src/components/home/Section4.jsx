@@ -78,7 +78,7 @@ const Section4 = () => {
         {works.map((w, i) => (
           <Link href={`/work/${w.projectname.split(" ").join("-")}`} title={w.projectname} key={i} ref={el => workrefs.current[i] = el} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}   className="img-clip project-h cursor-pointer w-full sm:w-full md:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
           <div className='hidden sm:block black-strip transition-all duration-500 w-full h-[0%] bg-black absolute bottom-0 left-0 z-[9]'></div>
-          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[2vw] md:text-[1vw] font-[heading] h-[10%]  absolute  opacity-0 bottom-0 left-0 z-[10]  hidden sm:flex flex-col items-start justify-center'>
+          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[4vw] sm:text-[2vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] font-[heading] h-[10%]  absolute  opacity-0 bottom-0 left-0 z-[10]  hidden sm:flex flex-col items-start justify-center'>
             <h5 className='text-[1.5vw]'>{w.projectname}</h5>
             <div className='flex items-center justify-between w-[100%]'>
               <h5>
@@ -101,8 +101,8 @@ const Section4 = () => {
          <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[68vh] overflow-hidden'>
            <Image width={1000} height={1000} src={project.coverimage1} className='project-ig  w-full h-full object-cover object-center' alt={project.projectname} title={project.projectname}/>
          </div>
-         <h4 className='text-white font-[heading] text-[4vw] sm:text-[3vw] tracking-wide sm:tracking-tight md:text-[1.4vw] lg:text-[1.4vw]  mt-[4vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
-         <p className='text-white opacity-[.8] tracking-wide sm:tracking-tight  mt-[2vw] sm:mt-0 font-[heading2] text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
+         <h4 className='text-white font-[heading] text-[4vw] sm:text-[3vw] tracking-wide md:text-[1.4vw] lg:text-[1.4vw]  mt-[4vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
+         <p className='text-white opacity-[.8] tracking-wide  mt-[2vw] sm:mt-0 font-[heading2] text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
        </Link>
         ))}
       </div>

@@ -100,11 +100,11 @@ const Contact = () => {
                         setisOpen(false)
                     }
                 })
-            }} className='w-full h-screen fixed top-0 left-0 z-40'></div>
+            }} className='w-full h-[100dvh] fixed top-0 left-0 z-40'></div>
 
-            <div id='contact-page' ref={contactRef} className='fixed top-1/2 left-1/2 border border-zinc-800 -translate-x-1/2 -translate-y-1/2 z-[99] w-full sm:w-[70%] md:w-[50%] h-full sm:h-fit overflow-hidden bg-black/50 sm:rounded-2xl flex flex-col' style={{ backdropFilter: "blur(50px)" }}>
+            <div id='contact-page' ref={contactRef} className='fixed top-1/2 left-1/2 border border-zinc-800 -translate-x-1/2 -translate-y-1/2 z-[99] w-full sm:w-[70%] md:w-[70%] lg:w-[50%] h-[100dvh] sm:h-fit overflow-hidden bg-black/50 sm:rounded-2xl flex flex-col' style={{ backdropFilter: "blur(50px)" }}>
                 {/* Header */}
-                <div className='dots relative w-full bg-[#222222] px-[3vw] sm:px-[1vw] py-[4vw] sm:py-[1.7vw] md:py-[.9vw] flex items-center justify-between'>
+                <div className='dots relative w-full bg-[#222222] px-[3vw] sm:px-[1vw] py-[4vw] sm:py-[1.7vw] md:py-[1.6vw] lg:py-[.9vw] flex items-center justify-between'>
                     <div className=' flex gap-[4vw] sm:gap-[.4vw]'>
                         <div onClick={() => {
                             setErrors({})
@@ -120,8 +120,8 @@ const Contact = () => {
                                     setisOpen(false)
                                 }
                             })
-                        }} className='w-[4vw] sm:w-[1.5vw] md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-red-600 rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'>
-                            <i className="ri-close-fill w-[4vw] sm:w-[1.5vw] md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] flex items-center justify-center opacity-0"></i>
+                        }} className='w-[4vw] sm:w-[1.5vw] md:w-[1.3vw] lg:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1.3vw] lg:h-[1vw]  bg-red-600 rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'>
+                            <i className="ri-close-fill w-[4vw] sm:w-[1.5vw] md:w-[1.3vw] lg:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1.3vw] lg:h-[1vw]  flex items-center justify-center opacity-0"></i>
                         </div>
                         <div onClick={() => {
                             setErrors({})
@@ -137,27 +137,27 @@ const Contact = () => {
                                     setisOpen(false)
                                 }
                             })
-                        }} className='w-[4vw] sm:w-[1.5vw] md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-[#F3BF49] rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'>
-                            <i className="ri-subtract-line w-[4vw] sm:w-[1.5vw] md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] flex items-center justify-center opacity-0"></i>
+                        }} className='w-[4vw] sm:w-[1.5vw] md:w-[1.3vw] lg:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1.3vw] lg:h-[1vw]  bg-[#F3BF49] rounded-full flex items-center justify-center text-[.8vw] cursor-pointer'>
+                            <i className="ri-subtract-line w-[4vw] sm:w-[1.5vw] md:w-[1.3vw] lg:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1.3vw] lg:h-[1vw]  flex items-center justify-center opacity-0"></i>
                         </div>
-                        <div className='w-[4vw] sm:w-[1.5vw] md:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1vw] bg-[#58595B] rounded-full'></div>
+                        <div className='w-[4vw] sm:w-[1.5vw] md:w-[1.3vw] lg:w-[1vw] h-[4vw] sm:h-[1.5vw] md:h-[1.3vw] lg:h-[1vw]  bg-[#58595B] rounded-full'></div>
                     </div>
-                    <h4 className='text-white font-[heading] text-[4vw] md:text-[.9vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>Get in touch</h4>
+                    <h4 className='text-white font-[heading] text-[4vw] md:text-[1.8vw] lg:text-[.9vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>Get in touch</h4>
                     <button onClick={() => {
                         setErrors({})
                         setisOpen(false)
                         setEmail('')
                         setSubject('')
                         setMessage('')
-                    }} className='text-white text-[4vw] font-[heading2] tracking-wide sm:tracking-normal sm:hidden'>Close</button>
+                    }} className='text-white text-[4vw] font-[heading2] tracking-wide  sm:hidden'>Close</button>
                 </div>
 
                 {/* Form */}
                 <form onSubmit={handleSubmit}>
-                    <div className='w-full p-[4vw] md:p-[1.5vw] font-[heading2] tracking-wide sm:tracking-normal pt-[10vw] sm:pt-[2vw] md:pt-[1.5vw]'>
+                    <div className='w-full p-[4vw] md:p-[1.5vw] font-[heading2] tracking-wide  pt-[10vw] sm:pt-[2vw] md:pt-[1.5vw]'>
 
                         {/* To line */}
-                        <div className='w-full text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center border-b border-white/40 pt-[5vw] sm:pt-[1vw] pb-[5vw] sm:pb-[1vw]'>
+                        <div className='w-full text-white text-[4vw] sm:text-[1.7vw] md:text-[1.8vw] lg:text-[1vw] flex items-center border-b border-white/40 pt-[5vw] sm:pt-[1vw] pb-[5vw] sm:pb-[1vw]'>
                             <h2>To</h2>
                             <span className='bg-white/20 rounded-md mx-[.5vw] px-[2vw] sm:px-[.5vw] flex items-center gap-[2vw] sm:gap-[.5vw]'>
                                 <div className='sm:w-[1vw] w-[3.5vw] sm:h-[1vw] h-[3.5vw] bg-white rounded-full text-black flex items-center justify-center text-[.8vw] font-[font5]'>
@@ -170,7 +170,7 @@ const Contact = () => {
 
                         {/* Email */}
                         <div className='w-full border-b border-white/40'>
-                            <div className='text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center'>
+                            <div className='text-white text-[4vw] sm:text-[1.7vw] md:text-[1.8vw] lg:text-[1vw] flex items-center'>
                                 {errors.email && <div className='w-[5vw] sm:w-[.6vw] h-[4vw] sm:h-[.6vw] bg-red-600 rounded-full mr-[3vw] sm:mr-[.5vw]'></div>}
                                 <h2>From</h2>
                                 <input
@@ -185,7 +185,7 @@ const Contact = () => {
 
                         {/* Subject */}
                         <div className='w-full border-b border-white/40 mt-[4vw] sm:mt-[1vw]'>
-                            <div className='text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center'>
+                            <div className='text-white text-[4vw] sm:text-[1.7vw] md:text-[1.8vw] lg:text-[1vw] flex items-center'>
                                 {errors.subject && <div className='w-[5vw] sm:w-[.6vw] h-[4vw] sm:h-[.6vw] bg-red-600 rounded-full mr-[3vw] sm:mr-[.5vw]'></div>}
                                 <h2>Subject</h2>
                                 <input
@@ -201,7 +201,7 @@ const Contact = () => {
                         {/* Message */}
                         <div className='w-full border-b border-white/40 mt-[4vw] sm:mt-[1vw]'>
                             <textarea
-                                className='w-full outline-none bg-transparent text-white text-[4vw] sm:text-[1.7vw] md:text-[1vw] flex items-center py-[1vw] h-[30vh] resize-none'
+                                className='w-full outline-none bg-transparent text-white text-[4vw] sm:text-[1.7vw] md:text-[1.8vw] lg:text-[1vw] flex items-center py-[1vw] h-[30vh] resize-none'
                                 placeholder='Say something,'
                                 value={message}
                                 onChange={(e) => handleFieldChange('message', e.target.value)}
@@ -212,13 +212,13 @@ const Contact = () => {
                         {/* Submit Button */}
                         <div className={`w-full  flex flex-col  sm:flex-row items-center ${Object.keys(errors).length > 0 ? 'justify-between' : 'justify-end'} mt-[20vh] sm:mt-[2vw] md:mt-0`}>
                             {Object.keys(errors).length > 0 && (
-                                <div className='text-[4vw]  sm:text-[1.7vw] md:text-[1vw] text-red-600'>
+                                <div className='text-[4vw]  sm:text-[1.7vw] md:text-[1.8vw] lg:text-[1vw] text-red-600'>
                                     {errors.email || errors.subject || errors.message}
                                 </div>
                             )}
                             <button
                                 type="submit"
-                                className='w-full sm:w-fit py-[3vw] outline-none sm:py-[.9vw] text-white bg-gray-500/30 mt-[5vw] sm:mt-[1.5vw] rounded-xl text-[4vw] sm:text-[2vw] md:text-[1vw] px-[8vw] sm:px-[2.5vw]'
+                                className='w-full sm:w-fit py-[3vw] outline-none sm:py-[.9vw] text-white bg-gray-500/30 mt-[5vw] sm:mt-[1.5vw] rounded-xl text-[4vw] sm:text-[2vw] md:text-[1.8vw] lg:text-[1vw] px-[8vw] sm:px-[2.5vw]'
                             >
                                 {loading ? 'Sending...' : 'Send'}
                             </button>

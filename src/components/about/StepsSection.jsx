@@ -73,22 +73,22 @@ const StepsSection = ({ mainRef, benifitsRef }) => {
 
 
     return (
-        <div className='stepSection w-full min-h-screen text-white py-[10vw] sm:py-0 px-[4vw] sm:px-0'>
+        <div className='stepSection w-full min-h-screen text-white py-[10vw] lg:py-[2vw] xl:py-[0vw] sm:py-0 px-[4vw] sm:px-0'>
             {values.map((item, index) => (
                 <div
                     key={index}
-                    className={`w-full ${index !== values.length - 1 ? "border-b border-black/20" : ""
+                    className={`w-full ${index !== values.length - 1 ? "border-b border-black/30" : ""
                         } flex items-center flex-col sm:flex-row justify-center py-[5vw]`}
                 >
                     <div className="flex w-full flex-col sm:flex-row items-start justify-center">
                         <span className="w-full sm:w-[13%]  text-[15vw] sm:text-[8vw] font-[heading2] leading-none">
                             {item.number}
                         </span>
-                        <div className="w-full sm:w-[50%]">
-                            <h4 className=" text-[6vw] my-[2vw] sm:my-0 md:text-[2vw] font-[heading] leading-none">
+                        <div className="w-full sm:w-[50%] md:w-[60%] lg:w-[50%]">
+                            <h4 className=" text-[6vw] my-[2vw] sm:my-0 md:text-[3vw] lg:text-[2vw] font-[heading] leading-none">
                                 {item.title}
                             </h4>
-                            <p className=" text-[4vw] sm:text-[2vw] md:text-[1vw] font-[heading2] tracking-wide sm:tracking-tight lg:text-[1.2vw] mt-[.8vw]">
+                            <p className=" text-[4vw] sm:text-[2vw] md:text-[1.8vw] font-[heading2] tracking-wide lg:text-[1.3vw] xl:text-[1.2vw] mt-[.8vw]">
                                 {item.description}
                             </p>
                         </div>

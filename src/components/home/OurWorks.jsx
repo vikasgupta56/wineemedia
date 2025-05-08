@@ -143,7 +143,7 @@ const Section4 = () => {
         <div className='our-works w-full py-[2vw] pb-[10vw] sm:pb-[6vw] bg-black'>
             <div className='select-work2 relative w-full mx-[2vw] py-[5vw] sm:py-[1.2vw] flex mt-[6vw]'>
                 <div className='overflow-hidden'>
-                    <h3 className='work-txt2 text-black text-[10vw] w-[90%] sm:w-full sm:text-[3.5vw] font-[heading2] leading-none capitalize' style={{ transform: "translateY(100%)" }}>Our Services</h3>
+                    <h3 className='work-txt2 text-black text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none capitalize' style={{ transform: "translateY(100%)" }}>Our Services</h3>
                 </div>
                 <div className="line2 w-[0%] h-[1px] bg-black absolute left-0 bottom-0"></div>
             </div>
