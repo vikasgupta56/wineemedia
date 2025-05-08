@@ -116,12 +116,12 @@ const Team = () => {
         });
       }, []);
     return (
-        <div className='team-section w-full relative min-h-screen hidden sm:block  text-white px-[2vw] py-[8vw]'>
+        <div className='team-section w-full relative min-h-screen hidden sm:block  text-black px-[2vw] py-[8vw]'>
             <div className='h-[11vw] sm:h-[5vw] client-txt-pp overflow-hidden'>
-                <h3 className='client-txtt text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Meet the Team</h3>
+                <h3 className='client-txtt text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Meet the Team</h3>
             </div>
             <div className='h-[11vw] sm:h-[5vw] client-txt-pp overflow-hidden'>
-                <h3 className='client-txtt text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Behind the Design</h3>
+                <h3 className='client-txtt text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Behind the Design</h3>
             </div>
             <div className='team-names w-full h-full mt-[8vw]'>
                 {

@@ -102,20 +102,20 @@ const OurClient = () => {
 
 
     return (
-        <div className='w-full py-[8vw] text-white px-[4vw] sm:px-[2vw]'>
+        <div className='w-full py-[8vw] text-black px-[4vw] sm:px-[2vw]'>
             <div className='h-[11vw] sm:h-[5vw] client-txt-p overflow-hidden'>
-                <h3 className='client-txt text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Still not convinced?</h3>
+                <h3 className='client-txt text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Still not convinced?</h3>
             </div>
             <div className='h-[11vw] sm:h-[5vw] client-txt-p overflow-hidden'>
-                <h3 className='client-txt text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Well, they were.</h3>
+                <h3 className='client-txt text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none py-[.6vw]' style={{ transform: "translateY(100%)" }}>Well, they were.</h3>
             </div>
             <div className='w-full pt-[6vw] sm:pt-[3vw] flex flex-wrap gap-[1.5vw]'>
                 {
-                    clientData.map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-[#ffffff15] flex items-center justify-center'>
+                    clientData.map((c, i) => (<div key={i} ref={el => clipRefs.current[i] = el} onMouseMove={() => handleClipMove(i)} onMouseLeave={() => handleClipLeave(i)} className='shrink-0 w-[49%] md:w-[18vw] h-[30vw] md:h-[13vw]  cursor-pointer relative bg-[#000] flex items-center justify-center'>
                         <div className='clipeffect absolute bottom-0 left-0 h-full w-full bg-zinc-800' style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
                             <Image width={1000} height={1000} className='w-full h-full object-cover' src={c.images} alt={c.name}/>
                         </div>
-                        <Image width={1000} height={1000} className='w-[50%] h-auto relative' style={{ filter: " grayscale(100%) contrast(100%)" }} src={c.logo} alt={c.name} title={c.name} />
+                        <Image width={1000} height={1000} className='w-[50%] h-auto relative ' style={{ filter: " grayscale(100%)  contrast(100%)" }} src={c.logo} alt={c.name} title={c.name} />
                     </div>))
                 }
 

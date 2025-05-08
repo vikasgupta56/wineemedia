@@ -94,9 +94,9 @@ const Services = () => {
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
-            <Image width={1000} height={1000} className='igs absolute top-[29%] sm:top-[18%] right-[25%] w-[26%] h-auto' src="/hero1.webp" alt="service-image1" title="service-image1" />
-            <Image width={1000} height={1000} className='igs absolute top-[60%] right-[0%] w-[25%] h-auto mix-blend-exclusion' src="/hero2.webp" alt="service-image2" title="service-image2" />
-            <Image width={1000} height={1000} className='igs absolute bottom-[-10%] left-[0%] w-[25%] h-auto' src="/hero3.webp" alt="service-image3" title="service-image3" />
+            <Image width={1000} height={1000} className='igs z-10 mix-blend-exclusion absolute brightness-70 top-[29%] sm:top-[18%] right-[20%] w-[26%] h-auto' src="/hero1.webp" alt="service-image1" title="service-image1" />
+            <Image width={1000} height={1000} className='igs z-10 mix-blend-exclusion absolute brightness-70 top-[60%] right-[0%] w-[25%] h-auto' src="/hero2.webp" alt="service-image2" title="service-image2" />
+            <Image width={1000} height={1000} className='igs z-10 mix-blend-exclusion absolute brightness-70 bottom-[-10%] left-[0%] w-[25%] h-auto' src="/images/dawn-cover2.webp" alt="service-image3" title="service-image3" />
         </div>
     )
 }

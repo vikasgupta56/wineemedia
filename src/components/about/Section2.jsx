@@ -18,24 +18,24 @@ const Section2 = () => {
             }
         })
 
-        var tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".select-work",
-                start: "top 75%",
-                end: "top 60%",
-                scrub: 1,
-            }
-        })
-        tl
-            .to(".line-about", {
-                width: "96vw",
-                duration: .8,
-                ease: "none",
-            }, "a")
-            .to(".work-txt-about", {
-                transform: "translateY(0)",
-                duration: .8,
-            }, "a")
+        // var tl = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".select-work",
+        //         start: "top 75%",
+        //         end: "top 60%",
+        //         scrub: 1,
+        //     }
+        // })
+        // tl
+        //     .to(".line-about", {
+        //         width: "96vw",
+        //         duration: .8,
+        //         ease: "none",
+        //     }, "a")
+        //     .to(".work-txt-about", {
+        //         transform: "translateY(0)",
+        //         duration: .8,
+        //     }, "a")
 
         gsap.fromTo(".sect2-txt", {
             y: 50,
@@ -52,32 +52,32 @@ const Section2 = () => {
                 scrub: 1,
             }
         })
-        gsap.fromTo(".sec2-txt1", {
-            y: 10,
-            opacity: 0,
-        }, {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-                trigger: ".sec2-txt1",
-                start: "top 70%",
-                end: "top 40%",
-                scrub: 1,
-            }
-        })
+        // gsap.fromTo(".sec2-txt1", {
+        //     y: 10,
+        //     opacity: 0,
+        // }, {
+        //     y: 0,
+        //     opacity: 1,
+        //     duration: 1,
+        //     scrollTrigger: {
+        //         trigger: ".sec2-txt1",
+        //         start: "top 70%",
+        //         end: "top 40%",
+        //         scrub: 1,
+        //     }
+        // })
 
     }, [])
 
     return (
-        <div className='w-full min-h-screen px-[2vw]'>
-            <div className='select-work relative w-full py-[5vw] md:py-[1.2vw] flex'>
+        <div className='w-full min-h-screen px-[2vw] pt-[8vw]'>
+            {/* <div className='select-work relative w-full py-[5vw] md:py-[1.2vw] flex'>
                 <div className='overflow-hidden'>
                     <h2 className='work-txt-about pl-[2vw] sm:pl-0 text-white text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>About Us</h2>
                 </div>
                 <div className="line-about w-[0] h-[1px] bg-white/20 absolute left-0 bottom-0"></div>
-            </div>
-            <h2 className='sec2-txt1 text-white px-[2vw] sm:px-0  font-[heading2] tracking-wide sm:tracking-tight w-full md:w-[70%] text-[4vw] md:text-[2vw] my-[10vw] md:my-[5vw]'>WineeMedia is a digital branding and marketing agency helping businesses elevate their online presence through strategic social media, engaging content, SEO, and high-impact advertising campaigns.</h2>
+            </div> */}
+            {/* <h2 className='sec2-txt1 text-white px-[2vw] sm:px-0  font-[heading2] tracking-wide sm:tracking-tight w-full md:w-[70%] text-[4vw] md:text-[2vw] my-[10vw] md:my-[5vw]'>WineeMedia is a digital branding and marketing agency helping businesses elevate their online presence through strategic social media, engaging content, SEO, and high-impact advertising campaigns.</h2> */}
             <div className='clipimg w-full px-[2vw] sm:px-0 flex flex-col md:flex-row gap-[2vw]'>
                 <div className='w-full md:w-1/2 h-[50vh] md:h-[120vh]'>
                     <Image width={1000} height={1000} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='img-clip w-full h-[70%] md:h-[50%] object-cover' src="/aboutimg1.webp" alt="about-us-banner1" title="about-us-banner1" />'

@@ -45,7 +45,7 @@ const StepsSection = ({ mainRef, benifitsRef }) => {
           scrollTrigger: {
             trigger: benifitsRef.current,
             start: "bottom 90%",
-            end: "bottom 60%",
+            end: "bottom 80%",
             scrub: 1, // ties the timeline to scroll
           },
         });
@@ -53,41 +53,19 @@ const StepsSection = ({ mainRef, benifitsRef }) => {
         tl2
           .to(mainRef.current, {
             backgroundColor: "white",
-            duration: 1,
+            duration: .4,
             ease: "power2.inOut",
           }, 0)
           .to(benifitsRef.current, {
             color: "black",
-            duration: 1,
+            duration: .4,
             ease: "power2.inOut",
           }, 0)
           .to(".stepSection", {
             color: "black",
-            duration: 1,
+            duration: .4,
             ease: "power2.inOut",
           }, 0);
-
-          const tl3 = gsap.timeline({
-            scrollTrigger: {
-              trigger:".stepSection",
-              start: "bottom 90%",
-              end: "bottom 60%",
-              scrub: 1, // ties the timeline to scroll
-            },
-          });
-          tl3
-          .to(mainRef.current, {
-            backgroundColor: "black",
-            duration: 1,
-            ease: "power2.inOut",
-          }, 0)
-          .to(".stepSection", {
-            color: "white",
-            duration: 1,
-            ease: "power2.inOut",
-          }, 0);
-        
-
 
       }, []);
       

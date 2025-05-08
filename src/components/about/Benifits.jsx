@@ -46,7 +46,7 @@ const Benifits = ({benifitsRef}) => {
         <div ref={benifitsRef} className='benifits w-full px-[2vw] text-white'>
             <div className='select-work2 relative w-full py-[5vw] md:py-[1.2vw] flex'>
                 <div className='overflow-hidden'>
-                    <h2 className='work-txt-about2 pl-[2vw] sm:pl-0 text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>Benefits</h2>
+                    <h2 className='work-txt-about2 pl-[2vw] sm:pl-0 text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>Benefits</h2>
                 </div>
                 <div className="line-about2 w-[0] h-[1px] bg-white/20 absolute left-0 bottom-0"></div>
             </div>

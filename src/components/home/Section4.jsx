@@ -70,7 +70,7 @@ const Section4 = () => {
     <div className='section4-h w-full min-h-screen bg-black'>
       <div className='select-work relative w-full mx-[2vw] py-[5vw] sm:py-[1.2vw] mt-[6vw]'>
         <div className='overflow-hidden'>
-          <h2 className='work-txt text-white  pl-[2vw] sm:pl-0 text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>Selected Work</h2>
+          <h2 className='work-txt text-white  pl-[2vw] sm:pl-0 text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>Selected Work</h2>
         </div>
         <div className="line w-[0%] h-[1px] bg-white/20 absolute left-0 bottom-0"></div>
       </div>

@@ -44,10 +44,10 @@ const Footer = () => {
 
 
     return (
-        <div className='w-full flex flex-col justify-between h-[70vh] relative sm:h-[75vh] bg-black p-[4vw] sm:p-[2vw] pt-[10vw] text-white'>
+        <div className='w-full flex flex-col justify-between h-[70vh] relative sm:h-[75vh] bg-black p-[4vw] sm:p-[2vw] sm:pt-[4vw] pt-[10vw] text-white'>
             <div className='w-full flex flex-col md:flex-row items-start justify-between'>
                 <div>
-                    <h3 className='text-[10vw] sm:text-[4.3vw] font-[heading2] leading-[.8] whitespace-nowrap'>Let's Connect</h3>
+                    <h3 className='text-[10vw] sm:text-[3.5vw] font-[heading2] leading-[.8] whitespace-nowrap'>Let's Connect</h3>
                     <h6 className='font-[heading2] text-[4vw] sm:text-[2.5vw] md:text-[1.8vw] lg:text-[1vw]  mb-[10vw] sm:mb-0 mt-[3vw] sm:mt-[1.4vw]'>info@wineemedia.com</h6>
                 </div>
                 <div className='flex gap-[8vw] flex-col md:flex-row font-[heading2]'>

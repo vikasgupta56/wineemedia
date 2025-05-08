@@ -61,6 +61,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background-color: black;
 }
 
 .social-i:hover .cir{
@@ -113,8 +114,13 @@ body {
   cursor:default;
 }
 
+.line-mask {
+  display: inline-block;
+  overflow: hidden;
+}
+
 .home-marquee:hover{
-  color: #fff;
+  color: #4B216E;
 }
 
 .marquee-about{

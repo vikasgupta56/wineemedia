@@ -39,7 +39,7 @@ const WorkDetails = ({ data, meta }) => {
 
         // Wait for DOM/text to update before manipulating
         requestAnimationFrame(() => {
-            const text = textElement.current.textContent;
+            const text = textElement.current?.textContent;
             if (!text || text.length === 0) return;
 
             let clutter = '';
@@ -89,11 +89,11 @@ const WorkDetails = ({ data, meta }) => {
     
             gsap.to(ref.current, {
               clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
-              duration:.6,
+              duration:1.2,
               scrollTrigger: {
                 trigger: ref.current,
-                start: 'top 80%',
-                end: 'top 20%',
+                start: 'top 70%',
+                end: 'top 10%',
                 // scrub: 1,
                 // markers: true,
               },
@@ -165,7 +165,7 @@ const WorkDetails = ({ data, meta }) => {
                 <div className='w-full min-h-screen pt-[30vw] md:pt-[12vw] px-[4vw] md:px-[2vw]'>
                     <Navbar />
                     <h2 ref={textElement} className='project-detail w-[90%] sm:w-full text-white text-[8vw] tracking-wide sm:tracking-normal font-[heading2] md:text-[7.5vw] leading-none mb-[5vw] md:mb-[2vw] text-left md:text-center uppercase'>{data?.projectname}</h2>
-                    <div style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='cover-main w-full h-[50vh] md:h-[80vh] lg:h-[120vh] bg-[#ffffff27]'>
+                    <div style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='cover-main w-full h-[50vh] md:h-[80vh] lg:h-[120vh] bg-[#ffffff0e]'>
                         <Image width={1000} height={1000} priority className='w-full h-full object-cover object-center' src={data?.coverimage1} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div className='w-full py-[8vw] md:py-[3vw] text-white'>
@@ -249,40 +249,40 @@ const WorkDetails = ({ data, meta }) => {
                         </>}
                     </div>
                     <div ref={imgRef1} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full h-[30vh] mb-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <Image width={1000} height={1000} className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.coverimage2} alt={data?.projectname} title={data?.projectname} />
+                        <Image width={1000} height={1000} className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff0e]' src={data?.coverimage2} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div ref={imgRef2} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full md:pt-[2vw]  flex flex-col md:flex-row items-center gap-[4vw] md:gap-0 justify-between'>
-                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
+                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff0e]'>
                             <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image3} alt={data?.projectname} title={data?.projectname} />
                         </div>
-                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
+                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff0e]'>
                             <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image4} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>
                     {data?.portraitVideo && <div className='w-full my-[4vw] md:mb-0 h-[60vh]  md:md:h-[65vh] lg:h-[100vh] flex items-center justify-center '>
-                        <div ref={imgRef3} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
+                        <div ref={imgRef3} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff0e]'>
                             <video autoPlay muted loop playsInline className='w-full h-full object-cover object-center' src={data?.portraitVideo} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>}
                     {data?.landScapeVideo && <div ref={imgRef4} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full h-[30vh] mb-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <video autoPlay muted loop playsInline className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.landScapeVideo} alt={data?.projectname} title={data?.projectname} />
+                        <video autoPlay muted loop playsInline className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff0e]' src={data?.landScapeVideo} alt={data?.projectname} title={data?.projectname} />
                     </div>}
                     <div ref={imgRef5} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full h-[30vh] my-[4vw] md:mb-0 md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
-                        <Image width={1000} height={1000} className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff27]' src={data?.image5} alt={data?.projectname} title={data?.projectname} />
+                        <Image width={1000} height={1000} className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff0e]' src={data?.image5} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div ref={imgRef6} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full md:pt-[2vw]  flex flex-col md:flex-row items-center gap-[4vw] md:gap-0 justify-between'>
-                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
+                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff0e]'>
                             <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image6} alt={data?.projectname} title={data?.projectname} />
                         </div>
-                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff27]'>
+                        <div className='w-full md:w-[49.5%] h-[30vh] md:h-[70vh] bg-[#ffffff0e]'>
                             <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image7} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>
                     {data?.image8 && data?.image9 ? (<div ref={imgRef7} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full mt-[4vw] md:mt-0 md:pt-[2vw] flex flex-col  md:flex-row items-center justify-center gap-[4vw] md:gap-[1%]'>
-                        <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
+                        <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff0e]'>
                             <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image8} alt={data?.projectname} title={data?.projectname} />
                         </div>
-                        <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff27]'>
+                        <div className='w-full md:w-[45%] lg:w-[40%] h-[60vh] md:md:h-[65vh] lg:h-[100vh] bg-[#ffffff0e]'>
                             <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image9} alt={data?.projectname} title={data?.projectname} />
                         </div>
                     </div>) : ""}

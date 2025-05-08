@@ -42,7 +42,7 @@ const Section1 = () => {
       <Navbar />
       <div className='select-work relative w-full mx-[2vw] py-[5vw] md:py-[1.2vw] flex pt-[30vw] md:pt-[12vw]'>
         <div className='overflow-hidden'>
-          <h2 className='work-txt text-white text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>Our Work</h2>
+          <h2 className='work-txt text-white text-[10vw] sm:text-[3.5vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>Our Work</h2>
         </div>
         <div className="line sm:w-[0%] h-[1px] bg-white/20 absolute left-0 bottom-0"></div>
       </div>
