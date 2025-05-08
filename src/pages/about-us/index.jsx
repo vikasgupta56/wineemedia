@@ -3,21 +3,26 @@ import OurClient from '@/components/about/OurClient'
 import OurTeam from '@/components/about/OurTeam'
 import Section1 from '@/components/about/Section1'
 import Section2 from '@/components/about/Section2'
+import StepsSection from '@/components/about/StepsSection'
+import Team from '@/components/about/Team'
 import Footer from '@/components/footer/Footer'
 import SeoHeader from '@/components/seo/SeoHeader'
-import Head from 'next/head'
-import React, { useEffect } from 'react'
+import React, { useRef } from 'react'
 
 
 const About = ({meta}) => {
+   const mainRef = useRef(null)
+   const benifitsRef = useRef(null)
 
   return (
    <>
    <SeoHeader meta={meta}/>
-    <div className='relative bg-black'>
+    <div ref={mainRef} className='relative bg-black'>
         <Section1/>
         <Section2/>
-        <Benifits/>
+        <Benifits benifitsRef={benifitsRef} />
+        <StepsSection mainRef={mainRef} benifitsRef={benifitsRef}/>
+        <Team/>
         <OurTeam/>
         <OurClient/>
         <Footer/>

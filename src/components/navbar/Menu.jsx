@@ -39,28 +39,28 @@ const Menu = () => {
     </div>
     <div className='flex flex-col px-4 text-white items-start'>
       <div className='overflow-hidden'>
-        <Link onClick={() => setisOpenm(false)}  href="/" title='home' className='mtxt inline-block text-[10vw] font-[font6] font-semibold text-white'>Home</Link >
+        <Link onClick={() => setisOpenm(false)}  href="/" title='home' className='mtxt inline-block text-[10vw] font-[heading2] font-semibold text-white'>Home</Link >
       </div>
       <div className='overflow-hidden'>
-        <Link onClick={() => setisOpenm(false)}  href="/about-us" title='about-us' className='mtxt inline-block text-[10vw] font-[font6] font-semibold text-white'>About</Link >
+        <Link onClick={() => setisOpenm(false)}  href="/about-us" title='about-us' className='mtxt inline-block text-[10vw] font-[heading2] font-semibold text-white'>About</Link >
       </div>
       <div className='overflow-hidden'>
-        <Link onClick={() => setisOpenm(false)}  href="/work" title='work' className='mtxt inline-block text-[10vw] font-[font6] font-semibold text-white'>Work</Link>
+        <Link onClick={() => setisOpenm(false)}  href="/work" title='work' className='mtxt inline-block text-[10vw] font-[heading2] font-semibold text-white'>Work</Link>
       </div>
       <div className='overflow-hidden'>
         <div onClick={() => {
             setisOpenm(false)
             setisOpen(true)
-        }} className='mtxt inline-block text-[10vw] font-[font6] font-semibold text-white'>Contact</div>
+        }} className='mtxt inline-block text-[10vw] font-[heading2] font-semibold text-white'>Contact</div>
       </div>
       <div className='overflow-hidden mt-[8vw]'>
-        <Link href="https://www.instagram.com/wineemedia/" target='_blank' title='work' className='mtxt inline-block text-[4vw] font-[font6] text-white'>Instagram</Link>
+        <Link href="https://www.instagram.com/wineemedia/" target='_blank' title='work' className='mtxt inline-block text-[4vw] font-[heading2] text-white'>Instagram</Link>
       </div>
       <div className='overflow-hidden my-[2vw]'>
-        <Link href="https://www.behance.net/wineemedia" target='_blank' title='work' className='mtxt inline-block text-[4vw] font-[font6] text-white'>Behance</Link>
+        <Link href="https://www.behance.net/wineemedia" target='_blank' title='work' className='mtxt inline-block text-[4vw] font-[heading2] text-white'>Behance</Link>
       </div>
       <div className='overflow-hidden'>
-        <Link href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" target='_blank' title='work' className='mtxt inline-block text-[4vw] font-[font6] text-white'>Linkedin</Link>
+        <Link href="https://www.linkedin.com/company/wineemedia/?originalSubdomain=in" target='_blank' title='work' className='mtxt inline-block text-[4vw] font-[heading2] text-white'>Linkedin</Link>
       </div>
     </div>
     <div className='border-t w-full border-white/20'>

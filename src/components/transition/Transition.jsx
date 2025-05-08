@@ -95,14 +95,14 @@ const Transition = ({ children }) => {
                     {getRouteName() === "wineemedia" ? <>
                         <div className='relative'>
                             <div className='loader-cover w-full h-full absolute right-0 top-0 bg-[#111111] opacity-[.7]'></div>
-                            <h1 className="text-[8vw] sm:text-[4vw] font-[styles] text-white">WineeMedia</h1>
+                            <h1 className="text-[8vw] sm:text-[4vw] text-center font-[styles] text-white">WineeMedia</h1>
                         </div>
                         <div className='flex items-center justify-between opacity-[.7] gap-[2vw] sm:gap-[.5vw]'>
-                            <h4 className='text-white font-[font4] text-[4vw] sm:text-[2.2vw] lg:text-[1vw]'>Loading...</h4>
+                            <h4 className='text-white font-[heading2] text-[4vw] sm:text-[2.2vw] lg:text-[1vw]'>Loading...</h4>
                             <div className='w-[2.5vw] text-white flex items-center justify-between'>{loading}<span>%</span></div>
                         </div>
 
-                    </> : <h1 className="text-[8vw] sm:text-[3vw] font-[font4] text-white uppercase">{getRouteName()}</h1>}
+                    </> : <h1 className="text-[8vw] sm:text-[3vw] font-[heading2] w-[90%] sm:w-full text-center text-white uppercase">{getRouteName()}</h1>}
 
                 </div>
             </div>

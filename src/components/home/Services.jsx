@@ -33,63 +33,63 @@ const Services = () => {
     },[])
 
     return (
-        <div className='relative w-full h-fit sm:h-fit bg-black p-[2vw] py-[10vw]'>
+        <div className='relative w-full h-fit sm:h-fit bg-black p-[4vw] sm:p-[2vw] py-[10vw]'>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 Clicks, Tricks & Profit Fix
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 We Make Digital 
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 Work Like Magic!
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 Strategic Marketing
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 for the Digital Age.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 Creating Iconic Brands
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 with Digital Power.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 Smart Strategies.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 Creative Execution.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>
             </div>
             <div className='wrapper-txt z-10 relative '>
-                <h4 className="text-[9vw] sm:text-[6vw] font-[font4] leading-none py-[1.2vw] text-white">
+                <h4 className="text-[8.6vw] sm:text-[6vw] font-[heading2] leading-none py-[1.2vw] text-white">
                 Results that Matter.
                 </h4>
                 <div className="overlay absolute w-full h-full right-0 top-1/2 -translate-y-1/2 bg-black opacity-[.8]"></div>

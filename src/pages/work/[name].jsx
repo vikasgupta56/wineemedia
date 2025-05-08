@@ -164,82 +164,82 @@ const WorkDetails = ({ data, meta }) => {
             <div onMouseMove={(e) => handleMouseMove(e)} className='relative bg-black'>
                 <div className='w-full min-h-screen pt-[30vw] md:pt-[12vw] px-[4vw] md:px-[2vw]'>
                     <Navbar />
-                    <h2 ref={textElement} className='project-detail text-white text-[8vw] md:text-[7.5vw] leading-none mb-[5vw] md:mb-[2vw] text-left md:text-center uppercase'>{data?.projectname}</h2>
+                    <h2 ref={textElement} className='project-detail w-[90%] sm:w-full text-white text-[8vw] tracking-wide sm:tracking-normal font-[heading2] md:text-[7.5vw] leading-none mb-[5vw] md:mb-[2vw] text-left md:text-center uppercase'>{data?.projectname}</h2>
                     <div style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='cover-main w-full h-[50vh] md:h-[80vh] lg:h-[120vh] bg-[#ffffff27]'>
                         <Image width={1000} height={1000} priority className='w-full h-full object-cover object-center' src={data?.coverimage1} alt={data?.projectname} title={data?.projectname} />
                     </div>
                     <div className='w-full py-[8vw] md:py-[3vw] text-white'>
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Brand Introduction & Their Details:</h4>
+                            <div className='w-full md:w-[50%] font-[heading] tracking-wide sm:tracking-normal text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <h4 className='font-[heading] tracking-wide sm:tracking-normal text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Brand Introduction & Their Details:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.intro}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] tracking-wide sm:tracking-normal font-[heading2] capitalize'>{data?.intro}</h4>
                                 </div>
                             </div>
                         </div>
                         {data?.brief &&
                             <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                                <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                    <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Brand’s Brief:</h4>
+                                <div className='w-full md:w-[50%] font-[heading] tracking-wide sm:tracking-normal text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                    <h4 className='font-[heading] tracking-wide sm:tracking-normal text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Brand’s Brief:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
                                     <div className='w-full flex justify-between items-center'>
-                                        <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.brief}</h4>
+                                        <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] tracking-wide sm:tracking-normal font-[heading2] capitalize'>{data?.brief}</h4>
                                     </div>
                                 </div>
                             </div>
                         }
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Problem Faced by the Brand / Brief:</h4>
+                            <div className='w-full md:w-[50%] font-[heading] tracking-wide sm:tracking-normal text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <h4 className='font-[heading] tracking-wide sm:tracking-normal text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Problem Faced by the Brand / Brief:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.problem}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] tracking-wide sm:tracking-normal font-[heading2] capitalize'>{data?.problem}</h4>
                                 </div>
                             </div>
                         </div>
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Solution Provided:</h4>
+                            <div className='w-full md:w-[50%] font-[heading] tracking-wide sm:tracking-normal text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <h4 className='font-[heading] tracking-wide sm:tracking-normal text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Solution Provided:</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.solution}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] tracking-wide sm:tracking-normal font-[heading2] capitalize'>{data?.solution}</h4>
                                 </div>
                             </div>
                         </div>
                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                            <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Conclusion</h4>
+                            <div className='w-full md:w-[50%] font-[heading] tracking-wide sm:tracking-normal text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <h4 className='font-[heading] tracking-wide sm:tracking-normal text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Conclusion</h4>
                             </div>
                             <div className='w-full md:w-[50%]'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.conclusion}</h4>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] tracking-wide sm:tracking-normal font-[heading2] capitalize'>{data?.conclusion}</h4>
                                 </div>
                             </div>
                         </div>
 
                         {data?.result && <>
                             <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                                <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                    <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Content - Deliverables:</h4>
+                                <div className='w-full md:w-[50%] font-[heading] tracking-wide sm:tracking-normal text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                    <h4 className='font-[heading] tracking-wide sm:tracking-normal text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Content - Deliverables:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
                                     <div className='w-full flex justify-between items-center'>
-                                        <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize'>{data?.serviceprovided}</h4>
+                                        <h4 className='text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] tracking-wide sm:tracking-normal font-[heading2] capitalize'>{data?.serviceprovided}</h4>
                                     </div>
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
-                                <div className='w-full md:w-[50%] font-[font6] text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
-                                    <h4 className='font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Result/Outcome - Growth Conversion:</h4>
+                                <div className='w-full md:w-[50%] font-[heading] tracking-wide sm:tracking-normal text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                    <h4 className='font-[heading] tracking-wide sm:tracking-normal text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Result/Outcome - Growth Conversion:</h4>
                                 </div>
                                 <div className='w-full md:w-[50%]'>
                                     <div className='w-full flex justify-between items-center'>
-                                        <ul className='list-disc text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] font-[font1] capitalize ml-4'>
+                                        <ul className='list-disc text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] tracking-wide sm:tracking-normal font-[heading2] capitalize ml-4'>
                                             {data?.result?.map((item, index) => <li key={index} className='mb-[1vw]'>{item}</li>)}
                                         </ul>
 
@@ -289,8 +289,8 @@ const WorkDetails = ({ data, meta }) => {
                 </div>
                 <div className='hidden  md:block open-p fixed z-[999] scale-0 mix-blend-difference -translate-x-1/2 -translate-y-1/2 bg-white pointer-events-none w-fit p-[.7vw] text-[1vw] py-[.1vw] rounded-full capitalize'>open project</div>
                 <div className='w-full py-[3vw] pb-[10vw]'>
-                    <div className='w-full text-white capitalize mb-[3vw] px-[2vw] flex gap-[4vw]'>
-                        <h4 className='text-[10vw]  md:text-[5vw] font-[font6]'>Latest project</h4>
+                    <div className='w-full text-white capitalize mb-[3vw] px-[4vw] sm:px-[2vw] flex gap-[4vw]'>
+                        <h4 className='text-[10vw] sm:text-[4.3vw] tracking-wide sm:tracking-normal font-[heading2]'>Latest project</h4>
                     </div>
                     <div onMouseMove={handleMouseMove2} onMouseLeave={handleMouseLeave} className='mar-p w-full flex gap-[1.5vw]'>
                         <div className='marquee2 w-fit flex items-center text-white/50 font-[font4] text-[4vw] gap-[1.5vw] uppercase'>

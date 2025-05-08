@@ -34,6 +34,18 @@
   src: url(/fonts/NUSAR.ttf);
 }
 
+@font-face {
+  font-family: heading;
+  src: url(/fonts/SuisseIntl-Regular.woff2);
+}
+@font-face {
+  font-family: heading2;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/SuisseIntl-Light.woff2);
+}
+
 ::-webkit-scrollbar{
   display: none;
 }
@@ -109,7 +121,7 @@ body {
   animation-name: slide;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 25s;
+  animation-duration: 40s;
 }
 .marquee2{
   animation-name: slide;
@@ -300,3 +312,13 @@ body {
 }
 
 
+
+.heading{
+  letter-spacing: min(-.065vw,-1.24px);
+  line-height: min(5vw,89.3333333333px);
+  font-weight: 300;
+  font-family: heading2;
+}
+.para{
+    font-variant-numeric: tabular-nums;
+}

@@ -70,15 +70,15 @@ const Section4 = () => {
     <div className='section4-h w-full min-h-screen bg-black'>
       <div className='select-work relative w-full mx-[2vw] py-[5vw] sm:py-[1.2vw] mt-[6vw]'>
         <div className='overflow-hidden'>
-          <h2 className='work-txt text-white text-[10vw] sm:text-[5vw] font-[font6] leading-none' style={{ transform: "translateY(100%)" }}>Selected Work</h2>
+          <h2 className='work-txt text-white  pl-[2vw] sm:pl-0 text-[10vw] sm:text-[4.3vw] font-[heading2] leading-none' style={{ transform: "translateY(100%)" }}>Selected Work</h2>
         </div>
-        <div className="line w-[0%] h-[1px] bg-white/60 absolute left-0 bottom-0"></div>
+        <div className="line w-[0%] h-[1px] bg-white/20 absolute left-0 bottom-0"></div>
       </div>
       <div className="projects w-full hidden sm:flex justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
         {works.map((w, i) => (
           <Link href={`/work/${w.projectname.split(" ").join("-")}`} title={w.projectname} key={i} ref={el => workrefs.current[i] = el} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}   className="img-clip project-h cursor-pointer w-full sm:w-full md:w-[49%] h-[60vh] sm:h-[90vh] mb-[2%] overflow-hidden relative">
           <div className='hidden sm:block black-strip transition-all duration-500 w-full h-[0%] bg-black absolute bottom-0 left-0 z-[9]'></div>
-          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[2vw] md:text-[1vw] font-[font6] h-[10%]  absolute  opacity-0 bottom-0 left-0 z-[10]  hidden sm:flex flex-col items-start justify-center'>
+          <div className='strip-text w-full text-white capitalize  transition-all duration-500 text-[2vw] md:text-[1vw] font-[heading] h-[10%]  absolute  opacity-0 bottom-0 left-0 z-[10]  hidden sm:flex flex-col items-start justify-center'>
             <h5 className='text-[1.5vw]'>{w.projectname}</h5>
             <div className='flex items-center justify-between w-[100%]'>
               <h5>
@@ -95,20 +95,20 @@ const Section4 = () => {
         </Link>
         ))}
       </div>
-      <div className="projects w-full flex sm:hidden justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[2vw] pb-[0]">
+      <div className="projects w-full flex sm:hidden justify-between flex-wrap pt-[5vw] sm:pt-[2vw] p-[4vw] pb-[0]">
         {works.map((project, i) => (
          <Link href={`/work/${project.projectname.split(" ").join("-")}`} key={i}  title={project.projectname} className='project w-full md:w-[49.5%] mb-[10vw] cursor-pointer'>
          <div className='projectCover w-full h-[46.5vh] sm:h-[75vh] md:h-[68vh] overflow-hidden'>
            <Image width={1000} height={1000} src={project.coverimage1} className='project-ig  w-full h-full object-cover object-center' alt={project.projectname} title={project.projectname}/>
          </div>
-         <h4 className='text-white font-[font6] text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]  mt-[1.5vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
-         <p className='text-white opacity-[.8]  mt-[2vw] sm:mt-0 font-[font1] text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
+         <h4 className='text-white font-[heading] text-[4vw] sm:text-[3vw] tracking-wide sm:tracking-tight md:text-[1.4vw] lg:text-[1.4vw]  mt-[4vw] md:mt-[.5vw] capitalize'>{project.projectname}</h4>
+         <p className='text-white opacity-[.8] tracking-wide sm:tracking-tight  mt-[2vw] sm:mt-0 font-[heading2] text-[4vw] sm:text-[2vw] md:text-[1vw] lg:text-[1.2vw] capitalize w-full md:w-[50%]'>{project.serviceprovided}</p>
        </Link>
         ))}
       </div>
       <div className='flex items-center justify-center py-[3vw] pt-[5vw] sm:pt-[1vw]'>
         <Link href="/work" title='view all' className='viewall overflow-hidden effecttxt border border-white px-[6vw] sm:px-[3vw] md:px-[2vw] relative rounded-full py-[2vw] sm:py-[1vw] md:py-[.7vw] text-white flex items-center gap-[1vw] mix-blend-difference  cursor-pointer'>
-          <div className='relative z-[10] overflow-hidden h-[4.5vw] sm:h-[2.3vw] md:h-[1.5vw] text-[4vw] sm:text-[2vw] md:text-[1.2vw] font-[font6]'>
+          <div className='relative z-[10] overflow-hidden h-[4.5vw] sm:h-[2.3vw] md:h-[1.5vw] text-[4vw] sm:text-[2vw] md:text-[1.2vw] font-[heading]'>
             <h2 className='one capitalize'>view all</h2>
             <h2 className='one capitalize'>view all</h2>
           </div>
