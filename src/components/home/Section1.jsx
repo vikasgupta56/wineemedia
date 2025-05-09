@@ -23,9 +23,7 @@ const Section1 = () => {
                 y: "-100%",
                 duration: .3
             }, "a")
-            .to(".header-txt", {
-                y: -50,
-            }, "a")
+         
       
         return () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
