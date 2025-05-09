@@ -328,3 +328,20 @@ body {
 .para{
     font-variant-numeric: tabular-nums;
 }
+
+.zerror-link{
+  position: relative;
+}
+.zerror-link:hover::after{
+  width: 100%;
+}
+.zerror-link::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.01vw;
+  width: 0%;
+  background-color: #fff;
+  transition: all ease .3s;
+}

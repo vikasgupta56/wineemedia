@@ -5,9 +5,8 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
 gsap.registerPlugin(ScrollTrigger)
 
-const Section1 = ({videoRef,playerRef,handlePlayer}) => {
+const Section1 = () => {
     const navRef = useRef(null)
-    const img3dRef = useRef(null)
     useEffect(() => {
 
         var tl = gsap.timeline({
@@ -28,43 +27,13 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
                 y: -50,
             }, "a")
       
-            // .to(".header-video", {
-            //     clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)"
-            // }, "a")
-
         return () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         }
 
     }, []);
 
-    // const handleMouseMove3d = (e) => {
-    //     const bounds = img3dRef.current.getBoundingClientRect();
-    //     const offsetX = (e.clientX - bounds.left - bounds.width / 2) / bounds.width;
-    //     const offsetY = (e.clientY - bounds.top - bounds.height / 2) / bounds.height;
-        
-    //     gsap.to(img3dRef.current, {
-    //         x: offsetX * 30, 
-    //         y: offsetY * 30,
-    //         duration: 0.1,   
-    //     });
-       
-    // };
 
-    // const handlePlayerMove = ()=>{
-    //     const player = playerRef.current;
-    //     gsap.to(playerRef.current, {
-    //         scale:1,
-    //         duration: 0.2,   
-    //         ease: "power3.out"
-    //     });
-    // }
-    // const handlePlayerLeave = ()=>{
-    //     const player = playerRef.current;
-    //     gsap.to(playerRef.current, {
-    //         scale:0,
-    //     });
-    // }
     const socialLinks = [
         { icon: "instagram-line", link: "https://www.instagram.com/wineemedia/",alt:"instagram" },
         { icon: "behance-line", link: "https://www.behance.net/wineemedia",alt:"behance" },
@@ -74,19 +43,8 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
     return (
         <div   className='section1 overflow-hidden h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
             <Navbar nav={navRef} />
-            <div className='header-txt hidden font-[font6] relative z-[9]'>
-                <div className='h-[7vw] overflow-hidden'>
-                <h2 className='text-header text-[5vw] leading-none '>Ideas, Innovation</h2>
-                </div>
-                <div className='h-[7vw] overflow-hidden' >
-                <h2 className='text-header text-[5vw] '>  & Digital Success</h2>
-                </div>
-                <div className='h-[7vw] overflow-hidden' >
-                <h2 className='text-header text-[5vw] '> Marketing That Moves You!</h2>
-                </div>
-            </div>
             <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black'>
-            <video  autoPlay muted loop playsInline className='w-full h-full object-cover' src="/shortv.mp4"></video>
+            <video autoPlay  muted={true} preload="auto"  loop playsInline className='w-full h-full object-cover' src="/shortv.mp4"></video>
             </div>
             <div className='w-full flex justify-end pb-[10vw] sm:pb-[2vw] p-[4vw] sm:p-[2vw] absolute bottom-0 '>
                 <div className='social flex items-center gap-[3vw] sm:gap-[3vw]   md:gap-[1vw]'>
@@ -98,9 +56,6 @@ const Section1 = ({videoRef,playerRef,handlePlayer}) => {
                     ))}
                 </div>
             </div>
-            {/* <div onMouseMove={handlePlayerMove} onClick={handlePlayer} onMouseLeave={handlePlayerLeave} style={{ clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)" }} className='header-video bg-[#171717]  cursor-none absolute bottom-0 left-0 w-full h-screen z-[99]'>
-                <video ref={videoRef} autoPlay muted loop playsInline className='w-full h-full object-cover' src="/shortv.mp4"></video>
-            </div> */}
         </div>
     );
 };
