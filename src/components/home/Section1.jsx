@@ -42,7 +42,7 @@ const Section1 = () => {
         <div   className='section1 overflow-hidden h-screen relative w-full text-white text-center flex flex-col items-center justify-center uppercase'>
             <Navbar nav={navRef} />
             <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black'>
-            <video autoPlay  muted={true} preload="auto"  loop playsInline className='w-full h-full object-cover' src="/shortv.mp4"></video>
+            <video autoPlay  muted={true} preload="auto"  loop playsInline className='w-full h-full object-cover' src="/reel.mp4"></video>
             </div>
             <div className='w-full flex justify-end pb-[10vw] sm:pb-[2vw] p-[4vw] sm:p-[2vw] absolute bottom-0 '>
                 <div className='social flex items-center gap-[3vw] sm:gap-[3vw]   md:gap-[1vw]'>
