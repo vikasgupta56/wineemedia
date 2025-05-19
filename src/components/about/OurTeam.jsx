@@ -17,11 +17,6 @@ const OurTeam = () => {
             name: "Niranjan Solanki",
             profession: "Data Scientist"
         },
-        // {
-        //     image: "/team/Rishabh Pandey.webp",
-        //     name: "Rishabh pandey",
-        //     profession: "Data Analyst"
-        // },
         {
             image: "/team/Himanshu Khatri.webp",
             name: "Himanshu Khatri",
@@ -41,11 +36,6 @@ const OurTeam = () => {
             image: "/team/Sumeet Patwa.webp",
             name: "Sumeet",
             profession: "3D Character Artist"
-        },
-        {
-            image: "/team/Rituraj Bang.webp",
-            name: "Rituraj Bang",
-            profession: "Concept Artist"
         },
     ];
 

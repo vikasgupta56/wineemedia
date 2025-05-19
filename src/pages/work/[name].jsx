@@ -201,7 +201,9 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                       {
+                        data?.soloution && data?.result && <>
+                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[heading] tracking-wide text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                 <h4 className='font-[heading] tracking-wide text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Solution Provided:</h4>
                             </div>
@@ -211,7 +213,11 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                        </>
+                       }
+                       {
+                        data?.conclusion && data?.result && <>
+                         <div className='flex flex-col md:flex-row mb-[10vw]  md:mb-[1.8vw] gap-[2vw] md:gap-0'>
                             <div className='w-full md:w-[50%] font-[heading] tracking-wide text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
                                 <h4 className='font-[heading] tracking-wide text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Conclusion</h4>
                             </div>
@@ -221,6 +227,8 @@ const WorkDetails = ({ data, meta }) => {
                                 </div>
                             </div>
                         </div>
+                        </>
+                       }
 
                         {data?.result && <>
                             <div className='flex flex-col md:flex-row mb-[3vw] md:mb-[1.8vw] gap-[2vw] md:gap-0'>
@@ -270,6 +278,35 @@ const WorkDetails = ({ data, meta }) => {
                     <div ref={imgRef5} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full h-[30vh] my-[4vw] md:mb-0 sm:h-[70vh] md:h-[90vh] lg:h-[100vh] flex items-center justify-center '>
                         <Image width={1000} height={1000} className='w-[100%] md:w-[80%] lg:w-[68%] h-[100%] md:h-[73%] lg:h-[78%] object-cover object-center bg-[#ffffff0e]' src={data?.image5} alt={data?.projectname} title={data?.projectname} />
                     </div>
+                      {
+                        data?.solution && !data?.result && <>
+                         <div className='flex flex-col md:flex-row mb-[10vw] text-white md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                            <div className='w-full md:w-[50%] font-[heading] tracking-wide text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <h4 className='font-[heading] tracking-wide text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Solution Provided:</h4>
+                            </div>
+                            <div className='w-full md:w-[50%]'>
+                                <div className='w-full flex justify-between items-center'>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] tracking-wide font-[heading2] capitalize'>{data?.solution}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        </>
+                       }
+                       {
+                        data?.conclusion && !data?.result && <>
+                         <div className='flex flex-col md:flex-row mb-[10vw] text-white md:mb-[1.8vw] gap-[2vw] md:gap-0'>
+                            <div className='w-full md:w-[50%] font-[heading] tracking-wide text-[4vw] md:text-[1.5vw] lg:text-[1vw]'>
+                                <h4 className='font-[heading] tracking-wide text-[4vw] sm:text-[3vw] md:text-[1.4vw] lg:text-[1.4vw]'>Conclusion</h4>
+                            </div>
+                            <div className='w-full md:w-[50%]'>
+                                <div className='w-full flex justify-between items-center'>
+                                    <h4 className='text-[4vw] sm:text-[2vw] md:text-[1.8vw] lg:text-[1.3vw] xl:text-[1.2vw] tracking-wide font-[heading2] capitalize'>{data?.conclusion}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        </>
+                       }
+
                     <div ref={imgRef6} style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }} className='w-full md:pt-[2vw]  flex flex-col md:flex-row items-center gap-[4vw] md:gap-0 justify-between'>
                         <div className='w-full md:w-[49.5%] h-[30vh] sm:h-[70vh] md:h-[70vh] bg-[#ffffff0e]'>
                             <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src={data?.image6} alt={data?.projectname} title={data?.projectname} />

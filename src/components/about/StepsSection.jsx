@@ -5,38 +5,39 @@ gsap.registerPlugin(ScrollTrigger)
 
 const StepsSection = ({ mainRef, benifitsRef }) => {
 
-    const values = [
-        {
-            number: "1",
-            title: "Transparenz",
-            description:
-                "Wir legen grossen Wert auf Transparenz in all unseren Prozessen. Unsere Kunden werden stets über den aktuellen Stand ihrer Projekte informiert und in alle wichtigen Entscheidungen einbezogen. Offene Kommunikation und klare Informationen sind für uns die Grundlage einer vertrauensvollen Zusammenarbeit."
-        },
-        {
-            number: "2",
-            title: "Kreativität",
-            description:
-                "Unsere Arbeit basiert auf kreativen Konzepten, die individuell auf die Bedürfnisse unserer Kunden zugeschnitten sind. Wir denken innovativ und setzen neue Maßstäbe."
-        },
-        {
-            number: "3",
-            title: "Qualität",
-            description:
-                "Wir liefern hochwertige Ergebnisse durch präzises Arbeiten, technisches Know-how und höchste Ansprüche an unsere Leistungen."
-        },
-        {
-            number: "4",
-            title: "Zuverlässigkeit",
-            description:
-                "Termine werden bei uns eingehalten. Unsere Kunden können sich darauf verlassen, dass wir unsere Zusagen einhalten – ohne Kompromisse."
-        },
-        {
-            number: "5",
-            title: "Partnerschaft",
-            description:
-                "Wir sehen unsere Kunden als Partner. Nur gemeinsam können nachhaltige und erfolgreiche Projekte entstehen."
-        }
-    ];
+  const values = [
+    {
+        number: "1",
+        title: "Stunning Visuals",
+        description:
+            "We create high-quality, visually striking content that captures attention and reflects your brand’s true identity, using the latest tools and techniques."
+    },
+    {
+        number: "2",
+        title: "Tailored Service",
+        description:
+            "From first meeting to final delivery, we offer a fully personalized experience that fits your goals, timeline, and vision."
+    },
+    {
+        number: "3",
+        title: "All-in-One Solutions",
+        description:
+            "Whether it’s product shoots, brand videos, or full campaigns, we handle everything in-house for a seamless process and consistent quality."
+    },
+    {
+        number: "4",
+        title: "Smart & Strategic",
+        description:
+            "We combine creativity with data-driven strategies to deliver content that not only looks great but also performs across platforms."
+    },
+    {
+        number: "5",
+        title: "Skilled & Modern Team",
+        description:
+            "Our experienced professionals stay updated with the latest trends and tech to ensure your brand stands out in a fast-changing digital world."
+    }
+];
+
 
     useEffect(() => {
         if (!benifitsRef.current || !mainRef.current) return;
