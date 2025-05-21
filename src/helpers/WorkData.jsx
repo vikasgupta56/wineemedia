@@ -73,7 +73,7 @@ export const workData = {
         image5: "/images/envision-image5.webp",
         image6: "/images/envision-image6.webp",
         image7: "/images/envision-image7.webp",
-        landScapeVideo: "/videos/envision.mp4",
+        portraitVideo: "/videos/envision.mp4",
         meta: {
             title:
                 "Crafting Exceptional Branding Strategies | Winemedia",
@@ -217,6 +217,7 @@ export const workData = {
         image5: "/images/pacep-image5.webp",
         image6: "/images/pacep-image6.webp",
         image7: "/images/pacep-image7.webp",
+        image9: "/images/pacep-image9.webp",
         meta: {
             title:
                 "WineeMedia x Pace Premium | Elevating Digital Presence",
