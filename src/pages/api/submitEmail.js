@@ -77,13 +77,13 @@ export default async function handler(req, res) {
         port: 465,
         secure: true,
         auth: {
-          user: process.env.MAIL_EMAIL_ADDRESS,
-          pass: process.env.MAIL_PASSWORD,
+          user: process.env.NEXT_PUBLIC_MAIL_EMAIL_ADDRESS,
+          pass: process.env.NEXT_PUBLIC_MAIL_PASSWORD,
         },
       });
 
       const mailOptions = {
-        from: process.env.MAIL_EMAIL_ADDRESS,
+        from: process.env.NEXT_PUBLIC_MAIL_EMAIL_ADDRESS,
         to: ["info@wineemedia.com"],
         subject: `New WineeMedia Contact Form Submission`,
         html: `
